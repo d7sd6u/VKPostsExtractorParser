@@ -1,0 +1,29 @@
+{
+    "name": "d7sd6u/vk-posts-extractor-parser",
+    "description": "Library for obtaining posts from vk.com in simple array format (see README for more info). Library does not use VK's api, but parses the site.",
+    "type": "library",
+    "keywords": ["vk", "posts", "parser"],
+    "homepage": "https://github.com/d7sd6u/VKPostsExtractorParser",
+    "license": "LGPL-2.1-or-later",
+    "authors": [
+        {
+            "name": "d7sd6u",
+            "homepage": "https://github.com/d7sd6u"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/d7sd6u/VKPostsExtractorParser/issues/",
+        "wiki": "https://github.com/d7sd6u/VKPostsExtractorParser/wiki/",
+        "source": "https://github.com/d7sd6u/VKPostsExtractorParser/",
+        "rss": "https://github.com/d7sd6u/VKPostsExtractorParser/commits/master.atom"
+    },
+    "require": {
+        "kub-at/php-simple-html-dom-parser": "^1.9"
+    },
+    "autoload": {
+        "files": [ "src/Extractor.php" ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
