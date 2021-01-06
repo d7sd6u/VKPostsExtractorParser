@@ -72,7 +72,7 @@ $getDoms = function($urls, $context) use ($source) {
 };
 
 $log = function($message) {
-	echo "$message\n";
+	echo "$message[text]\n";
 };
 
 date_default_timezone_set('UTC');

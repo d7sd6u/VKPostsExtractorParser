@@ -114,7 +114,7 @@ class CommentExtractor extends GenericExtractor {
 
 	private function extractCommentAuthorLink() {
 		if(hasAttr($this->commentElem, 'href', '.reply_image')) {
-			return $this->commentElem->find('.reply_image')[0]->getAttribute('href');
+			return 'https://vk.com' . $this->commentElem->find('.reply_image')[0]->getAttribute('href');
 		} else {
 			$this->log('Failed to extract comment author link');
 		}

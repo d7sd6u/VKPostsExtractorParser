@@ -50,7 +50,7 @@ class PostExtractor extends GenericExtractor {
 	public function setDom($postDom) {
 		assertc(has($postDom, '.wall_post_cont'), 'setDom() failed to find .wall_post_cont');
 		
-		$this->postDom = $this->cleanRedirects($postDom);
+		$this->postDom = $postDom;
 
 		$this->postBody = $this->postDom->find('.wall_post_cont')[0];
 	}
@@ -94,18 +94,6 @@ class PostExtractor extends GenericExtractor {
 		$this->post['repost'] = $this->extractPostRepost();
 
 		return $this->post;
-	}
-	
-	private function cleanRedirects($dom) {
-		foreach($dom->find('.wall_post_cont a') as $link) {
-			// check if url in link is redirect, i.e. /away.php?to=<canonical url>&<some vk's parameters>
-			// first subexpression is canonical url: all chars after "/away.php?to=", except other possible parameters in "dirty" url
-			if(preg_match('#^/away.php\?to=(.*?)(&.*)*$#', $link->getAttribute('href'), $matches)) {
-				$clean_url = $matches[1];
-				$link->setAttribute('href', urldecode($clean_url));
-			}
-		}
-		return $dom;
 	}
 
 	private function extractPostAuthor() {

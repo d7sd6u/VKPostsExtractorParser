@@ -339,6 +339,8 @@ class PartExtractor extends GenericExtractor {
 			$textElem = $textElemFound[0];
 		}
 
+		$textElem = $this->cleanUrls($textElem);
+
 		// innertext doesn't work here :/, seems like bug in simple_html_dom, maybe caused by encoding or cyrillic characters, so using this hack instead:
 		$text['emojis'] = $textElem->outertext;
 		$text['emojis'] = preg_replace('!</?div.*?>!', '', $text['emojis']);
@@ -364,6 +366,23 @@ class PartExtractor extends GenericExtractor {
 
 
 		return $text;
+	}
+
+	private function cleanUrls($dom) {
+		foreach($dom->find('a') as $link) {
+			// check if url in link is redirect, i.e. /away.php?to=<canonical url>&<some vk's parameters>
+			// first subexpression is canonical url: all chars after "/away.php?to=", except other possible parameters in "dirty" url
+			if(preg_match('#^/away.php\?to=(.*?)(&.*)*$#', $link->getAttribute('href'), $matches)) {
+				$clean_url = $matches[1];
+				$link->setAttribute('href', urldecode($clean_url));
+			}
+			// check if url is relative
+			if(preg_match('#^/.*$#', $link->getAttribute('href'), $matches)) {
+				$clean_url = 'https://vk.com' . $matches[0];
+				$link->setAttribute('href', $clean_url);
+			}
+		}
+		return $dom;
 	}
 
 	public function extractFiles($body) {
