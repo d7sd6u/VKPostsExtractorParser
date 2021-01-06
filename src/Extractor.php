@@ -41,7 +41,7 @@ class Extractor extends GenericExtractor {
 
 		$postsProcessed = 0;
 		foreach($sourceDom->find('.post') as $postElem) {
-			if($postsProcessed > $this->options['postsAmount']) {
+			if($postsProcessed >= $this->options['postsAmount']) {
 				break;
 			} else {
 				$postsProcessed++;
