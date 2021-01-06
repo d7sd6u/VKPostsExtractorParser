@@ -531,7 +531,7 @@ class PostExtractor extends GenericExtractor {
 			} else {
 				$repostCleanUrl = getPostUrlFromId($repostId);
 				$repostDom = $this->getDom($repostCleanUrl, 'post');
-				$repostExtractor = new PostExtractor($this->getDoms, $this->log, $this->options);
+				$repostExtractor = new PostExtractor($this->getDoms, $this->inheritedLog, $this->options);
 				$repostExtractor->setDom($repostDom);
 				$repost = $repostExtractor->extractPost();
 			}
