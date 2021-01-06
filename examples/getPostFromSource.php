@@ -17,7 +17,9 @@ $parser = new Parser($getDoms, $log);
 $posts = $parser->getPostsFromSource('habr');
 
 foreach($logs as $message) {
-	echo $message;
+	echo '<pre>';
+	print_r($message);
+	echo '</pre>';
 	echo '<br/>';
 }
 echo '<hr/>';

@@ -14,18 +14,31 @@ class CommentExtractor extends GenericExtractor {
 
 	public function __construct($getDoms, $log) {
 		$this->getDoms = $getDoms;
-		$this->log = $log;
+		$this->inheritedLog = $log;
 
-		$this->partExtractor = new PartExtractor($getDoms, $log);
+		$commentLog = function($message) {
+			$this->log($message);
+		};
+
+		$this->partExtractor = new PartExtractor($getDoms, $commentLog);
 	}
 
 	protected function log($message) {
-		if(isset($this->comment['id']) && $this->comment['id'] !== null) {
-			$message .= ' at comment' . $this->comment['id'];
+		$enrichedMessage = array();
+
+		if(is_string($message)) {
+			$enrichedMessage['text'] = $message;
 		} else {
-			$message .= ' at unknown comment';
+			$enrichedMessage = $message;
 		}
-		($this->log)($message);
+
+		if(isset($this->comment['id'])) {
+			$enrichedMessage['commentId'] = $this->comment['id'];
+		} else {
+			$enrichedMessage['commentId'] = null;
+		}
+
+		($this->inheritedLog)($enrichedMessage);
 	}
 
 	public function setComment($commentElem) {

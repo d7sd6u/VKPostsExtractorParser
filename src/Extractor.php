@@ -11,7 +11,7 @@ class Extractor extends GenericExtractor {
 
 	public function __construct($getDoms, $log) {
 		$this->getDoms = $getDoms;
-		$this->log = $log;
+		$this->inheritedLog = $log;
 
 		$this->postExtractor = new PostExtractor($getDoms, $log);
 	}
@@ -29,11 +29,10 @@ class Extractor extends GenericExtractor {
 
 		foreach($sourceDom->find('.post') as $postElem) {
 			$postId = substr($postElem->getAttribute('id'), 4);
-
-			try {
+			if(preg_match('/-?\d+_\d+/', $postId)) {
 				$urls[] = getPostUrlFromId($postId);
-			} catch(\Exception $e) {
-				$this->log('Failed to extract post\'s url');
+			} else {
+				$this->log("Failed to extract post: failed to extract post\'s id");
 				$posts[] = null;
 			}
 		}
@@ -42,7 +41,7 @@ class Extractor extends GenericExtractor {
 
 		foreach($postsDoms as $url => $postDom) {
 			if($postDom === null) {
-				$this->log('Failed to get post dom from this url: ' . $url);
+				$this->log("Failed to extract post: failed to get post dom from this url: $url");
 				$posts[] = null;
 				continue;
 			}
@@ -55,7 +54,7 @@ class Extractor extends GenericExtractor {
 				$mobileDom = $this->getDom($mobilePostUrl, 'page');
 
 				if($mobileDom === null) {
-					$this->log('Failed to get post\'s mobile dom from this url: ' . $mobilePostUrl);
+					$this->log("Failed to extract post: failed to get post\'s mobile dom from this url: $mobilePostUrl");
 					$posts[] = null;
 					continue;
 				}

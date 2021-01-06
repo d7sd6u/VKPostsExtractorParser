@@ -18,7 +18,7 @@ class PostExtractor extends GenericExtractor {
 
 	public function __construct($getDoms, $log) {
 		$this->getDoms = $getDoms;
-		$this->log = $log;
+		$this->inheritedLog = $log;
 
 		$postLog = function($message) {
 			$this->log($message);
@@ -30,12 +30,21 @@ class PostExtractor extends GenericExtractor {
 	}
 
 	protected function log($message) {
-		if(isset($this->post['id'])) {
-			$postId = $this->post['id'];
+		$enrichedMessage = array();
+
+		if(is_string($message)) {
+			$enrichedMessage['text'] = $message;
 		} else {
-			$postId = null;
+			$enrichedMessage = $message;
 		}
-		($this->log)($message, $postId);
+
+		if(isset($this->post['id'])) {
+			$enrichedMessage['postId'] = $this->post['id'];
+		} else {
+			$enrichedMessage['postId'] = null;
+		}
+
+		($this->inheritedLog)($enrichedMessage);
 	}
 
 	public function setDom($postDom) {

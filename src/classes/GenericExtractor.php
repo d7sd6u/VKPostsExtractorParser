@@ -5,7 +5,7 @@ require_once dirname(__DIR__) . "/Utilities.php";
 
 class GenericExtractor {
 	protected $getDoms;
-	protected $log;
+	protected $inheritedLog;
 
 	protected function getDoms($urls, $context) {
 		return ($this->getDoms)($urls, $context);
@@ -16,11 +16,17 @@ class GenericExtractor {
 	}
 
 	protected function log($message) {
-		($this->log)($message);
+		if(is_string($message)) {
+			$message = array(
+				'text' => $message
+			);
+		}
+
+		($this->inheritedLog)($message);
 	}
 
 	public function __construct($getDoms, $log) {
 		$this->getDoms = $getDoms;
-		$this->log = $log;
+		$this->inheritedLog = $log;
 	}
 }
