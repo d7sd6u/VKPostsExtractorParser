@@ -9,7 +9,7 @@ use d7sd6u\VKPostsExtractorParser\Extractor as Parser;
 use KubAT\PhpSimple\HtmlDomParser;
 
 if(!isset($argv[1])) {
-	die('Please, provide source id\n');
+	die("Please, provide source id\n");
 }
 $source = $argv[1];
 
