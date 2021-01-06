@@ -3,9 +3,10 @@ namespace d7sd6u\VKPostsExtractorParser;
 
 require_once dirname(__DIR__) . "/Utilities.php";
 
-class GenericExtractor {
+abstract class GenericExtractor {
 	protected $getDoms;
 	protected $inheritedLog;
+	protected $options;
 
 	protected function getDoms($urls, $context) {
 		return ($this->getDoms)($urls, $context);
@@ -25,8 +26,9 @@ class GenericExtractor {
 		($this->inheritedLog)($message);
 	}
 
-	public function __construct($getDoms, $log) {
+	public function __construct($getDoms, $log, $options) {
 		$this->getDoms = $getDoms;
 		$this->inheritedLog = $log;
+		$this->options = $options;
 	}
 }

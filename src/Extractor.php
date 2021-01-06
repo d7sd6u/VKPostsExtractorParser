@@ -9,11 +9,23 @@ require_once "Utilities.php";
 class Extractor extends GenericExtractor {
 	private $postExtractor;
 
-	public function __construct($getDoms, $log) {
-		$this->getDoms = $getDoms;
-		$this->inheritedLog = $log;
+	const defaultOptions = array(
+		'extractComments' => true,
+		'postsAmount' => 20,
+	);
 
-		$this->postExtractor = new PostExtractor($getDoms, $log);
+	public function __construct($getDoms, $log, $options = array()) {
+		parent::__construct($getDoms, $log, $options);
+
+		foreach(self::defaultOptions as $name => $value) {
+			if(!isset($options[$name])) {
+				$this->options[$name] = self::defaultOptions[$name];
+			} else {
+				$this->options[$name] = $options[$name];
+			}
+		}
+
+		$this->postExtractor = new PostExtractor($getDoms, $log, $this->options);
 	}
 
 	public function getPostsFromSource($sourceId) {
@@ -27,7 +39,14 @@ class Extractor extends GenericExtractor {
 			throw new \Exception('Failed to get source dom from this url: ' . $sourceUrl);
 		}
 
+		$postsProcessed = 0;
 		foreach($sourceDom->find('.post') as $postElem) {
+			if($postsProcessed > $this->options['postsAmount']) {
+				break;
+			} else {
+				$postsProcessed++;
+			}
+
 			$postId = substr($postElem->getAttribute('id'), 4);
 			if(preg_match('/-?\d+_\d+/', $postId)) {
 				$urls[] = getPostUrlFromId($postId);

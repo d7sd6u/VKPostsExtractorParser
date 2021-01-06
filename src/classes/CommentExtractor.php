@@ -12,15 +12,14 @@ class CommentExtractor extends GenericExtractor {
 
 	private $comment;
 
-	public function __construct($getDoms, $log) {
-		$this->getDoms = $getDoms;
-		$this->inheritedLog = $log;
+	public function __construct($getDoms, $log, $options) {
+		parent::__construct($getDoms, $log, $options);
 
 		$commentLog = function($message) {
 			$this->log($message);
 		};
 
-		$this->partExtractor = new PartExtractor($getDoms, $commentLog);
+		$this->partExtractor = new PartExtractor($getDoms, $commentLog, $this->options);
 	}
 
 	protected function log($message) {

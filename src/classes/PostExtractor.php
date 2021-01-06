@@ -16,17 +16,16 @@ class PostExtractor extends GenericExtractor {
 
 	private $post;
 
-	public function __construct($getDoms, $log) {
-		$this->getDoms = $getDoms;
-		$this->inheritedLog = $log;
+	public function __construct($getDoms, $log, $options) {
+		parent::__construct($getDoms, $log, $options);
 
 		$postLog = function($message) {
 			$this->log($message);
 		};
 
-		$this->partExtractor = new PartExtractor($getDoms, $postLog);
+		$this->partExtractor = new PartExtractor($getDoms, $postLog, $this->options);
 
-		$this->commentExtractor = new CommentExtractor($getDoms, $postLog);
+		$this->commentExtractor = new CommentExtractor($getDoms, $postLog, $this->options);
 	}
 
 	protected function log($message) {
@@ -89,7 +88,11 @@ class PostExtractor extends GenericExtractor {
 
 		$this->post['url'] = $this->extractPostUrl();
 
-		$this->post['comments'] = $this->extractPostComments();
+		if($this->options['extractComments']) {
+			$this->post['comments'] = $this->extractPostComments();
+		} else {
+			$this->post['comments'] = null;
+		}
 
 		$this->post['repost'] = $this->extractPostRepost();
 
