@@ -89,7 +89,11 @@ class CommentExtractor extends GenericExtractor {
 			'link' => '',
 			'avatar' => 'https://vk.com/images/wall/deleted_avatar_50.png'
 		);
-		$comment['text'] = '';
+		$comment['text'] = array(
+			'plaintext' => '',
+			'html' => '',
+			'emojis' => '',
+		);
 		$comment['likes'] = 0;
 		$comment['videos'] = $comment['files'] = $comment['audios'] = $comment['images'] = array();
 
