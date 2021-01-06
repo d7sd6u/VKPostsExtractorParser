@@ -51,7 +51,7 @@ class CommentExtractor extends GenericExtractor {
 		$this->comment['id'] = $this->extractCommentId();
 
 		if(!has($this->commentElem, '.reply_text > div')) {
-			$this->comment = $this->createDeletedComment();
+			$this->createDeletedComment();
 		} else {
 			$this->comment['author'] = $this->extractCommentAuthor();
 
@@ -82,22 +82,18 @@ class CommentExtractor extends GenericExtractor {
 	}
 
 	private function createDeletedComment() {
-		$comment = array();
-
-		$comment['author'] = array(
+		$this->comment['author'] = array(
 			'name' => 'Comment deleted by author or moderator',
 			'link' => '',
 			'avatar' => 'https://vk.com/images/wall/deleted_avatar_50.png'
 		);
-		$comment['text'] = array(
+		$this->comment['text'] = array(
 			'plaintext' => '',
 			'html' => '',
 			'emojis' => '',
 		);
-		$comment['likes'] = 0;
-		$comment['videos'] = $comment['files'] = $comment['audios'] = $comment['images'] = array();
-
-		return $comment;
+		$this->comment['likes'] = 0;
+		$this->comment['videos'] = $this->comment['files'] = $this->comment['audios'] = $this->comment['images'] = array();
 	}
 
 	private function extractCommentAuthor() {
