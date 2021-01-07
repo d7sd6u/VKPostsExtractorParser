@@ -26,7 +26,7 @@ var vk = {
   host: 'vk.com',
   loginDomain: 'https://login.vk.com/',
   lang: 3,
-  statsMeta: {"platform":"web2","st":false,"time":1609962300,"hash":"zLMX5ADDRAPZ7wnd3OQzWzAQtoshWJGtx4zmVAkBz9P"},
+  statsMeta: {"platform":"web2","st":false,"time":1610011274,"hash":"vcgnSkQFQAXrO5KZAhmZLPU6sGKv90yh7SZ3o1W3IL8"},
   loaderNavSection: '',
   rtl: parseInt('') || 0,
   version: 143240,
@@ -36,17 +36,17 @@ var vk = {
   wsTransport: 'https://stats.vk-portal.net',
   stExcludedMasks: ["loader_nav","lang","sw\/"],
   zero: false,
-  contlen: 75213,
+  contlen: 66322,
   loginscheme: 'https',
-  ip_h: '461b5ac10d7891e972',
+  ip_h: '2cf696312f98840a08',
   navPrefix: '/',
   dt: parseInt('0') || 0,
   fs: parseInt('13') || 13,
-  ts: 1609962300,
+  ts: 1610011274,
   tz: 10800,
   pd: 0,
   vcost: 7,
-  time: [2021, 1, 6, 22, 45, 0],
+  time: [2021, 1, 7, 12, 21, 14],
   sampleUser: -1, spentLastSendTS: new Date().getTime(),
   a11y: 0,
   statusExportHash: '',
@@ -63,7 +63,7 @@ var vk = {
   },
 
   pr_tpl: "<div class=\"pr %cls%\" id=\"%id%\"><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><\/div>",
-  push_hash: 'c417ff1f844efb94dd',
+  push_hash: '477b961d540bd28d83',
 
   audioInlinePlayerTpl: "<div class=\"audio_inline_player _audio_inline_player no_select\">\n  <div class=\"audio_inline_player_right\">\n    <div class=\"audio_inline_player_volume\"><\/div>\n  <\/div>\n  <div class=\"audio_inline_player_left\">\n    <div class=\"audio_inline_player_progress\"><\/div>\n  <\/div>\n<\/div>",
 
@@ -76,7 +76,7 @@ var vk = {
   },
 
   isCallsDevEnv: '' ? true : false,
-};;vk.rv="105615";;if (!window.constants) { window.constants = {Groups: {
+};;vk.rv="105616";;if (!window.constants) { window.constants = {Groups: {
   GROUPS_ADMIN_LEVEL_USER: 0,
   GROUPS_ADMIN_LEVEL_MODERATOR: 1,
   GROUPS_ADMIN_LEVEL_EDITOR: 2,
@@ -103,12 +103,12 @@ if (vk.al != 1 && ___htest.length && ___htest.substr(0, 1) == vk.navPrefix) {
 var StaticFiles = {
   'cmodules/web/common_web.js' : {v: '228'},
   'al/common.65354639abb6e4b6b3f6.css':{v:''},'common.css':{v:1},'al/base.4205a0cdf368d40fab79.css':{v:''},'base.css':{v:1},'al/fonts_utf.3e49cba3b57d115e0fd0.css':{v:''},'fonts_utf.css':{v:1},'al/fonts_cnt.2758ddb836f8883f0d1d.css':{v:''},'fonts_cnt.css':{v:1}
-  ,'cmodules/bundles/evbus.035f3d2e60c59ab7cd67.js':{v:'439c8b71aafdabfd59fa'},'cmodules/bundles/audioplayer.491a832342f0afee7d3a.js':{v:'5fad3511cb7cf6281fe0'},'cmodules/bundles/lottie.42c43ab3dd042ab8b845.js':{v:'4d0de2991b49d6fc43f9'},'cmodules/bundles/common.b3b0a4f967e2bee9f1b6.js':{v:'78de0b9f59c99b729470'},'cmodules/web/common_web.2df7fd38da98b00b5514.js':{v:'65bfd8efbbc84c780f76410a60e3e412'},'lang3_0.js': {v: 26832705},'cmodules/bundles/983f42e70b3e18d97715513130ff4d9c.71c87b47c4a67e3c5005.js':{v:'2e110c95af558361560b'},'cmodules/bundles/7ff0c31fd89ceca852f0cf5e2f61c8c8.f3895afa7a813888d3ff.js':{v:'2cb6e168c5cf439148ca'},'cmodules/bundles/c6f51c78d2a3f17f935b490330a9da66.d954fec92e6569491561.js':{v:'64bcfd2af49e9f37d2fc'},'cmodules/bundles/07ed5e94b188401a51c6fd9fb02f3537.eb008ee57715c2740cd8.js':{v:'e52d20ddaa10de61ae4e'},'cmodules/bundles/e1eb3733f1f626a37fd0d2e038b98573.25d68629c38a5491f36e.js':{v:'6f58b25c88e0fe5fca22'},'cmodules/bundles/3d69874b9b2a413d4c2d4df376b293a6.72e9ed78df3966fadec0.js':{v:'0f36ec6a3a27e10301f6'},'cmodules/web/page.4510ccb4bd79f4e85512.js':{v:'4bb45cd6b0a3f086321713d42161b8b9'},'page.js':{v:1},'al/page.56bb91688712df2434f2.css':{v:''},'page.css':{v:1},'al/post.2dda6ccdfe124838da95.css':{v:''},'post.css':{v:1},'cmodules/web/wall.637f597ef2a966a8a7e6.js':{v:'763ecf5252473298a26da770b2d80b6e'},'cmodules/web/wall.js':{v:1},'al/wall.edb54d6715a22c7b838f.css':{v:''},'wall.css':{v:1},'wide_dd.js':{v:31},'al/wide_dd.6bcece6deceba34f76ce.css':{v:''},'wide_dd.css':{v:1},'cmodules/web/pagination.8b08dc00fb1afaf0254f.js':{v:'baf98316575a0e697896fc5e094d1bff'},'cmodules/web/pagination.js':{v:1},'cmodules/bundles/palette.60c089afa6c6b372e5a4.js':{v:'21ca4767fe544e438ac9'},'cmodules/web/emoji.7212eb74d24e8ba746e6.js':{v:'6ba845ae8d0cc1a24bab7683231135c1'},'cmodules/web/emoji.js':{v:1},'al/ui_common.2df1b3d763cda2ddf2be.css':{v:''},'ui_common.css':{v:1},'cmodules/bundles/71af34534be10395f7f6bb3e2039fd2e.60fb4d8eec439a51d0dd.js':{v:'4b78c3e89b3153e7d52b'},'cmodules/web/ui_common.295cb4b381b288bc2541.js':{v:'781a55540caa25d5876f28f277a99d48'},'ui_common.js':{v:1},'cmodules/web/index.fbd4c4b841a4db094d6c.js':{v:'01e2c1f76c87df6d78d5818926a8d45d'},'cmodules/web/index.js':{v:1},'al/index.3c618ab599f4d3cc7018.css':{v:''},'index.css':{v:1},'cmodules/web/join.e921fc188b681339c66b.js':{v:'846548871aea5427cbca51a1617c513c'},'cmodules/web/join.js':{v:1},'al/join.83e186add06e5809c014.css':{v:''},'join.css':{v:1},'ui_controls.js':{v:189},'ui_controls.6d887d252cd181f2be7f.css':{v:''},'ui_controls.css':{v:1},'al/cookies_policy.65640d039de9486c509c.css':{v:''},'cookies_policy.css':{v:1},'cmodules/web/css_types.7072f2e6f601aa8875bd.js':{v:'4482715c18abe6253e59'},'cmodules/web/css_types.js':{v:1},'cmodules/web/unauthorized.1b39cf821f40540e1b14.js':{v:'cdb42bcd49ae0641df8d9abe8be72cc5'},'cmodules/web/unauthorized.js':{v:1},'cmodules/web/jobs_devtools_notification.fae58dff8a0e29571e95.js':{v:'ec2b9b83c1f4451ac8e342e9fadf55b4'},'cmodules/web/jobs_devtools_notification.js':{v:1},'cmodules/web/page_layout.367c725c1efd150f692b.js':{v:'70f9bc332b8a77da1870f3276c88ffc6'},'cmodules/web/page_layout.js':{v:1},'cmodules/bundles/87e53d18c97a21833435b4d03c8ffead.71abec828712e3c2fe34.js':{v:'118df2fa244ad28f118d'},'cmodules/web/likes.4fffe19303c964e5da61.js':{v:'3f9d781529ab52daee462bd1632b91d9'},'cmodules/web/likes.js':{v:1},'cmodules/bundles/vendors.d8be6de74e8d64f67187.js':{v:'d54e61451335845931b5'},'cmodules/web/grip.f50231034e8b05f2ddab.js':{v:'1acaa759fc8db37488004c1229bfefde'},'cmodules/web/grip.js':{v:1}
+  ,'cmodules/bundles/evbus.035f3d2e60c59ab7cd67.js':{v:'439c8b71aafdabfd59fa'},'cmodules/bundles/audioplayer.491a832342f0afee7d3a.js':{v:'5fad3511cb7cf6281fe0'},'cmodules/bundles/lottie.42c43ab3dd042ab8b845.js':{v:'4d0de2991b49d6fc43f9'},'cmodules/bundles/common.b3b0a4f967e2bee9f1b6.js':{v:'78de0b9f59c99b729470'},'cmodules/web/common_web.2df7fd38da98b00b5514.js':{v:'65bfd8efbbc84c780f76410a60e3e412'},'lang3_0.js': {v: 26833521},'cmodules/bundles/983f42e70b3e18d97715513130ff4d9c.71c87b47c4a67e3c5005.js':{v:'2e110c95af558361560b'},'cmodules/bundles/7ff0c31fd89ceca852f0cf5e2f61c8c8.f3895afa7a813888d3ff.js':{v:'2cb6e168c5cf439148ca'},'cmodules/bundles/c6f51c78d2a3f17f935b490330a9da66.d954fec92e6569491561.js':{v:'64bcfd2af49e9f37d2fc'},'cmodules/bundles/07ed5e94b188401a51c6fd9fb02f3537.eb008ee57715c2740cd8.js':{v:'e52d20ddaa10de61ae4e'},'cmodules/bundles/e1eb3733f1f626a37fd0d2e038b98573.25d68629c38a5491f36e.js':{v:'6f58b25c88e0fe5fca22'},'cmodules/bundles/3d69874b9b2a413d4c2d4df376b293a6.72e9ed78df3966fadec0.js':{v:'0f36ec6a3a27e10301f6'},'cmodules/web/page.4510ccb4bd79f4e85512.js':{v:'4bb45cd6b0a3f086321713d42161b8b9'},'page.js':{v:1},'al/page.56bb91688712df2434f2.css':{v:''},'page.css':{v:1},'al/post.2dda6ccdfe124838da95.css':{v:''},'post.css':{v:1},'cmodules/web/wall.637f597ef2a966a8a7e6.js':{v:'763ecf5252473298a26da770b2d80b6e'},'cmodules/web/wall.js':{v:1},'al/wall.edb54d6715a22c7b838f.css':{v:''},'wall.css':{v:1},'wide_dd.js':{v:31},'al/wide_dd.6bcece6deceba34f76ce.css':{v:''},'wide_dd.css':{v:1},'cmodules/web/pagination.8b08dc00fb1afaf0254f.js':{v:'baf98316575a0e697896fc5e094d1bff'},'cmodules/web/pagination.js':{v:1},'cmodules/bundles/palette.60c089afa6c6b372e5a4.js':{v:'21ca4767fe544e438ac9'},'cmodules/web/emoji.7212eb74d24e8ba746e6.js':{v:'6ba845ae8d0cc1a24bab7683231135c1'},'cmodules/web/emoji.js':{v:1},'al/ui_common.2df1b3d763cda2ddf2be.css':{v:''},'ui_common.css':{v:1},'cmodules/bundles/71af34534be10395f7f6bb3e2039fd2e.60fb4d8eec439a51d0dd.js':{v:'4b78c3e89b3153e7d52b'},'cmodules/web/ui_common.295cb4b381b288bc2541.js':{v:'781a55540caa25d5876f28f277a99d48'},'ui_common.js':{v:1},'cmodules/web/index.fbd4c4b841a4db094d6c.js':{v:'01e2c1f76c87df6d78d5818926a8d45d'},'cmodules/web/index.js':{v:1},'al/index.3c618ab599f4d3cc7018.css':{v:''},'index.css':{v:1},'cmodules/web/join.e921fc188b681339c66b.js':{v:'846548871aea5427cbca51a1617c513c'},'cmodules/web/join.js':{v:1},'al/join.83e186add06e5809c014.css':{v:''},'join.css':{v:1},'ui_controls.js':{v:189},'ui_controls.6d887d252cd181f2be7f.css':{v:''},'ui_controls.css':{v:1},'al/cookies_policy.65640d039de9486c509c.css':{v:''},'cookies_policy.css':{v:1},'cmodules/web/css_types.7072f2e6f601aa8875bd.js':{v:'4482715c18abe6253e59'},'cmodules/web/css_types.js':{v:1},'cmodules/web/unauthorized.1b39cf821f40540e1b14.js':{v:'cdb42bcd49ae0641df8d9abe8be72cc5'},'cmodules/web/unauthorized.js':{v:1},'cmodules/web/jobs_devtools_notification.fae58dff8a0e29571e95.js':{v:'ec2b9b83c1f4451ac8e342e9fadf55b4'},'cmodules/web/jobs_devtools_notification.js':{v:1},'cmodules/web/page_layout.367c725c1efd150f692b.js':{v:'70f9bc332b8a77da1870f3276c88ffc6'},'cmodules/web/page_layout.js':{v:1},'cmodules/bundles/87e53d18c97a21833435b4d03c8ffead.71abec828712e3c2fe34.js':{v:'118df2fa244ad28f118d'},'cmodules/web/likes.4fffe19303c964e5da61.js':{v:'3f9d781529ab52daee462bd1632b91d9'},'cmodules/web/likes.js':{v:1},'cmodules/bundles/vendors.d8be6de74e8d64f67187.js':{v:'d54e61451335845931b5'},'cmodules/web/grip.f50231034e8b05f2ddab.js':{v:'1acaa759fc8db37488004c1229bfefde'},'cmodules/web/grip.js':{v:1}
 }
 var abp;
 </script>
 
-<meta property="og:title" content="Wall posts "/><meta property="og:site_name" content="VK"/><meta property="og:description" content="Может найдётся тут кто-то, кто поможет игру установить? Через wine скачала всё, а вот после &amp;quot;играть&amp;quot; вылетает это, в теме не особо разбираюсь, так что буду очень рада советам."/><meta property="og:image" content="http://sun9-30.userapi.com/mmZ_p9NkSh62ogngkOdnczzaFFQD_nmKJbscfA/ruozDQu6AE8.jpg"/><meta property="og:image:secure_url" content="https://sun9-30.userapi.com/mmZ_p9NkSh62ogngkOdnczzaFFQD_nmKJbscfA/ruozDQu6AE8.jpg"/><meta property="og:image:width" content="367"/><meta property="og:image:height" content="169"/><meta property="og:url" content="https://vk.com/wall-80747703_21314"/><meta property="og:type" content="website"/><script type="text/javascript" src="/js/loader_nav2188141052_3.js"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/evbus.035f3d2e60c59ab7cd67.js?439c8b71aafdabfd59fa"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/audioplayer.491a832342f0afee7d3a.js?5fad3511cb7cf6281fe0"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/lottie.42c43ab3dd042ab8b845.js?4d0de2991b49d6fc43f9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/common.b3b0a4f967e2bee9f1b6.js?78de0b9f59c99b729470"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/common_web.2df7fd38da98b00b5514.js?65bfd8efbbc84c780f76410a60e3e412"></script><script type="text/javascript" src="/js/lang3_0.js?26832705"></script><script type="text/javascript" src="/js/lib/px.js?ch=1"></script><script type="text/javascript" src="/js/lib/px.js?ch=2"></script><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.vk.com/wall-80747703_21314" /><link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/wall-80747703_21314" /><meta name="google-site-verification" content="CNjLCRpSR2sryzCC4NQKKCL5WnvmBTaag2J_UlTyYeQ" /><meta name="yandex-verification" content="798f8402854bea07" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/983f42e70b3e18d97715513130ff4d9c.71c87b47c4a67e3c5005.js?2e110c95af558361560b"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/7ff0c31fd89ceca852f0cf5e2f61c8c8.f3895afa7a813888d3ff.js?2cb6e168c5cf439148ca"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/c6f51c78d2a3f17f935b490330a9da66.d954fec92e6569491561.js?64bcfd2af49e9f37d2fc"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/07ed5e94b188401a51c6fd9fb02f3537.eb008ee57715c2740cd8.js?e52d20ddaa10de61ae4e"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/e1eb3733f1f626a37fd0d2e038b98573.25d68629c38a5491f36e.js?6f58b25c88e0fe5fca22"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/3d69874b9b2a413d4c2d4df376b293a6.72e9ed78df3966fadec0.js?0f36ec6a3a27e10301f6"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/page.4510ccb4bd79f4e85512.js?4bb45cd6b0a3f086321713d42161b8b9"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/page.56bb91688712df2434f2.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/post.2dda6ccdfe124838da95.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/wall.637f597ef2a966a8a7e6.js?763ecf5252473298a26da770b2d80b6e"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/wall.edb54d6715a22c7b838f.css" /><script type="text/javascript" src="https://st.vk.com/js/al/wide_dd.js?31"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/wide_dd.6bcece6deceba34f76ce.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/pagination.8b08dc00fb1afaf0254f.js?baf98316575a0e697896fc5e094d1bff"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/palette.60c089afa6c6b372e5a4.js?21ca4767fe544e438ac9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/emoji.7212eb74d24e8ba746e6.js?6ba845ae8d0cc1a24bab7683231135c1"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/ui_common.2df1b3d763cda2ddf2be.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/71af34534be10395f7f6bb3e2039fd2e.60fb4d8eec439a51d0dd.js?4b78c3e89b3153e7d52b"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/ui_common.295cb4b381b288bc2541.js?781a55540caa25d5876f28f277a99d48"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/index.fbd4c4b841a4db094d6c.js?01e2c1f76c87df6d78d5818926a8d45d"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/index.3c618ab599f4d3cc7018.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/join.e921fc188b681339c66b.js?846548871aea5427cbca51a1617c513c"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/join.83e186add06e5809c014.css" /><script type="text/javascript" src="https://st.vk.com/js/lib/ui_controls.js?189"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/ui_controls.6d887d252cd181f2be7f.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/cookies_policy.65640d039de9486c509c.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/css_types.7072f2e6f601aa8875bd.js?4482715c18abe6253e59"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/unauthorized.1b39cf821f40540e1b14.js?cdb42bcd49ae0641df8d9abe8be72cc5"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/jobs_devtools_notification.fae58dff8a0e29571e95.js?ec2b9b83c1f4451ac8e342e9fadf55b4"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/page_layout.367c725c1efd150f692b.js?70f9bc332b8a77da1870f3276c88ffc6"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/87e53d18c97a21833435b4d03c8ffead.71abec828712e3c2fe34.js?118df2fa244ad28f118d"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/likes.4fffe19303c964e5da61.js?3f9d781529ab52daee462bd1632b91d9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/vendors.d8be6de74e8d64f67187.js?d54e61451335845931b5"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/grip.f50231034e8b05f2ddab.js?1acaa759fc8db37488004c1229bfefde"></script>
+<meta property="og:title" content="Wall posts "/><meta property="og:site_name" content="VK"/><meta property="og:description" content="Может найдётся тут кто-то, кто поможет игру установить? Через wine скачала всё, а вот после &amp;quot;играть&amp;quot; вылетает это, в теме не особо разбираюсь, так что буду очень рада советам."/><meta property="og:image" content="http://sun9-30.userapi.com/mmZ_p9NkSh62ogngkOdnczzaFFQD_nmKJbscfA/ruozDQu6AE8.jpg"/><meta property="og:image:secure_url" content="https://sun9-30.userapi.com/mmZ_p9NkSh62ogngkOdnczzaFFQD_nmKJbscfA/ruozDQu6AE8.jpg"/><meta property="og:image:width" content="367"/><meta property="og:image:height" content="169"/><meta property="og:url" content="https://vk.com/wall-80747703_21314"/><meta property="og:type" content="website"/><script type="text/javascript" src="/js/loader_nav2188141052_3.js"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/evbus.035f3d2e60c59ab7cd67.js?439c8b71aafdabfd59fa"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/audioplayer.491a832342f0afee7d3a.js?5fad3511cb7cf6281fe0"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/lottie.42c43ab3dd042ab8b845.js?4d0de2991b49d6fc43f9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/common.b3b0a4f967e2bee9f1b6.js?78de0b9f59c99b729470"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/common_web.2df7fd38da98b00b5514.js?65bfd8efbbc84c780f76410a60e3e412"></script><script type="text/javascript" src="/js/lang3_0.js?26833521"></script><script type="text/javascript" src="/js/lib/px.js?ch=1"></script><script type="text/javascript" src="/js/lib/px.js?ch=2"></script><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.vk.com/wall-80747703_21314" /><link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/wall-80747703_21314" /><meta name="google-site-verification" content="CNjLCRpSR2sryzCC4NQKKCL5WnvmBTaag2J_UlTyYeQ" /><meta name="yandex-verification" content="798f8402854bea07" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/983f42e70b3e18d97715513130ff4d9c.71c87b47c4a67e3c5005.js?2e110c95af558361560b"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/7ff0c31fd89ceca852f0cf5e2f61c8c8.f3895afa7a813888d3ff.js?2cb6e168c5cf439148ca"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/c6f51c78d2a3f17f935b490330a9da66.d954fec92e6569491561.js?64bcfd2af49e9f37d2fc"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/07ed5e94b188401a51c6fd9fb02f3537.eb008ee57715c2740cd8.js?e52d20ddaa10de61ae4e"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/e1eb3733f1f626a37fd0d2e038b98573.25d68629c38a5491f36e.js?6f58b25c88e0fe5fca22"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/3d69874b9b2a413d4c2d4df376b293a6.72e9ed78df3966fadec0.js?0f36ec6a3a27e10301f6"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/page.4510ccb4bd79f4e85512.js?4bb45cd6b0a3f086321713d42161b8b9"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/page.56bb91688712df2434f2.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/post.2dda6ccdfe124838da95.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/wall.637f597ef2a966a8a7e6.js?763ecf5252473298a26da770b2d80b6e"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/wall.edb54d6715a22c7b838f.css" /><script type="text/javascript" src="https://st.vk.com/js/al/wide_dd.js?31"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/wide_dd.6bcece6deceba34f76ce.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/pagination.8b08dc00fb1afaf0254f.js?baf98316575a0e697896fc5e094d1bff"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/palette.60c089afa6c6b372e5a4.js?21ca4767fe544e438ac9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/emoji.7212eb74d24e8ba746e6.js?6ba845ae8d0cc1a24bab7683231135c1"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/ui_common.2df1b3d763cda2ddf2be.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/71af34534be10395f7f6bb3e2039fd2e.60fb4d8eec439a51d0dd.js?4b78c3e89b3153e7d52b"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/ui_common.295cb4b381b288bc2541.js?781a55540caa25d5876f28f277a99d48"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/index.fbd4c4b841a4db094d6c.js?01e2c1f76c87df6d78d5818926a8d45d"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/index.3c618ab599f4d3cc7018.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/join.e921fc188b681339c66b.js?846548871aea5427cbca51a1617c513c"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/join.83e186add06e5809c014.css" /><script type="text/javascript" src="https://st.vk.com/js/lib/ui_controls.js?189"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/ui_controls.6d887d252cd181f2be7f.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/cookies_policy.65640d039de9486c509c.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/css_types.7072f2e6f601aa8875bd.js?4482715c18abe6253e59"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/unauthorized.1b39cf821f40540e1b14.js?cdb42bcd49ae0641df8d9abe8be72cc5"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/jobs_devtools_notification.fae58dff8a0e29571e95.js?ec2b9b83c1f4451ac8e342e9fadf55b4"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/page_layout.367c725c1efd150f692b.js?70f9bc332b8a77da1870f3276c88ffc6"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/87e53d18c97a21833435b4d03c8ffead.71abec828712e3c2fe34.js?118df2fa244ad28f118d"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/likes.4fffe19303c964e5da61.js?3f9d781529ab52daee462bd1632b91d9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/vendors.d8be6de74e8d64f67187.js?d54e61451335845931b5"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/grip.f50231034e8b05f2ddab.js?1acaa759fc8db37488004c1229bfefde"></script>
 
 </head>
 
@@ -170,8 +170,8 @@ var abp;
     <input type="hidden" name="captcha_sid" id="quick_captcha_sid" value="" />
     <input type="hidden" name="captcha_key" id="quick_captcha_key" value="" />
     <input type="hidden" name="_origin" value="https://vk.com" />
-    <input type="hidden" name="ip_h" value="461b5ac10d7891e972" />
-    <input type="hidden" name="lg_h" value="074d88c6b6cd3dd726" />
+    <input type="hidden" name="ip_h" value="2cf696312f98840a08" />
+    <input type="hidden" name="lg_h" value="6c1479939319c3a951" />
     <input type="hidden" name="ul" id="quick_login_ul" value="" />
     <div class="label">Phone or email</div>
     <div class="labeled"><input type="text" name="email" class="dark" id="quick_email" /></div>
@@ -219,7 +219,7 @@ var abp;
       <div class="wall_wrap clear_fix">
   <div class="big_wall">
     <div class="wall_module">
-      <div id="page_wall_posts" class="mark_top_verified "><div id="post-80747703_21314" class="_post post page_block post--with-likes closed_comments deep_active" data-post-id="-80747703_21314" onclick="wall.postClick('-80747703_21314', event);"  data-replies-offset = "0" data-replies-limit = "1" post_view_hash="be320beb7b53ca3440">
+      <div id="page_wall_posts" class="mark_top_verified "><div id="post-80747703_21314" class="_post post page_block post--with-likes closed_comments deep_active" data-post-id="-80747703_21314" onclick="wall.postClick('-80747703_21314', event);"  data-replies-offset = "0" data-replies-limit = "1" post_view_hash="7dd2e01987e079a593">
   <div class="_post_content">
     
     <div class="post_header">
@@ -230,10 +230,10 @@ var abp;
       
       <div class="post_header_info">
         <h5 class="post_author"><a class="author" href="/whereismyrose" data-from-id="488120144" data-post-id="488120144_21314" data-post-click-type="post_owner_link">Lia Nedosyp</a><span class="explain"><span class="wall_fixed_label"> pinned post</span></span></h5>
-        <div class="post_date"><a  class="post_link"  href="/wall-80747703_21314"  onclick="return showWiki({w: 'wall-80747703_21314'}, false, event);" ><span class="rel_date">yesterday at 2:02 am</span></a> in <a class="PostGroupWallSource" href="/linuxmintrussia" title="Linux Mint Russia">Linux Mint Russia</a><a onmouseover="wall.postTooltip(this, '-80747703_21314', {i: '-1', dark: 1, className: ' post_source_tt'})" href="/app2274003" class="wall_post_source_icon wall_post_source_android"></a></div>
+        <div class="post_date"><a  class="post_link"  href="/wall-80747703_21314"  onclick="return showWiki({w: 'wall-80747703_21314'}, false, event);" ><span class="rel_date">5 Jan at 2:02 am</span></a> in <a class="PostGroupWallSource" href="/linuxmintrussia" title="Linux Mint Russia">Linux Mint Russia</a><a onmouseover="wall.postTooltip(this, '-80747703_21314', {i: '-1', dark: 1, className: ' post_source_tt'})" href="/app2274003" class="wall_post_source_icon wall_post_source_android"></a></div>
         <div class="ui_actions_menu_wrap _ui_menu_wrap " onmouseover="uiActionsMenu.show(this);" onmouseout="uiActionsMenu.hide(this);">
   <div class="ui_actions_menu_icons" tabindex="0" aria-label="Actions" role="button" onclick="uiActionsMenu.keyToggle(this, event);"> <span class="blind_label">Actions</span> </div>
-  <div class="ui_actions_menu _ui_menu " ><a class="ui_actions_menu_item" onclick="wall.markAsSpam(this, '-80747703_21314', '3f08fcd735cf58bc99');" tabindex="0" role="link">Report</a></div>
+  <div class="ui_actions_menu _ui_menu " ><a class="ui_actions_menu_item" onclick="wall.markAsSpam(this, '-80747703_21314', 'a170d1b72aa6575a1d');" tabindex="0" role="link">Report</a></div>
 </div>
       </div>
     </div>
@@ -243,7 +243,7 @@ var abp;
         <div class="like_wrap _like_wall-80747703_21314 ">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall-80747703_21314', '3a340efce28eea78bc');" onmouseover="Likes.showLikes(this, 'wall-80747703_21314', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall-80747703_21314', 'bf11d9db6f573744c8');" onmouseover="Likes.showLikes(this, 'wall-80747703_21314', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -265,7 +265,7 @@ var abp;
   </div>
 </div>
         <div class="replies"><div class="replies_wrap" id="replies_wrap-80747703_21314" style="">
-  <div class="replies_list _replies_list" id="replies-80747703_21314" ><div id="post-80747703_21315" class="reply reply_dived clear  _post" data-post-id="-80747703_21315" >
+  <div class="replies_list _replies_list" id="replies-80747703_21314" data-top-ids="21315"><div id="post-80747703_21315" class="reply reply_dived clear  _post" data-post-id="-80747703_21315" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id287787009">
@@ -281,7 +281,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_21315  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21315', '3d1f97d2a2dec4be89');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21315', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21315', 'feae148c4a44d386d2');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21315', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -295,7 +295,7 @@ var abp;
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21315'}, false, event);" ><span class="rel_date">yesterday at 9:13 am</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21315'}, false, event);" ><span class="rel_date">5 Jan at 9:13 am</span></a></div>
         
         
       </div>
@@ -306,223 +306,187 @@ var abp;
   <span class="replies_deep_collapse_icon"></span>
 </div>
   <div class="replies_list_deep" id="replies-80747703_21315">
-    <a href="https://vk.com/wall-80747703_21314?reply=21315" onclick="return Unauthorized.showMoreBox(event, -80747703, 'comments')" class="replies_next replies_prev replies_next_deep replies_next_shown" data-offset="20" data-count="20">Show previous comments</a><div id="post-80747703_21374" class="reply reply_dived clear  _post" data-post-id="-80747703_21374" >
+    <div id="post-80747703_21318" class="reply reply_dived clear  _post" data-post-id="-80747703_21318" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
+    <a class="reply_image" href="/id145557981">
+      <img src="https://sun9-35.userapi.com/impg/Rlyxq6sxJ0-HuozIH3W2jHf1qayg9RjKhzK4Mw/UQ1S8FRLRv8.jpg?size=50x0&quality=96&crop=0,0,1063,1063&sign=826c888748cdc115ba25ec4f078c129e&ava=1" width="40" height="40" class="reply_img" alt="Vladislav Milenin" />
     </a>
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21373', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21374', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
+        <a class="author" href="/id145557981" data-from-id="145557981">Vladislav Milenin</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21374"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21373', event)">Михаил</a>, по большей части манжаро с темами такое чтоб прям что то особенного не заметил</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21374">
-        <div class="like_wrap _like_wall_reply-80747703_21374  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21318"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/id287787009" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21315', event)">Антон</a>, а через Winetricks никак не доставить? Он же как раз, чтобы ставить недостающие dll, шрифты и т.д. Но хз, есть ли там kernel32.dll, так как последний раз на компе вино стояло в 2016 и уже подзабыл что и как там.<br>Ещё можно через стимовский протон завести, если игра из стима. Или через lutris</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21318">
+        <div class="like_wrap _like_wall_reply-80747703_21318  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21374', '32955d0c02a7699c07');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21374', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21318', 'c37f528b09ff398371');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21318', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21374')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21318')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21374');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21318');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21374&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21374'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 9:21 pm" time="1609957311">one hour ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21318&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21318'}, false, event);" ><span class="rel_date">5 Jan at 9:46 pm</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21375" class="reply reply_dived clear  _post" data-post-id="-80747703_21375" >
+</div><div id="post-80747703_21319" class="reply reply_dived clear  _post" data-post-id="-80747703_21319" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
-    <a class="reply_image" href="/idbear_bulloff">
-      <img src="https://sun9-54.userapi.com/impf/c624728/v624728506/2b8e/Qy-16YcRlpw.jpg?size=50x0&quality=96&crop=86,172,442,442&sign=f53fba4dfb73d69e544f681a1399579f&ava=1" width="40" height="40" class="reply_img" alt="Mikhail Bykov" />
+    <a class="reply_image" href="/id287787009">
+      <img src="https://sun9-33.userapi.com/impg/-8G2GRYaQY6MPWl__I5F5x8KDsfWWG1uphm3iA/IDERnMPp17Y.jpg?size=50x0&quality=96&crop=48,0,202,202&sign=a4016d27e8b5124be2cba26329856450&ava=1" width="40" height="40" class="reply_img" alt="Anton Kotov" />
     </a>
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21374', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21375', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/id287787009" data-from-id="287787009">Anton Kotov</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21318', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21319', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21375"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, у манжары сейчас своя репа, а тут репы арча плюс 1 своя для своих разрабатываемых приложений. Используется поумолчанию другое ядро, zram и т. д и т. п.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21375">
-        <div class="like_wrap _like_wall_reply-80747703_21375  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21319"><div class="wall_reply_text">Не знаю, я по старому опыту с виндой предположил. А так, обычно такие файлы в инете найти отдельно можно.</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21319">
+        <div class="like_wrap _like_wall_reply-80747703_21319  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21375', '0f4fb836578b77ef5d');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21375', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21319', 'cf56e01ef188076b88');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21319', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21375')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21319')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21375');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21319');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21375&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21375'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 9:40 pm" time="1609958436">one hour ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21319&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21319'}, false, event);" ><span class="rel_date">5 Jan at 11:00 pm</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21376" class="reply reply_dived clear  _post" data-post-id="-80747703_21376" >
+</div><div id="post-80747703_21320" class="reply reply_dived clear  _post" data-post-id="-80747703_21320" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
-    <a class="reply_image" href="/idbear_bulloff">
-      <img src="https://sun9-54.userapi.com/impf/c624728/v624728506/2b8e/Qy-16YcRlpw.jpg?size=50x0&quality=96&crop=86,172,442,442&sign=f53fba4dfb73d69e544f681a1399579f&ava=1" width="40" height="40" class="reply_img" alt="Mikhail Bykov" />
+    <a class="reply_image" href="/id145557981">
+      <img src="https://sun9-35.userapi.com/impg/Rlyxq6sxJ0-HuozIH3W2jHf1qayg9RjKhzK4Mw/UQ1S8FRLRv8.jpg?size=50x0&quality=96&crop=0,0,1063,1063&sign=826c888748cdc115ba25ec4f078c129e&ava=1" width="40" height="40" class="reply_img" alt="Vladislav Milenin" />
     </a>
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21369', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21376', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/id145557981" data-from-id="145557981">Vladislav Milenin</a> replied to <a href="/id287787009" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21319', event)" rid="287787009" onmouseover="wall.postTooltip(this, '-80747703_21320', {reply: 1})" data-root-id="-80747703_21315">Anton</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21376"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/id186756376" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21369', event)">Александр</a>, </div><div class="page_post_sized_thumbs  clear_fix" style="width: 192px; height: 120px;"><a  aria-label="photo" onclick="return showPhoto('-80747703_457241453', 'wall-80747703_21376', {&quot;temp&quot;:{&quot;x&quot;:&quot;https:\/\/sun9-21.userapi.com\/impg\/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA\/NhachvY6Qwc.jpg?size=604x378&amp;quality=96&amp;sign=5f6e717e1f1ea42c282673e28b3c3c3f&amp;type=album&quot;,&quot;y&quot;:&quot;https:\/\/sun9-21.userapi.com\/impg\/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA\/NhachvY6Qwc.jpg?size=807x504&amp;quality=96&amp;sign=c1792aabba38e4c7d5caf6c72cf1928d&amp;type=album&quot;,&quot;z&quot;:&quot;https:\/\/sun9-21.userapi.com\/impg\/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA\/NhachvY6Qwc.jpg?size=1280x800&amp;quality=96&amp;sign=3cc498142c002295188f378065b4f647&amp;type=album&quot;,&quot;w&quot;:&quot;https:\/\/sun9-21.userapi.com\/impg\/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA\/NhachvY6Qwc.jpg?size=1440x900&amp;quality=96&amp;proxy=1&amp;sign=30f16b0256ae2c8aaf5b72b62c38277a&amp;type=album&quot;,&quot;x_&quot;:[&quot;https:\/\/sun9-21.userapi.com\/impg\/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA\/NhachvY6Qwc.jpg?size=604x378&amp;quality=96&amp;sign=5f6e717e1f1ea42c282673e28b3c3c3f&amp;type=album&quot;,604,377],&quot;y_&quot;:[&quot;https:\/\/sun9-21.userapi.com\/impg\/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA\/NhachvY6Qwc.jpg?size=807x504&amp;quality=96&amp;sign=c1792aabba38e4c7d5caf6c72cf1928d&amp;type=album&quot;,807,504],&quot;z_&quot;:[&quot;https:\/\/sun9-21.userapi.com\/impg\/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA\/NhachvY6Qwc.jpg?size=1280x800&amp;quality=96&amp;sign=3cc498142c002295188f378065b4f647&amp;type=album&quot;,1280,800],&quot;w_&quot;:[&quot;https:\/\/sun9-21.userapi.com\/impg\/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA\/NhachvY6Qwc.jpg?size=1440x900&amp;quality=96&amp;proxy=1&amp;sign=30f16b0256ae2c8aaf5b72b62c38277a&amp;type=album&quot;,1440,900],&quot;base&quot;:&quot;&quot;},&quot;queue&quot;:1}, event)" style="width: 192px; height: 120px;background-image: url(https://sun9-21.userapi.com/impg/-HMOLtXE5Jw3zYVF2V6NwYxdrYSAQ4_PMjx-TA/NhachvY6Qwc.jpg?size=604x378&quality=96&sign=5f6e717e1f1ea42c282673e28b3c3c3f&type=album);" class="page_post_thumb_wrap image_cover  page_post_thumb_last_column page_post_thumb_last_row" data-photo-id="-80747703_457241453"></a></div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21376">
-        <div class="like_wrap _like_wall_reply-80747703_21376  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21320"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/id287787009" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21319', event)">Антон</a>, в принципе да, тоже можно</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21320">
+        <div class="like_wrap _like_wall_reply-80747703_21320  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21376', '2b7cb6ac533232b4d6');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21376', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21320', 'c6eaefd4947ccc072e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21320', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21376')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21320')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21376');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21320');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21376&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21376'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 9:44 pm" time="1609958696">one hour ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21320&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21320'}, false, event);" ><span class="rel_date">5 Jan at 11:04 pm</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21377" class="reply reply_dived clear  _post" data-post-id="-80747703_21377" >
+</div><div id="post-80747703_21321" class="reply reply_dived clear  _post" data-post-id="-80747703_21321" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
+    <a class="reply_image" href="/whereismyrose">
+      <img src="https://sun9-49.userapi.com/impg/P1vEruVIAaBcTuOghHBOZNXYycmUGCD0IqpJKQ/6HLf3lWmxJ0.jpg?size=50x0&quality=96&crop=49,0,1826,1826&sign=b3710afed2a581039443d7a77163b933&ava=1" width="40" height="40" class="reply_img" alt="Lia Nedosyp" />
     </a>
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21375', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21377', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
+        <a class="author" href="/whereismyrose" data-from-id="488120144">Lia Nedosyp</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21320', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21321', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21377"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21375', event)">Михаил</a>, насколько понял ядрышко они взяли арча с повышенной безопасностью zen или типа того что у меня с amdgpu возникали проблемы, zram не всегда нужен да и если нужен тот сам может поставить, при том сомневаюсь что нужен тем у кого от 8 гигов и больше хотя если рейдингом и сборкой пакетов в озу может и пригодиться но тут уже все же zswap использовать она более продвинутая ну это кому как. Утилиты скопипаздили и полинились даже источник с иконками поменять который на манжаро ссылается, честно мне больше эта система кастом напоминает хотя кое что интересное приметил что стоит посмотреть, а так нечего особенного.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21377">
-        <div class="like_wrap _like_wall_reply-80747703_21377  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21321"><div class="wall_reply_text"><a href="/id145557981" class="mem_link" mention="" mention_id="id145557981" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Владислав</a>, пыталась найти, там тоже свои причуды, не вышло</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21321">
+        <div class="like_wrap _like_wall_reply-80747703_21321  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21377', 'de03bce6b13606fbec');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21377', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21321', '84a316095ecebe5313');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21321', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21377')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21321')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21377');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21321');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21377&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21377'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 9:49 pm" time="1609958941">55 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21321&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21321'}, false, event);" ><span class="rel_date">5 Jan at 11:05 pm</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21378" class="reply reply_dived clear  _post" data-post-id="-80747703_21378" >
+</div><div id="post-80747703_21322" class="reply reply_dived clear  _post" data-post-id="-80747703_21322" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
+    <a class="reply_image" href="/id145557981">
+      <img src="https://sun9-35.userapi.com/impg/Rlyxq6sxJ0-HuozIH3W2jHf1qayg9RjKhzK4Mw/UQ1S8FRLRv8.jpg?size=50x0&quality=96&crop=0,0,1063,1063&sign=826c888748cdc115ba25ec4f078c129e&ava=1" width="40" height="40" class="reply_img" alt="Vladislav Milenin" />
     </a>
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21376', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21378', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
+        <a class="author" href="/id145557981" data-from-id="145557981">Vladislav Milenin</a> replied to <a href="/whereismyrose" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21321', event)" rid="488120144" onmouseover="wall.postTooltip(this, '-80747703_21322', {reply: 1})" data-root-id="-80747703_21315">Lia</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21378"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21376', event)">Михаил</a>, да да вот этот колокольчик с права у меня он пропадает если самому не перезагрузить плагин тогда только появляется</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21378">
-        <div class="like_wrap _like_wall_reply-80747703_21378  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21322"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/whereismyrose" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21321', event)">Лия</a>, тогда хз что с этим делать. Давно уже вино не использовал</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21322">
+        <div class="like_wrap _like_wall_reply-80747703_21322  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21378', '40c24bfc4926cd7bf2');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21378', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21322', 'c131d00fec851a5b27');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21322', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21378')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21322')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21378');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21322');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21378&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21378'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 9:51 pm" time="1609959080">53 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21322&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21322'}, false, event);" ><span class="rel_date">5 Jan at 11:13 pm</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21379" class="reply reply_dived clear  _post" data-post-id="-80747703_21379" >
-  <div class="reply_wrap _reply_content _post_content clear_fix">
-    
-    <a class="reply_image" href="/idbear_bulloff">
-      <img src="https://sun9-54.userapi.com/impf/c624728/v624728506/2b8e/Qy-16YcRlpw.jpg?size=50x0&quality=96&crop=86,172,442,442&sign=f53fba4dfb73d69e544f681a1399579f&ava=1" width="40" height="40" class="reply_img" alt="Mikhail Bykov" />
-    </a>
-    <div class="reply_content" >
-      
-      <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21378', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21379', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
-      </div>
-      <div class="reply_text" ><div id="wpt-80747703_21379"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, у меня есть.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21379">
-        <div class="like_wrap _like_wall_reply-80747703_21379  lite">
-  <div class="like_cont ">
-    <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21379', 'be84a7d92fae019a59');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21379', {})" data-count="0" role="button" title="Like">
-  <div class="like_button_icon"></div>
-  <div class="like_button_label"></div>
-  <div class="like_button_count"></div>
-  <span class="blind_label">Like</span>
-  
-</a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21379')">Show likes</span>
-      
-    </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21379');"></div>
-    
-  </div>
-</div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21379&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21379'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 9:56 pm" time="1609959381">48 minutes ago</span></a></div>
-        
-        
-      </div>
-    </div>
-  </div>
-</div><div id="post-80747703_21380" class="reply reply_dived clear  _post" data-post-id="-80747703_21380" >
+</div><div id="post-80747703_21323" class="reply reply_dived clear  _post" data-post-id="-80747703_21323" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/idbear_bulloff">
@@ -531,142 +495,70 @@ var abp;
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21377', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21380', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/whereismyrose" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21321', event)" rid="488120144" onmouseover="wall.postTooltip(this, '-80747703_21323', {reply: 1})" data-root-id="-80747703_21315">Lia</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21380"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, ядро там tgk спецом для игр.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21380">
-        <div class="like_wrap _like_wall_reply-80747703_21380  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21323"><div class="wall_reply_text"><a href="/whereismyrose" class="mem_link" mention="" mention_id="id488120144" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Лия</a>, что за игра? Обычно такая ошибка возникает из-за наличия DRM в игре и на данный момент она не решается.</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21323">
+        <div class="like_wrap _like_wall_reply-80747703_21323  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21380', '9619515b505e5494ef');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21380', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21323', '78fbfc601800abefa3');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21323', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21380')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21323')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21380');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21323');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21380&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21380'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 9:59 pm" time="1609959544">45 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21323&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21323'}, false, event);" ><span class="rel_date">5 Jan at 11:44 pm</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21381" class="reply reply_dived clear  _post" data-post-id="-80747703_21381" >
+</div><div id="post-80747703_21324" class="reply reply_dived clear  _post" data-post-id="-80747703_21324" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
+    <a class="reply_image" href="/whereismyrose">
+      <img src="https://sun9-49.userapi.com/impg/P1vEruVIAaBcTuOghHBOZNXYycmUGCD0IqpJKQ/6HLf3lWmxJ0.jpg?size=50x0&quality=96&crop=49,0,1826,1826&sign=b3710afed2a581039443d7a77163b933&ava=1" width="40" height="40" class="reply_img" alt="Lia Nedosyp" />
     </a>
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a>
+        <a class="author" href="/whereismyrose" data-from-id="488120144">Lia Nedosyp</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21323', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21324', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21381"><div class="wall_reply_text">у меня пропало опять(((</div><div class="page_post_sized_thumbs  clear_fix" style="width: 213px; height: 120px;"><a  aria-label="photo" onclick="return showPhoto('-80747703_457241454', 'wall-80747703_21381', {&quot;temp&quot;:{&quot;x&quot;:&quot;https:\/\/sun9-47.userapi.com\/impg\/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg\/_bnbyDYRits.jpg?size=604x340&amp;quality=96&amp;sign=00c1472e662a13923483256d8fade6db&amp;type=album&quot;,&quot;y&quot;:&quot;https:\/\/sun9-47.userapi.com\/impg\/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg\/_bnbyDYRits.jpg?size=807x454&amp;quality=96&amp;sign=005f3333280b60aba356a7688971e801&amp;type=album&quot;,&quot;z&quot;:&quot;https:\/\/sun9-47.userapi.com\/impg\/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg\/_bnbyDYRits.jpg?size=1280x720&amp;quality=96&amp;sign=cc885547489c8b8984de13371e00cc8c&amp;type=album&quot;,&quot;w&quot;:&quot;https:\/\/sun9-47.userapi.com\/impg\/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg\/_bnbyDYRits.jpg?size=1366x768&amp;quality=96&amp;proxy=1&amp;sign=7fcd3aa3c07a0d32717ec8e5c46d9550&amp;type=album&quot;,&quot;x_&quot;:[&quot;https:\/\/sun9-47.userapi.com\/impg\/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg\/_bnbyDYRits.jpg?size=604x340&amp;quality=96&amp;sign=00c1472e662a13923483256d8fade6db&amp;type=album&quot;,604,340],&quot;y_&quot;:[&quot;https:\/\/sun9-47.userapi.com\/impg\/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg\/_bnbyDYRits.jpg?size=807x454&amp;quality=96&amp;sign=005f3333280b60aba356a7688971e801&amp;type=album&quot;,807,454],&quot;z_&quot;:[&quot;https:\/\/sun9-47.userapi.com\/impg\/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg\/_bnbyDYRits.jpg?size=1280x720&amp;quality=96&amp;sign=cc885547489c8b8984de13371e00cc8c&amp;type=album&quot;,1280,720],&quot;w_&quot;:[&quot;https:\/\/sun9-47.userapi.com\/impg\/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg\/_bnbyDYRits.jpg?size=1366x768&amp;quality=96&amp;proxy=1&amp;sign=7fcd3aa3c07a0d32717ec8e5c46d9550&amp;type=album&quot;,1366,768],&quot;base&quot;:&quot;&quot;},&quot;queue&quot;:1}, event)" style="width: 213px; height: 120px;background-image: url(https://sun9-47.userapi.com/impg/wBZwGWK8fNyn2PwKBSt--4InhX16kab1Q09Seg/_bnbyDYRits.jpg?size=604x340&quality=96&sign=00c1472e662a13923483256d8fade6db&type=album);" class="page_post_thumb_wrap image_cover  page_post_thumb_last_column page_post_thumb_last_row" data-photo-id="-80747703_457241454"></a></div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21381">
-        <div class="like_wrap _like_wall_reply-80747703_21381  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21324"><div class="wall_reply_text"><a href="/idbear_bulloff" class="mem_link" mention="" mention_id="id40931506" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Михаил</a>, genshin impact</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21324">
+        <div class="like_wrap _like_wall_reply-80747703_21324  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21381', 'b16e0d57906ea05cfe');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21381', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21324', '7a3073ac0e3b00cf28');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21324', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21381')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21324')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21381');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21324');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21381&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21381'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 9:59 pm" time="1609959555">45 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21324&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21324'}, false, event);" ><span class="rel_date">5 Jan at 11:44 pm</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21382" class="reply reply_dived clear  _post" data-post-id="-80747703_21382" >
-  <div class="reply_wrap _reply_content _post_content clear_fix">
-    
-    <a class="reply_image" href="/idbear_bulloff">
-      <img src="https://sun9-54.userapi.com/impf/c624728/v624728506/2b8e/Qy-16YcRlpw.jpg?size=50x0&quality=96&crop=86,172,442,442&sign=f53fba4dfb73d69e544f681a1399579f&ava=1" width="40" height="40" class="reply_img" alt="Mikhail Bykov" />
-    </a>
-    <div class="reply_content" >
-      
-      <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21381', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21382', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
-      </div>
-      <div class="reply_text" ><div id="wpt-80747703_21382"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, у меня манжаро скорее всего пакеты разные, обновы ко мне раньше приходят.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21382">
-        <div class="like_wrap _like_wall_reply-80747703_21382  lite">
-  <div class="like_cont ">
-    <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21382', '48ff73e00b4bf08b3c');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21382', {})" data-count="0" role="button" title="Like">
-  <div class="like_button_icon"></div>
-  <div class="like_button_label"></div>
-  <div class="like_button_count"></div>
-  <span class="blind_label">Like</span>
-  
-</a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21382')">Show likes</span>
-      
-    </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21382');"></div>
-    
-  </div>
-</div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21382&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21382'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:01 pm" time="1609959684">43 minutes ago</span></a></div>
-        
-        
-      </div>
-    </div>
-  </div>
-</div><div id="post-80747703_21383" class="reply reply_dived clear  _post" data-post-id="-80747703_21383" >
-  <div class="reply_wrap _reply_content _post_content clear_fix">
-    
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
-    </a>
-    <div class="reply_content" >
-      
-      <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21382', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21383', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
-      </div>
-      <div class="reply_text" ><div id="wpt-80747703_21383"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21382', event)">Михаил</a>, а вообще была такая проблема?</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21383">
-        <div class="like_wrap _like_wall_reply-80747703_21383  lite">
-  <div class="like_cont ">
-    <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21383', 'e98a94f996497cf1c9');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21383', {})" data-count="0" role="button" title="Like">
-  <div class="like_button_icon"></div>
-  <div class="like_button_label"></div>
-  <div class="like_button_count"></div>
-  <span class="blind_label">Like</span>
-  
-</a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21383')">Show likes</span>
-      
-    </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21383');"></div>
-    
-  </div>
-</div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21383&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21383'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:02 pm" time="1609959759">42 minutes ago</span></a></div>
-        
-        
-      </div>
-    </div>
-  </div>
-</div><div id="post-80747703_21384" class="reply reply_dived clear  _post" data-post-id="-80747703_21384" >
+</div><div id="post-80747703_21325" class="reply reply_dived clear  _post" data-post-id="-80747703_21325" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/idbear_bulloff">
@@ -675,34 +567,214 @@ var abp;
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21383', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21384', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/whereismyrose" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21324', event)" rid="488120144" onmouseover="wall.postTooltip(this, '-80747703_21325', {reply: 1})" data-root-id="-80747703_21315">Lia</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21384"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, не сталкивался, у меня смена языка моросит, аж бесит.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21384">
-        <div class="like_wrap _like_wall_reply-80747703_21384  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21325"><div class="wall_reply_text"><a href="/whereismyrose" class="mem_link" mention="" mention_id="id488120144" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Лия</a>, там используется античит, поиграть не получится в ближайшее время.</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21325">
+        <div class="like_wrap _like_wall_reply-80747703_21325  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21384', '5c4320b1c0dac026dc');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21384', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21325', '20a01b50b92a24ec25');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21325', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21384')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21325')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21384');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21325');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21384&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21384'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:06 pm" time="1609960011">38 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21325&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21325'}, false, event);" ><span class="rel_date">5 Jan at 11:56 pm</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21385" class="reply reply_dived clear  _post" data-post-id="-80747703_21385" >
+</div><div id="post-80747703_21328" class="reply reply_dived clear  _post" data-post-id="-80747703_21328" >
+  <div class="reply_wrap _reply_content _post_content clear_fix">
+    
+    <a class="reply_image" href="/id145557981">
+      <img src="https://sun9-35.userapi.com/impg/Rlyxq6sxJ0-HuozIH3W2jHf1qayg9RjKhzK4Mw/UQ1S8FRLRv8.jpg?size=50x0&quality=96&crop=0,0,1063,1063&sign=826c888748cdc115ba25ec4f078c129e&ava=1" width="40" height="40" class="reply_img" alt="Vladislav Milenin" />
+    </a>
+    <div class="reply_content" >
+      
+      <div class="reply_author">
+        <a class="author" href="/id145557981" data-from-id="145557981">Vladislav Milenin</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21325', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21328', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
+      </div>
+      <div class="reply_text" ><div id="wpt-80747703_21328"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21325', event)">Михаил</a>, что странно, ведь вроде в 5.10 обещали что заработает</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21328">
+        <div class="like_wrap _like_wall_reply-80747703_21328  lite">
+  <div class="like_cont ">
+    <div class="like_btns">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21328', '9ef8dfea020c35f47f');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21328', {})" data-count="0" role="button" title="Like">
+  <div class="like_button_icon"></div>
+  <div class="like_button_label"></div>
+  <div class="like_button_count"></div>
+  <span class="blind_label">Like</span>
+  
+</a>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21328')">Show likes</span>
+      
+    </div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21328');"></div>
+    
+  </div>
+</div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21328&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21328'}, false, event);" ><span class="rel_date">yesterday at 2:13 am</span></a></div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div><div id="post-80747703_21329" class="reply reply_dived clear  _post" data-post-id="-80747703_21329" >
+  <div class="reply_wrap _reply_content _post_content clear_fix">
+    
+    <a class="reply_image" href="/whereismyrose">
+      <img src="https://sun9-49.userapi.com/impg/P1vEruVIAaBcTuOghHBOZNXYycmUGCD0IqpJKQ/6HLf3lWmxJ0.jpg?size=50x0&quality=96&crop=49,0,1826,1826&sign=b3710afed2a581039443d7a77163b933&ava=1" width="40" height="40" class="reply_img" alt="Lia Nedosyp" />
+    </a>
+    <div class="reply_content" >
+      
+      <div class="reply_author">
+        <a class="author" href="/whereismyrose" data-from-id="488120144">Lia Nedosyp</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21328', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21329', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
+      </div>
+      <div class="reply_text" ><div id="wpt-80747703_21329"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/id145557981" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21328', event)">Владислав</a>, стоит последняя версия, всё скачала, теперь вообще после &quot;начать игру&quot; ничего не происходит <img class="emoji" src="/emoji/e/f09fa4aa.png" alt="&#129322;"></div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21329">
+        <div class="like_wrap _like_wall_reply-80747703_21329  lite">
+  <div class="like_cont ">
+    <div class="like_btns">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21329', '52798a3584c61b6dd0');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21329', {})" data-count="0" role="button" title="Like">
+  <div class="like_button_icon"></div>
+  <div class="like_button_label"></div>
+  <div class="like_button_count"></div>
+  <span class="blind_label">Like</span>
+  
+</a>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21329')">Show likes</span>
+      
+    </div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21329');"></div>
+    
+  </div>
+</div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21329&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21329'}, false, event);" ><span class="rel_date">yesterday at 2:34 am</span></a></div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div><div id="post-80747703_21330" class="reply reply_dived clear  _post" data-post-id="-80747703_21330" >
+  <div class="reply_wrap _reply_content _post_content clear_fix">
+    
+    <a class="reply_image" href="/id145557981">
+      <img src="https://sun9-35.userapi.com/impg/Rlyxq6sxJ0-HuozIH3W2jHf1qayg9RjKhzK4Mw/UQ1S8FRLRv8.jpg?size=50x0&quality=96&crop=0,0,1063,1063&sign=826c888748cdc115ba25ec4f078c129e&ava=1" width="40" height="40" class="reply_img" alt="Vladislav Milenin" />
+    </a>
+    <div class="reply_content" >
+      
+      <div class="reply_author">
+        <a class="author" href="/id145557981" data-from-id="145557981">Vladislav Milenin</a> replied to <a href="/whereismyrose" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21329', event)" rid="488120144" onmouseover="wall.postTooltip(this, '-80747703_21330', {reply: 1})" data-root-id="-80747703_21315">Lia</a>
+      </div>
+      <div class="reply_text" ><div id="wpt-80747703_21330"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/whereismyrose" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21329', event)">Лия</a>, значит действительно античит не пускает, как Михаил выше говорил</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21330">
+        <div class="like_wrap _like_wall_reply-80747703_21330  lite">
+  <div class="like_cont ">
+    <div class="like_btns">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21330', '7e378550259df16da6');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21330', {})" data-count="0" role="button" title="Like">
+  <div class="like_button_icon"></div>
+  <div class="like_button_label"></div>
+  <div class="like_button_count"></div>
+  <span class="blind_label">Like</span>
+  
+</a>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21330')">Show likes</span>
+      
+    </div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21330');"></div>
+    
+  </div>
+</div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21330&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21330'}, false, event);" ><span class="rel_date">yesterday at 2:48 am</span></a></div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div><div id="post-80747703_21331" class="reply reply_dived clear  _post" data-post-id="-80747703_21331" >
+  <div class="reply_wrap _reply_content _post_content clear_fix">
+    
+    <a class="reply_image" href="/id145557981">
+      <img src="https://sun9-35.userapi.com/impg/Rlyxq6sxJ0-HuozIH3W2jHf1qayg9RjKhzK4Mw/UQ1S8FRLRv8.jpg?size=50x0&quality=96&crop=0,0,1063,1063&sign=826c888748cdc115ba25ec4f078c129e&ava=1" width="40" height="40" class="reply_img" alt="Vladislav Milenin" />
+    </a>
+    <div class="reply_content" >
+      
+      <div class="reply_author">
+        <a class="author" href="/id145557981" data-from-id="145557981">Vladislav Milenin</a> replied to <a href="/whereismyrose" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21329', event)" rid="488120144" onmouseover="wall.postTooltip(this, '-80747703_21331', {reply: 1})" data-root-id="-80747703_21315">Lia</a>
+      </div>
+      <div class="reply_text" ><div id="wpt-80747703_21331"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/whereismyrose" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21329', event)">Лия</a>, как я посмотрел, её и под мак нет, из десктопов только винда</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21331">
+        <div class="like_wrap _like_wall_reply-80747703_21331  lite">
+  <div class="like_cont ">
+    <div class="like_btns">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21331', '8368d50eb68631d04f');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21331', {})" data-count="0" role="button" title="Like">
+  <div class="like_button_icon"></div>
+  <div class="like_button_label"></div>
+  <div class="like_button_count"></div>
+  <span class="blind_label">Like</span>
+  
+</a>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21331')">Show likes</span>
+      
+    </div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21331');"></div>
+    
+  </div>
+</div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21331&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21331'}, false, event);" ><span class="rel_date">yesterday at 2:51 am</span></a></div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div><div id="post-80747703_21332" class="reply reply_dived clear  _post" data-post-id="-80747703_21332" >
+  <div class="reply_wrap _reply_content _post_content clear_fix">
+    
+    <a class="reply_image" href="/whereismyrose">
+      <img src="https://sun9-49.userapi.com/impg/P1vEruVIAaBcTuOghHBOZNXYycmUGCD0IqpJKQ/6HLf3lWmxJ0.jpg?size=50x0&quality=96&crop=49,0,1826,1826&sign=b3710afed2a581039443d7a77163b933&ava=1" width="40" height="40" class="reply_img" alt="Lia Nedosyp" />
+    </a>
+    <div class="reply_content" >
+      
+      <div class="reply_author">
+        <a class="author" href="/whereismyrose" data-from-id="488120144">Lia Nedosyp</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21330', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21332', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
+      </div>
+      <div class="reply_text" ><div id="wpt-80747703_21332"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/id145557981" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21330', event)">Владислав</a>, весьма печально</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21332">
+        <div class="like_wrap _like_wall_reply-80747703_21332  lite">
+  <div class="like_cont ">
+    <div class="like_btns">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21332', 'b076d7b146e2d1a130');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21332', {})" data-count="1" role="button" title="Like">
+  <div class="like_button_icon"></div>
+  <div class="like_button_label"></div>
+  <div class="like_button_count">1</div>
+  <span class="blind_label">Like</span>
+  
+</a>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21332')">Show likes</span>
+      
+    </div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21332');"></div>
+    
+  </div>
+</div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21332&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21332'}, false, event);" ><span class="rel_date">yesterday at 2:51 am</span></a></div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div><div id="post-80747703_21334" class="reply reply_dived clear  _post" data-post-id="-80747703_21334" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/idbear_bulloff">
@@ -711,77 +783,34 @@ var abp;
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21383', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21385', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21328', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21334', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21385"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, прога для скриншота ломалась на клавиши не реагировала пришлось ставить от кде.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21385">
-        <div class="like_wrap _like_wall_reply-80747703_21385  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21334"><div class="wall_reply_text"><a href="/id145557981" class="mem_link" mention="" mention_id="id145557981" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Владислав</a>, не в 5.10, а в 5.11 и не заработает, а добавят патч который должен помочь с этим, вот только как я понимаю ещё и вайн должны для этого сделать, а они сейчас в заморозке кода, так что в ближайшее время не получится реализовать.</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21334">
+        <div class="like_wrap _like_wall_reply-80747703_21334  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21385', '581ea64950efd0cbb8');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21385', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21334', '533b1946518b47039c');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21334', {})" data-count="1" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
-  <div class="like_button_count"></div>
+  <div class="like_button_count">1</div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21385')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21334')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21385');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21334');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21385&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21385'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:11 pm" time="1609960294">33 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21334&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21334'}, false, event);" ><span class="rel_date">yesterday at 3:49 am</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21386" class="reply reply_dived clear  _post" data-post-id="-80747703_21386" >
-  <div class="reply_wrap _reply_content _post_content clear_fix">
-    
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
-    </a>
-    <div class="reply_content" >
-      
-      <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21385', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21386', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
-      </div>
-      <div class="reply_text" ><div id="wpt-80747703_21386"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21385', event)">Михаил</a>, скрины редко делаю а вот переключалка языка появляется и работает если долго зажать клавиши переключения, а вот ядро нашел в документации того же арча <a href="/away.php?to=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%2FKernel_%28%25D0%25A0%25D1%2583%25D1%2581%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%29&cc_key=" target="_blank" rel="nofollow noopener" target="_blank" rel="noopener">https://wiki.archlinux.org/index.php/Kernel_(Русский)</a></div><div class="media_desc">
-  <a class="mail_link " href="/away.php?to=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%2FKernel_%28%25D0%25A0%25D1%2583%25D1%2581%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9&amp;post=-80747703_21386" target="_blank" rel="nofollow noopener">
-    <span class="mail_link__title">Kernel (Русский - ArchWiki</span>
-    
-    <span class="mail_link__subtitle">wiki.archlinux.org</span>
-    
-  </a>
-</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21386">
-        <div class="like_wrap _like_wall_reply-80747703_21386  lite">
-  <div class="like_cont ">
-    <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21386', '4126804a079b32d0a2');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21386', {})" data-count="0" role="button" title="Like">
-  <div class="like_button_icon"></div>
-  <div class="like_button_label"></div>
-  <div class="like_button_count"></div>
-  <span class="blind_label">Like</span>
-  
-</a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21386')">Show likes</span>
-      
-    </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21386');"></div>
-    
-  </div>
-</div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21386&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21386'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:17 pm" time="1609960678">27 minutes ago</span></a></div>
-        
-        
-      </div>
-    </div>
-  </div>
-</div><div id="post-80747703_21387" class="reply reply_dived clear  _post" data-post-id="-80747703_21387" >
+</div><div id="post-80747703_21335" class="reply reply_dived clear  _post" data-post-id="-80747703_21335" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/idbear_bulloff">
@@ -790,70 +819,34 @@ var abp;
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21383', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21387', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21328', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21335', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21387"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/id186756376" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21383', event)">Александр</a>, бывает эффекты окна слетают после перезагрузки потом снова появляются, короче живет де своей жизнью.</div><div class="page_post_sized_thumbs  clear_fix" style="width: 192px; height: 120px;"><a  aria-label="photo" onclick="return showPhoto('-80747703_457241455', 'wall-80747703_21387', {&quot;temp&quot;:{&quot;x&quot;:&quot;https:\/\/sun9-72.userapi.com\/impg\/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA\/9gY7szFhnrY.jpg?size=604x378&amp;quality=96&amp;sign=787bf5a507bb8752df6fae95b85e1c4d&amp;type=album&quot;,&quot;y&quot;:&quot;https:\/\/sun9-72.userapi.com\/impg\/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA\/9gY7szFhnrY.jpg?size=807x504&amp;quality=96&amp;sign=88bced32639bb89cfc767a3381c8e2c7&amp;type=album&quot;,&quot;z&quot;:&quot;https:\/\/sun9-72.userapi.com\/impg\/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA\/9gY7szFhnrY.jpg?size=1280x800&amp;quality=96&amp;sign=a580dcb25dd35975a2b27e1e1ca42ff4&amp;type=album&quot;,&quot;w&quot;:&quot;https:\/\/sun9-72.userapi.com\/impg\/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA\/9gY7szFhnrY.jpg?size=1440x900&amp;quality=96&amp;proxy=1&amp;sign=8db222eb8ed09a25b066ed7462991f61&amp;type=album&quot;,&quot;x_&quot;:[&quot;https:\/\/sun9-72.userapi.com\/impg\/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA\/9gY7szFhnrY.jpg?size=604x378&amp;quality=96&amp;sign=787bf5a507bb8752df6fae95b85e1c4d&amp;type=album&quot;,604,377],&quot;y_&quot;:[&quot;https:\/\/sun9-72.userapi.com\/impg\/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA\/9gY7szFhnrY.jpg?size=807x504&amp;quality=96&amp;sign=88bced32639bb89cfc767a3381c8e2c7&amp;type=album&quot;,807,504],&quot;z_&quot;:[&quot;https:\/\/sun9-72.userapi.com\/impg\/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA\/9gY7szFhnrY.jpg?size=1280x800&amp;quality=96&amp;sign=a580dcb25dd35975a2b27e1e1ca42ff4&amp;type=album&quot;,1280,800],&quot;w_&quot;:[&quot;https:\/\/sun9-72.userapi.com\/impg\/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA\/9gY7szFhnrY.jpg?size=1440x900&amp;quality=96&amp;proxy=1&amp;sign=8db222eb8ed09a25b066ed7462991f61&amp;type=album&quot;,1440,900],&quot;base&quot;:&quot;&quot;},&quot;queue&quot;:1}, event)" style="width: 192px; height: 120px;background-image: url(https://sun9-72.userapi.com/impg/JpVG_7PraS2XvTSFEisFjW9j-66ptpSsKbYZJA/9gY7szFhnrY.jpg?size=604x378&quality=96&sign=787bf5a507bb8752df6fae95b85e1c4d&type=album);" class="page_post_thumb_wrap image_cover  page_post_thumb_last_column page_post_thumb_last_row" data-photo-id="-80747703_457241455"></a></div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21387">
-        <div class="like_wrap _like_wall_reply-80747703_21387  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21335"><div class="wall_reply_text"><a href="/id145557981" class="mem_link" mention="" mention_id="id145557981" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Владислав</a>, <a href="/away.php?to=https%3A%2F%2Fwww.ixbt.com%2Flive%2Fgames%2Fanonsirovana-realizaciya-antichitov-dlya-linux-511.html&cc_key=" target="_blank" rel="nofollow noopener" target="_blank" rel="noopener" title="https://www.ixbt.com/live/games/anonsirovana-realizaciya-antichitov-dlya-linux-511.html">https://www.ixbt.com/live/games/anonsirovana-realizac..</a></div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21335">
+        <div class="like_wrap _like_wall_reply-80747703_21335  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21387', '09c5c06e2d2232e46e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21387', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21335', '36ede5b507284ba189');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21335', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21387')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21335')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21387');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21335');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21387&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21387'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:18 pm" time="1609960687">26 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21335&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21335'}, false, event);" ><span class="rel_date">yesterday at 3:51 am</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21388" class="reply reply_dived clear  _post" data-post-id="-80747703_21388" >
-  <div class="reply_wrap _reply_content _post_content clear_fix">
-    
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
-    </a>
-    <div class="reply_content" >
-      
-      <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21387', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21388', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
-      </div>
-      <div class="reply_text" ><div id="wpt-80747703_21388"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21387', event)">Михаил</a>, не такого не было только тормоза в анимациях перехода, ну и задержка при запуске приложениях и открытия диспетчера файлов не смотря на том что вся система на ссд стоит, походу еще и баги разные бывают, точно что система своей жизнью живет</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21388">
-        <div class="like_wrap _like_wall_reply-80747703_21388  lite">
-  <div class="like_cont ">
-    <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21388', '6114c14073ba229649');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21388', {})" data-count="0" role="button" title="Like">
-  <div class="like_button_icon"></div>
-  <div class="like_button_label"></div>
-  <div class="like_button_count"></div>
-  <span class="blind_label">Like</span>
-  
-</a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21388')">Show likes</span>
-      
-    </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21388');"></div>
-    
-  </div>
-</div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21388&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21388'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:20 pm" time="1609960855">24 minutes ago</span></a></div>
-        
-        
-      </div>
-    </div>
-  </div>
-</div><div id="post-80747703_21389" class="reply reply_dived clear  _post" data-post-id="-80747703_21389" >
+</div><div id="post-80747703_21336" class="reply reply_dived clear  _post" data-post-id="-80747703_21336" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/idbear_bulloff">
@@ -862,70 +855,34 @@ var abp;
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21388', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21389', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21328', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21336', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21389"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, разрабы походу не успевают на все отреагировать им бы дистрибутив deepin допилить, а тут ещё с другими дистрами вопросы задают.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21389">
-        <div class="like_wrap _like_wall_reply-80747703_21389  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21336"><div class="wall_reply_text"><a href="/id145557981" class="mem_link" mention="" mention_id="id145557981" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Владислав</a>, <a href="/away.php?to=https%3A%2F%2Fwww.kernel.org%2Fdoc%2Fhtml%2Flatest%2Fadmin-guide%2Fsyscall-user-dispatch.html&cc_key=" target="_blank" rel="nofollow noopener" target="_blank" rel="noopener" title="https://www.kernel.org/doc/html/latest/admin-guide/syscall-user-dispatch.html">https://www.kernel.org/doc/html/latest/admin-guide/sy..</a></div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21336">
+        <div class="like_wrap _like_wall_reply-80747703_21336  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21389', 'd71680ff254e610bcb');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21389', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21336', 'dddf934c329e139149');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21336', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21389')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21336')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21389');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21336');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21389&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21389'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:24 pm" time="1609961089">20 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21336&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21336'}, false, event);" ><span class="rel_date">yesterday at 3:51 am</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21390" class="reply reply_dived clear  _post" data-post-id="-80747703_21390" >
-  <div class="reply_wrap _reply_content _post_content clear_fix">
-    
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
-    </a>
-    <div class="reply_content" >
-      
-      <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21389', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21390', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
-      </div>
-      <div class="reply_text" ><div id="wpt-80747703_21390"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21389', event)">Михаил</a>, Да не они китайцы их много))) по идее все должны успевать)))</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21390">
-        <div class="like_wrap _like_wall_reply-80747703_21390  lite">
-  <div class="like_cont ">
-    <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21390', 'b22d248f2127b03f18');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21390', {})" data-count="0" role="button" title="Like">
-  <div class="like_button_icon"></div>
-  <div class="like_button_label"></div>
-  <div class="like_button_count"></div>
-  <span class="blind_label">Like</span>
-  
-</a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21390')">Show likes</span>
-      
-    </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21390');"></div>
-    
-  </div>
-</div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21390&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21390'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:26 pm" time="1609961192">18 minutes ago</span></a></div>
-        
-        
-      </div>
-    </div>
-  </div>
-</div><div id="post-80747703_21391" class="reply reply_dived clear  _post" data-post-id="-80747703_21391" >
+</div><div id="post-80747703_21337" class="reply reply_dived clear  _post" data-post-id="-80747703_21337" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/idbear_bulloff">
@@ -934,70 +891,70 @@ var abp;
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21386', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21391', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21328', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21337', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21391"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, а я скрины часто делаю, про переключение знаю, но по привычке нажимаю и пишу сразу, а не тут то было, а про ядро читал в вике арча</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21391">
-        <div class="like_wrap _like_wall_reply-80747703_21391  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21337"><div class="wall_reply_text"><a href="/id145557981" class="mem_link" mention="" mention_id="id145557981" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Владислав</a>, <a href="https://vk.com/wall-178581777_6738">https://vk.com/wall-178581777_6738</a></div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21337">
+        <div class="like_wrap _like_wall_reply-80747703_21337  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21391', '17b79c5b67351e4d0e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21391', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21337', '13589b90c2353e0556');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21337', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21391')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21337')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21391');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21337');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21391&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21391'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:27 pm" time="1609961248">17 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21337&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21337'}, false, event);" ><span class="rel_date">yesterday at 3:54 am</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21392" class="reply reply_dived clear  _post" data-post-id="-80747703_21392" >
+</div><div id="post-80747703_21338" class="reply reply_dived clear  _post" data-post-id="-80747703_21338" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
-    <a class="reply_image" href="/id186756376">
-      <img src="https://sun9-1.userapi.com/impf/ZUyMY81ojj7vuGiRZIDGI0qRb5yXpruHARjA3A/gdAVa8_U0Pk.jpg?size=50x0&quality=96&crop=20,49,201,201&sign=55ddff26f52643156d6bc3cf812b7d66&ava=1" width="40" height="40" class="reply_img" alt="Alexander Alexeevich" />
+    <a class="reply_image" href="/id145557981">
+      <img src="https://sun9-35.userapi.com/impg/Rlyxq6sxJ0-HuozIH3W2jHf1qayg9RjKhzK4Mw/UQ1S8FRLRv8.jpg?size=50x0&quality=96&crop=0,0,1063,1063&sign=826c888748cdc115ba25ec4f078c129e&ava=1" width="40" height="40" class="reply_img" alt="Vladislav Milenin" />
     </a>
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/id186756376" data-from-id="186756376">Alexander Alexeevich</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21391', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21392', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
+        <a class="author" href="/id145557981" data-from-id="145557981">Vladislav Milenin</a> replied to <a href="/idbear_bulloff" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21334', event)" rid="40931506" onmouseover="wall.postTooltip(this, '-80747703_21338', {reply: 1})" data-root-id="-80747703_21315">Mikhail</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21392"><div class="wall_reply_text"><a class="wall_reply_greeting" href="/idbear_bulloff" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21391', event)">Михаил</a>, ну все же главное что бы в своем дистре оболочку они докрутили а там уже ее можно прикрутить и к другим дистрам</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21392">
-        <div class="like_wrap _like_wall_reply-80747703_21392  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21338"><div class="wall_reply_text"><a href="/idbear_bulloff" class="mem_link" mention="" mention_id="id40931506" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Михаил</a>, понятно, благодарю за разъяснение. Надеюсь, эту проблему решат в скором времени и не будет так же долго тянуться, как и внедрение wayland</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21338">
+        <div class="like_wrap _like_wall_reply-80747703_21338  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21392', '585e25ec810da0ee1f');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21392', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21338', '1d1266e3e8c6b114fa');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21338', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21392')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21338')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21392');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21338');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21392&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21392'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:29 pm" time="1609961356">15 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21338&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21338'}, false, event);" ><span class="rel_date">yesterday at 4:07 am</span></a></div>
         
         
       </div>
     </div>
   </div>
-</div><div id="post-80747703_21393" class="reply reply_dived clear  _post" data-post-id="-80747703_21393" >
+</div><div id="post-80747703_21339" class="reply reply_dived clear  _post" data-post-id="-80747703_21339" >
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/idbear_bulloff">
@@ -1006,34 +963,70 @@ var abp;
     <div class="reply_content" >
       
       <div class="reply_author">
-        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id186756376" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21390', event)" rid="186756376" onmouseover="wall.postTooltip(this, '-80747703_21393', {reply: 1})" data-root-id="-80747703_21315">Alexander</a>
+        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21338', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21339', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
       </div>
-      <div class="reply_text" ><div id="wpt-80747703_21393"><div class="wall_reply_text"><a href="/id186756376" class="mem_link" mention="" mention_id="id186756376" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Александр</a>, у них там свои проблемы, из-за того же вируса долго не было изменений потом попёрло чуть ли ни каждый день обновы приходили, то что то починят то тут же сломают, так что жду когда все починят и можно будет пользоваться, захожу периодически проверяю.</div></div></div>
-      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21393">
-        <div class="like_wrap _like_wall_reply-80747703_21393  lite">
+      <div class="reply_text" ><div id="wpt-80747703_21339"><div class="wall_reply_text"><a href="/id145557981" class="mem_link" mention="" mention_id="id145557981" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Владислав</a>, драйвер для Wayland написан</div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21339">
+        <div class="like_wrap _like_wall_reply-80747703_21339  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21393', 'cd3a512dbeb43b61f3');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21393', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21339', '255ef5d0436ff58795');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21339', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
   <span class="blind_label">Like</span>
   
 </a>
-<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21393')">Show likes</span>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21339')">Show likes</span>
       
     </div>
-    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21393');"></div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21339');"></div>
     
   </div>
 </div>
-        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21393&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21393'}, false, event);" ><span class="rel_date rel_date_needs_update" abs_time="today at 10:30 pm" time="1609961426">14 minutes ago</span></a></div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21339&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21339'}, false, event);" ><span class="rel_date">yesterday at 4:09 am</span></a></div>
         
         
       </div>
     </div>
   </div>
+</div><div id="post-80747703_21340" class="reply reply_dived clear  _post" data-post-id="-80747703_21340" >
+  <div class="reply_wrap _reply_content _post_content clear_fix">
+    
+    <a class="reply_image" href="/idbear_bulloff">
+      <img src="https://sun9-54.userapi.com/impf/c624728/v624728506/2b8e/Qy-16YcRlpw.jpg?size=50x0&quality=96&crop=86,172,442,442&sign=f53fba4dfb73d69e544f681a1399579f&ava=1" width="40" height="40" class="reply_img" alt="Mikhail Bykov" />
+    </a>
+    <div class="reply_content" >
+      
+      <div class="reply_author">
+        <a class="author" href="/idbear_bulloff" data-from-id="40931506">Mikhail Bykov</a> replied to <a href="/id145557981" class="reply_to" onclick="return wall.showReply(this, '-80747703_21314', '-80747703_21338', event)" rid="145557981" onmouseover="wall.postTooltip(this, '-80747703_21340', {reply: 1})" data-root-id="-80747703_21315">Vladislav</a>
+      </div>
+      <div class="reply_text" ><div id="wpt-80747703_21340"><div class="wall_reply_text"><a href="/id145557981" class="mem_link" mention="" mention_id="id145557981" onclick="return mentionClick(this, event)" onmouseover="mentionOver(this)">Владислав</a>, <a href="/away.php?to=https%3A%2F%2Fwww.winehq.org%2Fpipermail%2Fwine-devel%2F2020-December%2F178575.html&cc_key=" target="_blank" rel="nofollow noopener" target="_blank" rel="noopener" title="https://www.winehq.org/pipermail/wine-devel/2020-December/178575.html">https://www.winehq.org/pipermail/wine-devel/2020-Dece..</a></div></div></div>
+      <div class="reply_footer clear_fix" id="wpe_bottom-80747703_21340">
+        <div class="like_wrap _like_wall_reply-80747703_21340  lite">
+  <div class="like_cont ">
+    <div class="like_btns">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_21340', 'b1e97049574c3a621d');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_21340', {})" data-count="1" role="button" title="Like">
+  <div class="like_button_icon"></div>
+  <div class="like_button_label"></div>
+  <div class="like_button_count">1</div>
+  <span class="blind_label">Like</span>
+  
+</a>
+<span class="blind_label" tabindex="0" role="link" onclick="Likes.showLikesList(this, 'wall_reply-80747703_21340')">Show likes</span>
+      
+    </div>
+    <div class="like_views _views" onmouseover="Likes.updateViews('wall_reply-80747703_21340');"></div>
+    
+  </div>
 </div>
+        <div class="reply_date"><a class="wd_lnk"  class="post_link"  href="https://vk.com/wall-80747703_21314?reply=21340&thread=21315"  onclick="return showWiki({w: 'wall-80747703_21314', reply: '21340'}, false, event);" ><span class="rel_date">yesterday at 4:10 am</span></a></div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div><a href="https://vk.com/wall-80747703_21314?reply=21315" onclick="return Unauthorized.showMoreBox(event, -80747703, 'comments')" class="replies_next replies_next_deep replies_next_shown" data-offset="20" data-count="20">Show more comments</a>
   </div>
 </div></div>
   
@@ -1064,7 +1057,7 @@ var abp;
     <a class="bnav_a" href="/dev">Developers</a>
     <a class="bnav_a" href="/jobs" style="display: none;">Careers</a>
   </div>
-  <div class="footer_lang"><a class="footer_lang_link" onclick="Language.changeLang(this, 3, 'a695de0d4df67b4463')">English</a><a class="footer_lang_link" onclick="Language.changeLang(this, 0, 'a695de0d4df67b4463')">Русский</a><a class="footer_lang_link" onclick="Language.changeLang(this, 1, 'a695de0d4df67b4463')">Українська</a><a class="footer_lang_link" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">all languages »</a></div>
+  <div class="footer_lang"><a class="footer_lang_link" onclick="Language.changeLang(this, 3, 'd8ce218d64a92388d2')">English</a><a class="footer_lang_link" onclick="Language.changeLang(this, 0, 'd8ce218d64a92388d2')">Русский</a><a class="footer_lang_link" onclick="Language.changeLang(this, 1, 'd8ce218d64a92388d2')">Українська</a><a class="footer_lang_link" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">all languages »</a></div>
 </div>
 
 <div class="footer_bench clear">
@@ -1205,8 +1198,8 @@ window.cur = window.cur || {};
 cur['deepRepliesActive']=true;
 
 window.cur = window.cur || {};
-cur['emojiHintsSendLogHash']="a872b89bc663c2d23a";
-Promise.resolve().then(() => {window.PageBottomBanners && window.PageBottomBanners.initUnauthBanner({"type":"unauth","hide_url":"","hide_params":[],"group_id":0,"icon_type":"vk_logo","header":"Read only the most interesting posts<br>","text":"We&#39;ll find posts according to your preferences and create a whole feed from them. Just log in to check it out.","feed_sections":[],"sections":[],"can_close":false,"actions":[{"type":"sign_up","mode":"overlay_primary","label":"Sign up","url":"","params":[]},{"type":"sign_in","mode":"overlay_outline","label":"Log in","url":"","params":[]}],"is_animated":true,"background_type":"green","html":"<div class=\"PageBottomBanner PageBottomBanner--unauth PageBottomBanner--animated PageBottomBanner--bg-green\">\n   <div class=\"PageBottomBanner__in\">\n      <div class=\"PageBottomBanner__icon PageBottomBanner__icon--vk_logo\"><\/div>\n      <div class=\"PageBottomBanner__content\">\n         <div class=\"PageBottomBanner__header\">Read only the most interesting posts<br><\/div>\n         <div class=\"PageBottomBanner__text\">We&#39;ll find posts according to your preferences and create a whole feed from them. Just log in to check it out.<\/div>\n      <\/div>\n      <div class=\"PageBottomBanner__actions\">\n  <button class=\"PageBottomBanner__actionBtn Button Button--size-m Button--overlay_primary\" data-action=\"{&quot;type&quot;:&quot;sign_up&quot;,&quot;mode&quot;:&quot;overlay_primary&quot;,&quot;label&quot;:&quot;Sign up&quot;,&quot;url&quot;:&quot;&quot;,&quot;params&quot;:[]}\">Sign up<\/button><button class=\"PageBottomBanner__actionBtn Button Button--size-m Button--overlay_outline\" data-action=\"{&quot;type&quot;:&quot;sign_in&quot;,&quot;mode&quot;:&quot;overlay_outline&quot;,&quot;label&quot;:&quot;Log in&quot;,&quot;url&quot;:&quot;&quot;,&quot;params&quot;:[]}\">Log in<\/button>\n<\/div>\n      \n   <\/div>\n<\/div>"})}).catch((error) => { error.name = "[unsafeJs inject_unauth_banner] " + error.name; throw error });Promise.resolve().then(() => {Unauthorized.initScrollMoreBox({"action":"more","html":"<div class=\"UnauthActionBox UnauthActionBox--rich\">\n  <div class=\"UnauthActionBox__in\">\n    \n\n    <div class=\"UnauthActionBox__hero\">\n      <div class=\"UnauthActionBox__ownerPhoto\" style=\"background-image: url(https:\/\/sun9-45.userapi.com\/impg\/c857324\/v857324001\/8e3f2\/p7oLynZcVco.jpg?size=200x0&quality=96&crop=411,233,201,201&sign=40e5eecf5cea462b9f2ec84df5300a09&ava=1)\"><\/div>\n      <div class=\"UnauthActionBox__header\">Sign up to see Linux Mint Russia<\/div>\n      <div class=\"UnauthActionBox__text\">Read and comment on posts you like from this community<\/div>\n    <\/div>\n\n    <div class=\"UnauthActionBox__aside\">\n      <div class=\"JoinForm\">\n  <div class=\"JoinForm__in\">\n    <div class=\"JoinForm__top\">\n      <div class=\"JoinForm__header\">Sign up for VK<\/div>\n      <div class=\"JoinForm__subheader\"><\/div>\n    <\/div>\n\n    <div class=\"JoinForm__error\"><\/div>\n\n    <div class=\"JoinForm__form\">\n      <div class=\"JoinForm__textInputRow\">\n        <input type=\"text\" class=\"JoinForm__textInput big_text\" name=\"first_name\" value=\"\" placeholder=\"Your first name\" \/>\n      <\/div>\n      <div class=\"JoinForm__textInputRow\">\n        <input type=\"text\" class=\"JoinForm__textInput big_text\" name=\"last_name\" value=\"\" placeholder=\"Your last name\" \/>\n      <\/div>\n\n      <div class=\"JoinForm__birthdate\">\n        <div class=\"JoinForm__label\">\n          Birthday\n          <span class=\"hint_icon\" data-title=\"&lt;b&gt;By providing your birthday&lt;\/b&gt;, your friends will be able to find you more easily and help us select interesting content to recommend to you.&lt;br&gt;You can edit your profile to manage who can view your birthday.\" onmouseover=\"showHint(this);\"><\/span>\n        <\/div>\n\n        <div class=\"JoinForm__birthdateIn\">\n          <div class=\"JoinForm__birthdateDay\">\n            <input type=\"text\" name=\"bday\" class=\"JoinForm__birthdateDayInput big_text\" \/>\n          <\/div>\n          <div class=\"JoinForm__birthdateMonth\">\n            <input type=\"text\" name=\"bmonth\" class=\"JoinForm__birthdateMonthInput big_text\" \/>\n          <\/div>\n          <div class=\"JoinForm__birthdateYear\">\n            <input type=\"text\" name=\"byear\" class=\"JoinForm__birthdateYearInput big_text\" \/>\n          <\/div>\n        <\/div>\n      <\/div>\n\n      <div class=\"JoinForm__sex \">\n        <div class=\"JoinForm__label\">Your gender<\/div>\n\n        <div class=\"JoinForm__sexIn\">\n          <div class=\"JoinForm__sexRadio radiobtn\" onclick=\"radiobtn(this, 1, 'join_form_sex');\">Female<\/div>\n          <div class=\"JoinForm__sexRadio radiobtn\" onclick=\"radiobtn(this, 2, 'join_form_sex');\">Male<\/div>\n        <\/div>\n      <\/div>\n\n      <button class=\"JoinForm__submitButton flat_button flat_button_positive button_wide button_big_text\">Continue registration<\/button>\n\n      <div class=\"JoinForm__facebookLogin FacebookLogin FacebookLogin--noNative\">\n        <div class=\"FacebookLogin__button fb-login-button\"\n          data-use-continue-as=\"true\"\n          data-width=\"264\"\n          data-max-rows=\"1\"\n          data-size=\"medium\"\n          data-button-type=\"continue_with\"\n          data-placeholder=\"Log in with Facebook\"\n        ><\/div>\n      <\/div>\n    <\/div>\n\n    <div class=\"JoinForm__footer\">\nAlready have an account? <a class=\"JoinForm__signIn\">Log in<\/a>&nbsp;&middot;&nbsp;<a href=\"#\" class=\"JoinForm__notNow\">Not now<\/a>\n<\/div>\n  <\/div>\n<\/div>\n\n    <\/div>\n  <\/div>\n<\/div>","withForm":true,"formOptions":{"from":"\/wall-80747703_21314","bdateMonths":[[0,"Month"],[1,"January"],[2,"February"],[3,"March"],[4,"April"],[5,"May"],[6,"June"],[7,"July"],[8,"August"],[9,"September"],[10,"October"],[11,"November"],[12,"December"]],"bdateYears":[[0,"Year"],[2005,"2005"],[2004,"2004"],[2003,"2003"],[2002,"2002"],[2001,"2001"],[2000,"2000"],[1999,"1999"],[1998,"1998"],[1997,"1997"],[1996,"1996"],[1995,"1995"],[1994,"1994"],[1993,"1993"],[1992,"1992"],[1991,"1991"],[1990,"1990"],[1989,"1989"],[1988,"1988"],[1987,"1987"],[1986,"1986"],[1985,"1985"],[1984,"1984"],[1983,"1983"],[1982,"1982"],[1981,"1981"],[1980,"1980"],[1979,"1979"],[1978,"1978"],[1977,"1977"],[1976,"1976"],[1975,"1975"],[1974,"1974"],[1973,"1973"],[1972,"1972"],[1971,"1971"],[1970,"1970"],[1969,"1969"],[1968,"1968"],[1967,"1967"],[1966,"1966"],[1965,"1965"],[1964,"1964"],[1963,"1963"],[1962,"1962"],[1961,"1961"],[1960,"1960"],[1959,"1959"],[1958,"1958"],[1957,"1957"],[1956,"1956"],[1955,"1955"],[1954,"1954"],[1953,"1953"],[1952,"1952"],[1951,"1951"],[1950,"1950"],[1949,"1949"],[1948,"1948"],[1947,"1947"],[1946,"1946"],[1945,"1945"],[1944,"1944"],[1943,"1943"],[1942,"1942"],[1941,"1941"],[1940,"1940"],[1939,"1939"],[1938,"1938"],[1937,"1937"],[1936,"1936"],[1935,"1935"],[1934,"1934"],[1933,"1933"],[1932,"1932"],[1931,"1931"],[1930,"1930"],[1929,"1929"],[1928,"1928"],[1927,"1927"],[1926,"1926"],[1925,"1925"],[1924,"1924"],[1923,"1923"],[1922,"1922"],[1921,"1921"],[1920,"1920"],[1919,"1919"],[1918,"1918"],[1917,"1917"],[1916,"1916"],[1915,"1915"],[1914,"1914"],[1913,"1913"],[1912,"1912"],[1911,"1911"],[1910,"1910"],[1909,"1909"],[1908,"1908"],[1907,"1907"],[1906,"1906"],[1905,"1905"],[1904,"1904"],[1903,"1903"],[1902,"1902"]],"fbApp":"128749580520227","fbState":"a870f5e3dcee80f269","fbLocale":"en_US"}})}).catch((error) => { error.name = "[unsafeJs init_scroll_more_box] " + error.name; throw error });var opts = {"owner_id":-80747703,"post_id":21314,"note_id":false,"post_raw":"-80747703_21314","note":false,"seen":[{"-80747703_21314":1}],"scroll":false,"start":0,"offset":40,"per_page":20,"count":71,"url":"\/wall-80747703_21314","params":false,"href":"\/wall-80747703_21314?offset=","max_post_len":280,"post_hash":"","rmedia_types":[["photo","Photo"],["video","Video"],["audio","Audio"],["doc","File"],["map","Map"],["graffiti","Graffiti"],["market","Product",{"tt_text":"Now you can <a onclick=\"showBox('al_market.php', {act: 'a_edit_item_box', attach: 1, from_wall: 1}); return false\">attach a product<\/a> to your post.","tt_words":["sell","sell","sells","selling","sale","sold","give","gives","gave","given","for","free","rent","for","rent","rental","rents","rented","renting","give for free","giving for free","gives for free","for free","for rent","rent room","rent a room","renting a room","rents room","rents a room","renting room"]}],["postpone","Timer",{"lang":{"profile_choose_timer":"Posting time","profile_wall_postpone_at":"at","wall_publication_now":"Now","wall_post_timer_reset":"Clear","export_to_twitter":"Export to Twitter","export_to_facebook":"Export to Facebook","friends_only":"Friends only","wall_post_access_all":"Public post","profile_wall_postpone_btn":"Schedule"},"date":1609965900,"postpone_item_hidden":false}]],"share":{"timehash":"1609962300_bdd5fe1137af954df5","allow_custom_photo":true,"allow_edit_title":true,"allow_edit_url":true,"max_title_len":100},"upload":null,"upload_video":null,"check_comments":true,"reply_names":{"186756376":["Alexander","Alexander, "],"_":false,"40931506":["Mikhail","Mikhail, "],"287787009":["Anton","Anton, "]},"wall_type":"full","view_hash":"be320beb7b53ca3440","replies_page_count":20}, preload = [71,60,"",[]];
+cur['emojiHintsSendLogHash']="81794a08fd02d3f83d";
+Promise.resolve().then(() => {window.PageBottomBanners && window.PageBottomBanners.initUnauthBanner({"type":"unauth","hide_url":"","hide_params":[],"group_id":0,"icon_type":"vk_logo","header":"Read only the most interesting posts<br>","text":"We&#39;ll find posts according to your preferences and create a whole feed from them. Just log in to check it out.","feed_sections":[],"sections":[],"can_close":false,"actions":[{"type":"sign_up","mode":"positive","label":"Sign up","url":"","params":[]},{"type":"sign_in","mode":"primary","label":"Log in","url":"","params":[]}],"is_animated":true,"background_type":"regular","html":"<div class=\"PageBottomBanner PageBottomBanner--unauth PageBottomBanner--animated PageBottomBanner--bg-regular\">\n   <div class=\"PageBottomBanner__in\">\n      <div class=\"PageBottomBanner__icon PageBottomBanner__icon--vk_logo\"><\/div>\n      <div class=\"PageBottomBanner__content\">\n         <div class=\"PageBottomBanner__header\">Read only the most interesting posts<br><\/div>\n         <div class=\"PageBottomBanner__text\">We&#39;ll find posts according to your preferences and create a whole feed from them. Just log in to check it out.<\/div>\n      <\/div>\n      <div class=\"PageBottomBanner__actions\">\n  <button class=\"PageBottomBanner__actionBtn Button Button--size-m Button--positive\" data-action=\"{&quot;type&quot;:&quot;sign_up&quot;,&quot;mode&quot;:&quot;positive&quot;,&quot;label&quot;:&quot;Sign up&quot;,&quot;url&quot;:&quot;&quot;,&quot;params&quot;:[]}\">Sign up<\/button><button class=\"PageBottomBanner__actionBtn Button Button--size-m Button--primary\" data-action=\"{&quot;type&quot;:&quot;sign_in&quot;,&quot;mode&quot;:&quot;primary&quot;,&quot;label&quot;:&quot;Log in&quot;,&quot;url&quot;:&quot;&quot;,&quot;params&quot;:[]}\">Log in<\/button>\n<\/div>\n      \n   <\/div>\n<\/div>"})}).catch((error) => { error.name = "[unsafeJs inject_unauth_banner] " + error.name; throw error });Promise.resolve().then(() => {Unauthorized.initScrollMoreBox({"action":"more","html":"<div class=\"UnauthActionBox UnauthActionBox--rich\">\n  <div class=\"UnauthActionBox__in\">\n    \n\n    <div class=\"UnauthActionBox__hero\">\n      <div class=\"UnauthActionBox__ownerPhoto\" style=\"background-image: url(https:\/\/sun9-45.userapi.com\/impg\/c857324\/v857324001\/8e3f2\/p7oLynZcVco.jpg?size=200x0&quality=96&crop=411,233,201,201&sign=40e5eecf5cea462b9f2ec84df5300a09&ava=1)\"><\/div>\n      <div class=\"UnauthActionBox__header\">Sign up to see Linux Mint Russia<\/div>\n      <div class=\"UnauthActionBox__text\">Read and comment on posts you like from this community<\/div>\n    <\/div>\n\n    <div class=\"UnauthActionBox__aside\">\n      <div class=\"JoinForm\">\n  <div class=\"JoinForm__in\">\n    <div class=\"JoinForm__top\">\n      <div class=\"JoinForm__header\">Sign up for VK<\/div>\n      <div class=\"JoinForm__subheader\"><\/div>\n    <\/div>\n\n    <div class=\"JoinForm__error\"><\/div>\n\n    <div class=\"JoinForm__form\">\n      <div class=\"JoinForm__textInputRow\">\n        <input type=\"text\" class=\"JoinForm__textInput big_text\" name=\"first_name\" value=\"\" placeholder=\"Your first name\" \/>\n      <\/div>\n      <div class=\"JoinForm__textInputRow\">\n        <input type=\"text\" class=\"JoinForm__textInput big_text\" name=\"last_name\" value=\"\" placeholder=\"Your last name\" \/>\n      <\/div>\n\n      <div class=\"JoinForm__birthdate\">\n        <div class=\"JoinForm__label\">\n          Birthday\n          <span class=\"hint_icon\" data-title=\"&lt;b&gt;By providing your birthday&lt;\/b&gt;, your friends will be able to find you more easily and help us select interesting content to recommend to you.&lt;br&gt;You can edit your profile to manage who can view your birthday.\" onmouseover=\"showHint(this);\"><\/span>\n        <\/div>\n\n        <div class=\"JoinForm__birthdateIn\">\n          <div class=\"JoinForm__birthdateDay\">\n            <input type=\"text\" name=\"bday\" class=\"JoinForm__birthdateDayInput big_text\" \/>\n          <\/div>\n          <div class=\"JoinForm__birthdateMonth\">\n            <input type=\"text\" name=\"bmonth\" class=\"JoinForm__birthdateMonthInput big_text\" \/>\n          <\/div>\n          <div class=\"JoinForm__birthdateYear\">\n            <input type=\"text\" name=\"byear\" class=\"JoinForm__birthdateYearInput big_text\" \/>\n          <\/div>\n        <\/div>\n      <\/div>\n\n      <div class=\"JoinForm__sex \">\n        <div class=\"JoinForm__label\">Your gender<\/div>\n\n        <div class=\"JoinForm__sexIn\">\n          <div class=\"JoinForm__sexRadio radiobtn\" onclick=\"radiobtn(this, 1, 'join_form_sex');\">Female<\/div>\n          <div class=\"JoinForm__sexRadio radiobtn\" onclick=\"radiobtn(this, 2, 'join_form_sex');\">Male<\/div>\n        <\/div>\n      <\/div>\n\n      <button class=\"JoinForm__submitButton flat_button flat_button_positive button_wide button_big_text\">Continue registration<\/button>\n\n      <div class=\"JoinForm__facebookLogin FacebookLogin FacebookLogin--noNative\">\n        <div class=\"FacebookLogin__button fb-login-button\"\n          data-use-continue-as=\"true\"\n          data-width=\"264\"\n          data-max-rows=\"1\"\n          data-size=\"medium\"\n          data-button-type=\"continue_with\"\n          data-placeholder=\"Log in with Facebook\"\n        ><\/div>\n      <\/div>\n    <\/div>\n\n    <div class=\"JoinForm__footer\">\nAlready have an account? <a class=\"JoinForm__signIn\">Log in<\/a>&nbsp;&middot;&nbsp;<a href=\"#\" class=\"JoinForm__notNow\">Not now<\/a>\n<\/div>\n  <\/div>\n<\/div>\n\n    <\/div>\n  <\/div>\n<\/div>","withForm":true,"formOptions":{"from":"\/wall-80747703_21314","bdateMonths":[[0,"Month"],[1,"January"],[2,"February"],[3,"March"],[4,"April"],[5,"May"],[6,"June"],[7,"July"],[8,"August"],[9,"September"],[10,"October"],[11,"November"],[12,"December"]],"bdateYears":[[0,"Year"],[2005,"2005"],[2004,"2004"],[2003,"2003"],[2002,"2002"],[2001,"2001"],[2000,"2000"],[1999,"1999"],[1998,"1998"],[1997,"1997"],[1996,"1996"],[1995,"1995"],[1994,"1994"],[1993,"1993"],[1992,"1992"],[1991,"1991"],[1990,"1990"],[1989,"1989"],[1988,"1988"],[1987,"1987"],[1986,"1986"],[1985,"1985"],[1984,"1984"],[1983,"1983"],[1982,"1982"],[1981,"1981"],[1980,"1980"],[1979,"1979"],[1978,"1978"],[1977,"1977"],[1976,"1976"],[1975,"1975"],[1974,"1974"],[1973,"1973"],[1972,"1972"],[1971,"1971"],[1970,"1970"],[1969,"1969"],[1968,"1968"],[1967,"1967"],[1966,"1966"],[1965,"1965"],[1964,"1964"],[1963,"1963"],[1962,"1962"],[1961,"1961"],[1960,"1960"],[1959,"1959"],[1958,"1958"],[1957,"1957"],[1956,"1956"],[1955,"1955"],[1954,"1954"],[1953,"1953"],[1952,"1952"],[1951,"1951"],[1950,"1950"],[1949,"1949"],[1948,"1948"],[1947,"1947"],[1946,"1946"],[1945,"1945"],[1944,"1944"],[1943,"1943"],[1942,"1942"],[1941,"1941"],[1940,"1940"],[1939,"1939"],[1938,"1938"],[1937,"1937"],[1936,"1936"],[1935,"1935"],[1934,"1934"],[1933,"1933"],[1932,"1932"],[1931,"1931"],[1930,"1930"],[1929,"1929"],[1928,"1928"],[1927,"1927"],[1926,"1926"],[1925,"1925"],[1924,"1924"],[1923,"1923"],[1922,"1922"],[1921,"1921"],[1920,"1920"],[1919,"1919"],[1918,"1918"],[1917,"1917"],[1916,"1916"],[1915,"1915"],[1914,"1914"],[1913,"1913"],[1912,"1912"],[1911,"1911"],[1910,"1910"],[1909,"1909"],[1908,"1908"],[1907,"1907"],[1906,"1906"],[1905,"1905"],[1904,"1904"],[1903,"1903"],[1902,"1902"]],"fbApp":"128749580520227","fbState":"09616db382db44c8c6","fbLocale":"en_US"}})}).catch((error) => { error.name = "[unsafeJs init_scroll_more_box] " + error.name; throw error });var opts = {"owner_id":-80747703,"post_id":21314,"note_id":false,"post_raw":"-80747703_21314","note":false,"seen":[{"-80747703_21314":1}],"scroll":false,"start":0,"offset":40,"per_page":20,"count":71,"url":"\/wall-80747703_21314","params":false,"href":"\/wall-80747703_21314?offset=","max_post_len":280,"post_hash":"","rmedia_types":[["photo","Photo"],["video","Video"],["audio","Audio"],["doc","File"],["map","Map"],["graffiti","Graffiti"],["market","Product",{"tt_text":"Now you can <a onclick=\"showBox('al_market.php', {act: 'a_edit_item_box', attach: 1, from_wall: 1}); return false\">attach a product<\/a> to your post.","tt_words":["sell","sell","sells","selling","sale","sold","give","gives","gave","given","for","free","rent","for","rent","rental","rents","rented","renting","give for free","giving for free","gives for free","for free","for rent","rent room","rent a room","renting a room","rents room","rents a room","renting room"]}],["postpone","Timer",{"lang":{"profile_choose_timer":"Posting time","profile_wall_postpone_at":"at","wall_publication_now":"Now","wall_post_timer_reset":"Clear","export_to_twitter":"Export to Twitter","export_to_facebook":"Export to Facebook","friends_only":"Friends only","wall_post_access_all":"Public post","profile_wall_postpone_btn":"Schedule"},"date":1610014874,"postpone_item_hidden":false}]],"share":{"timehash":"1610011274_35b4abc47e8c7f2b86","allow_custom_photo":true,"allow_edit_title":true,"allow_edit_url":true,"max_title_len":100},"upload":null,"upload_video":null,"check_comments":true,"reply_names":{"145557981":["Vladislav","Vladislav, "],"_":false,"287787009":["Anton","Anton, "],"488120144":["Lia","Lia, "],"40931506":["Mikhail","Mikhail, "]},"wall_type":"full","view_hash":"7dd2e01987e079a593","replies_page_count":20}, preload = [71,60,"",[]];
 cur.lang = extend(cur.lang || {}, {
   dont_attach: 'Remove attachment',
   wall_n_replies: ["","%s comment","%s comments"],

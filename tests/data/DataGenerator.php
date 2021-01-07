@@ -6,7 +6,7 @@ require_once ROOTDIR . '/vendor/autoload.php';
 
 use d7sd6u\VKPostsExtractorParser\Extractor as Parser;
 
-use KubAT\PhpSimple\HtmlDomParser;
+use DiDom\Document;
 
 if(!isset($argv[1])) {
 	die("Please, provide source id\n");
@@ -56,10 +56,11 @@ $getDoms = function($urls, $context) use ($source) {
 
 		echo "Saved $url\n";
 
-		$dom = HtmlDomParser::str_get_html($str);
-		if($dom instanceof simple_html_dom\simple_html_dom) {
+		$str = iconv('windows-1251', 'utf-8//ignore', $str);
+		try {
+			$dom = new Document($str);
 			$doms[$url] = $dom;
-		} else {
+		} catch(\Exception $e) {
 			$doms[$url] = null;
 		}
 

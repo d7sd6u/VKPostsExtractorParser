@@ -18,7 +18,7 @@
         "rss": "https://github.com/d7sd6u/VKPostsExtractorParser/commits/master.atom"
     },
     "require": {
-        "kub-at/php-simple-html-dom-parser": "^1.9"
+        "imangazaliev/didom": "^1.16"
     },
     "autoload": {
         "files": [ "src/Extractor.php" ]

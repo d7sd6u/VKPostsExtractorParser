@@ -3,7 +3,7 @@ use PHPUnit\Framework\TestCase;
 
 use d7sd6u\VKPostsExtractorParser\Extractor as Parser;
 
-use KubAT\PhpSimple\HtmlDomParser;
+use DiDom\Document;
 
 final class SyntheticParserTest extends TestCase
 {
@@ -23,14 +23,15 @@ final class SyntheticParserTest extends TestCase
 					throw new \Exception('Failed to find pregenerated page');
 				}
 				$str = file_get_contents($foundPaths[0]);
+				
+				$str = iconv('windows-1251', 'utf-8//ignore', $str);
 
-				$dom = HtmlDomParser::str_get_html($str);
-				if($dom instanceof simple_html_dom\simple_html_dom) {
+				try {
+					$dom = new Document($str);
 					$doms[$url] = $dom;
-				} else {
+				} catch(\Exception $e) {
 					$doms[$url] = null;
 				}
-
 			}
 
 			return $doms;

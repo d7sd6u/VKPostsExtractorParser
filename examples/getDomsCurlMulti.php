@@ -1,6 +1,6 @@
 <?php
 
-use KubAT\PhpSimple\HtmlDomParser;
+use DiDom\Document;
 
 $getDoms = function($urls, $context) {
 	$doms = array();
@@ -35,14 +35,14 @@ $getDoms = function($urls, $context) {
 	foreach($handles as $url => $handle) {
 		$str = curl_multi_getcontent($handle);
 
+		$str = iconv('windows-1251', 'utf-8//ignore', $str);
 
-		$dom = HtmlDomParser::str_get_html($str);
-		if($dom instanceof simple_html_dom\simple_html_dom) {
+		try {
+			$dom = new Document($str);
 			$doms[$url] = $dom;
-		} else {
+		} catch(\Exception $e) {
 			$doms[$url] = null;
 		}
-
 
 		curl_multi_remove_handle($multiHandle, $handle);
 	}
