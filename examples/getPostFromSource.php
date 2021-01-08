@@ -14,7 +14,7 @@ $log = function($message) use (&$logs)  {
 
 $parser = new Parser($getDoms, $log);
 
-$posts = $parser->getPostsFromSource('habr');
+$posts = $parser->getPostsFromSource('durov');
 
 foreach($logs as $message) {
 	echo '<pre>';

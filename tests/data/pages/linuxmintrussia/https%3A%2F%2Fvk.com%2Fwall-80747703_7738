@@ -13,10 +13,51 @@
 
 <noscript><meta http-equiv="refresh" content="0; URL=/badbrowser.php"></noscript>
 
-<link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/common.65354639abb6e4b6b3f6.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/base.4205a0cdf368d40fab79.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/fonts_utf.3e49cba3b57d115e0fd0.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/fonts_cnt.2758ddb836f8883f0d1d.css" />
+<link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/common.65354639abb6e4b6b3f6.css" /><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/base.4205a0cdf368d40fab79.css" /><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/fonts_utf.3e49cba3b57d115e0fd0.css" /><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/fonts_cnt.2758ddb836f8883f0d1d.css" />
 
 <script type="text/javascript">
-
+(function() {
+var alertCont;
+function trackOldBrowserEvent(event) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '/badbrowser_stat.php?act=track&event=' + event);
+  xhr.send();
+}
+function exposeGlobals() {
+  window.hideOldBrowser = function() {
+    alertCont.remove();
+    var date = new Date();
+    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+    var expiresDate = date.toGMTString();
+    var domain = window.locDomain;
+    document.cookie = 'remixoldbshown=1; expires=' + expiresDate + '; path=/' + (domain ? '; domain=.' + domain : '') + ';secure';
+    trackOldBrowserEvent('hideAlert');
+  }
+}
+function checkOldBrowser() {
+  if(!document.body) {
+    setTimeout(checkOldBrowser, 100);
+    return;
+  }
+  try {
+    if ((true || !('noModule' in HTMLScriptElement.prototype)) && !false) {
+      exposeGlobals();
+      var alert = '<div class="OldBrowser__container" style="width:960px;">  For speed and stability when using VK, install <a href="/badbrowser.php?source=old_browser_alert" target="_blank">one of these browsers</a>.  <span class="OldBrowser__close" aria-label="Close"  role="button" onclick="hideOldBrowser();"></span></div>';
+      alertCont = document.createElement('div');
+      alertCont.className = 'OldBrowser';
+      alertCont.id = 'old_browser_wrap';
+      alertCont.innerHTML = alert;
+      document.body.appendChild(alertCont);
+      trackOldBrowserEvent('showAlert');
+    } else {
+      if (browserVersion < lastVersions[browserName] - 1) {
+        trackOldBrowserEvent('badBrowser' + (lastVersions[browserName] - browserVersion));
+      }
+    }
+  } catch(e) {}
+}
+setTimeout(checkOldBrowser, 0);
+})();
 var vk = {
   ads_rotate_interval: 120000,
   al: parseInt('3') || 4,
@@ -26,27 +67,27 @@ var vk = {
   host: 'vk.com',
   loginDomain: 'https://login.vk.com/',
   lang: 3,
-  statsMeta: {"platform":"web2","st":false,"time":1610011274,"hash":"vcgnSkQFQAXrO5KZAhmZLPU6sGKv90yh7SZ3o1W3IL8"},
+  statsMeta: {"platform":"web2","st":false,"time":1610093395,"hash":"aKXNdIIIh8KPhKGxK51WFQh8lvZK7FAExpIVKmGjVZL"},
   loaderNavSection: '',
   rtl: parseInt('') || 0,
   version: 143240,
   stDomains: 0,
-  stDomain: 'https://st.vk.com',
+  stDomain: 'https://st7-9.vk.com',
   navPostfix: "",
   wsTransport: 'https://stats.vk-portal.net',
   stExcludedMasks: ["loader_nav","lang","sw\/"],
   zero: false,
-  contlen: 141886,
+  contlen: 141563,
   loginscheme: 'https',
-  ip_h: '2cf696312f98840a08',
+  ip_h: '230f6c9fbd4e9200d9',
   navPrefix: '/',
   dt: parseInt('0') || 0,
   fs: parseInt('13') || 13,
-  ts: 1610011274,
+  ts: 1610093395,
   tz: 10800,
   pd: 0,
   vcost: 7,
-  time: [2021, 1, 7, 12, 21, 14],
+  time: [2021, 1, 8, 11, 9, 55],
   sampleUser: -1, spentLastSendTS: new Date().getTime(),
   a11y: 0,
   statusExportHash: '',
@@ -63,13 +104,13 @@ var vk = {
   },
 
   pr_tpl: "<div class=\"pr %cls%\" id=\"%id%\"><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><\/div>",
-  push_hash: '477b961d540bd28d83',
+  push_hash: 'f5e61f1e14bd4bf427',
 
   audioInlinePlayerTpl: "<div class=\"audio_inline_player _audio_inline_player no_select\">\n  <div class=\"audio_inline_player_right\">\n    <div class=\"audio_inline_player_volume\"><\/div>\n  <\/div>\n  <div class=\"audio_inline_player_left\">\n    <div class=\"audio_inline_player_progress\"><\/div>\n  <\/div>\n<\/div>",
 
-  pe: {"vk_apps_svg_qr":1,"upload.send_upload_stat":1,"push_notifier":1,"geminus_counter":1,"notify_new_events_box":1,"mini_apps_web_add_to_favorites":1,"mini_apps_web_add_to_menu":1,"mini_apps_m_web_new_stub_page":1,"mini_apps_web_catalog_enabled":1,"apps_edit_marusia_uploading_audio":1,"cookie_secure_default_true":1,"mvk_new_info_snackbar":1,"widgets_xdm_same_origin":1,"stickers_money_transfer_suggestions":1,"web2_story_box_enabled":1,"bridge_mobile_story_box_enabled":1,"gifts_stickers_preview_tooltips":1,"navigation_timespent":1,"mvk_mediascope_counter":1,"market_item_recommendations_view_log":1,"market_item_others_view_log":1,"web_stats_transport_story_view":1,"registration_item_stat":1,"mvk_lazy_static_reload":1,"notifications_view_new":1,"ads_market_autopromotion_bookmarks_stats":1,"mini_apps_web_call_api_form_data":1,"web_new_photo_editor":1,"web_new_photo_editor_crop":1,"web_photo_editor_hide_entrypoint":1,"web_stats_try_send":1,"stickers_catalog_reload_after_buy":1,"web_stats_send_on_events_limit":1,"stickers_web_new_ui":1,"ads_new_reports_web_tgb":1,"ads_autopromotion_web_cashback":1,"recognize_mock_turn_off":1,"photo_recognition_web":1,"aliexpress_app_links_with_partner_links":1,"ads_new_reports_web_histories":1,"ads_new_reports_mvk_histories":1,"audio_unauth_preview":1,"audio_unauth_preview_box":1,"ads_easy_promote_goods_new_create_api":1,"unauthorized_media_layer_box":1,"pinned_conversations":1,"messenger_empty_pinned_support":1},
+  pe: {"vk_apps_svg_qr":1,"upload.send_upload_stat":1,"push_notifier":1,"notify_new_events_box":1,"mini_apps_web_add_to_favorites":1,"mini_apps_web_add_to_menu":1,"mini_apps_m_web_new_stub_page":1,"mini_apps_web_catalog_enabled":1,"apps_edit_marusia_uploading_audio":1,"cookie_secure_default_true":1,"mvk_new_info_snackbar":1,"widgets_xdm_same_origin":1,"stickers_money_transfer_suggestions":1,"web2_story_box_enabled":1,"bridge_mobile_story_box_enabled":1,"gifts_stickers_preview_tooltips":1,"navigation_timespent":1,"mvk_mediascope_counter":1,"market_item_recommendations_view_log":1,"market_item_others_view_log":1,"web_stats_transport_story_view":1,"registration_item_stat":1,"mvk_lazy_static_reload":1,"notifications_view_new":1,"ads_market_autopromotion_bookmarks_stats":1,"mini_apps_web_call_api_form_data":1,"web_new_photo_editor":1,"web_new_photo_editor_crop":1,"web_photo_editor_hide_entrypoint":1,"web_stats_try_send":1,"stickers_catalog_reload_after_buy":1,"web_stats_send_on_events_limit":1,"stickers_web_new_ui":1,"ads_new_reports_web_tgb":1,"ads_autopromotion_web_cashback":1,"recognize_mock_turn_off":1,"photo_recognition_web":1,"aliexpress_app_links_with_partner_links":1,"ads_new_reports_web_histories":1,"ads_new_reports_mvk_histories":1,"audio_unauth_preview":1,"audio_unauth_preview_box":1,"ads_easy_promote_goods_new_create_api":1,"unauthorized_media_layer_box":1,"pinned_conversations":1,"messenger_empty_pinned_support":1},
   ex: [],
-  countryISO: 'LV',
+  countryISO: 'RU',
   apiConfigDomains: {
     apiDomain: 'api.vk.com',
     loginDomain: 'login.vk.com',
@@ -103,12 +144,12 @@ if (vk.al != 1 && ___htest.length && ___htest.substr(0, 1) == vk.navPrefix) {
 var StaticFiles = {
   'cmodules/web/common_web.js' : {v: '228'},
   'al/common.65354639abb6e4b6b3f6.css':{v:''},'common.css':{v:1},'al/base.4205a0cdf368d40fab79.css':{v:''},'base.css':{v:1},'al/fonts_utf.3e49cba3b57d115e0fd0.css':{v:''},'fonts_utf.css':{v:1},'al/fonts_cnt.2758ddb836f8883f0d1d.css':{v:''},'fonts_cnt.css':{v:1}
-  ,'cmodules/bundles/evbus.035f3d2e60c59ab7cd67.js':{v:'439c8b71aafdabfd59fa'},'cmodules/bundles/audioplayer.491a832342f0afee7d3a.js':{v:'5fad3511cb7cf6281fe0'},'cmodules/bundles/lottie.42c43ab3dd042ab8b845.js':{v:'4d0de2991b49d6fc43f9'},'cmodules/bundles/common.b3b0a4f967e2bee9f1b6.js':{v:'78de0b9f59c99b729470'},'cmodules/web/common_web.2df7fd38da98b00b5514.js':{v:'65bfd8efbbc84c780f76410a60e3e412'},'lang3_0.js': {v: 26833521},'cmodules/bundles/983f42e70b3e18d97715513130ff4d9c.71c87b47c4a67e3c5005.js':{v:'2e110c95af558361560b'},'cmodules/bundles/7ff0c31fd89ceca852f0cf5e2f61c8c8.f3895afa7a813888d3ff.js':{v:'2cb6e168c5cf439148ca'},'cmodules/bundles/c6f51c78d2a3f17f935b490330a9da66.d954fec92e6569491561.js':{v:'64bcfd2af49e9f37d2fc'},'cmodules/bundles/07ed5e94b188401a51c6fd9fb02f3537.eb008ee57715c2740cd8.js':{v:'e52d20ddaa10de61ae4e'},'cmodules/bundles/e1eb3733f1f626a37fd0d2e038b98573.25d68629c38a5491f36e.js':{v:'6f58b25c88e0fe5fca22'},'cmodules/bundles/3d69874b9b2a413d4c2d4df376b293a6.72e9ed78df3966fadec0.js':{v:'0f36ec6a3a27e10301f6'},'cmodules/web/page.4510ccb4bd79f4e85512.js':{v:'4bb45cd6b0a3f086321713d42161b8b9'},'page.js':{v:1},'al/page.56bb91688712df2434f2.css':{v:''},'page.css':{v:1},'al/post.2dda6ccdfe124838da95.css':{v:''},'post.css':{v:1},'cmodules/web/wall.637f597ef2a966a8a7e6.js':{v:'763ecf5252473298a26da770b2d80b6e'},'cmodules/web/wall.js':{v:1},'al/wall.edb54d6715a22c7b838f.css':{v:''},'wall.css':{v:1},'wide_dd.js':{v:31},'al/wide_dd.6bcece6deceba34f76ce.css':{v:''},'wide_dd.css':{v:1},'cmodules/web/pagination.8b08dc00fb1afaf0254f.js':{v:'baf98316575a0e697896fc5e094d1bff'},'cmodules/web/pagination.js':{v:1},'cmodules/bundles/palette.60c089afa6c6b372e5a4.js':{v:'21ca4767fe544e438ac9'},'cmodules/web/emoji.7212eb74d24e8ba746e6.js':{v:'6ba845ae8d0cc1a24bab7683231135c1'},'cmodules/web/emoji.js':{v:1},'al/ui_common.2df1b3d763cda2ddf2be.css':{v:''},'ui_common.css':{v:1},'cmodules/bundles/71af34534be10395f7f6bb3e2039fd2e.60fb4d8eec439a51d0dd.js':{v:'4b78c3e89b3153e7d52b'},'cmodules/web/ui_common.295cb4b381b288bc2541.js':{v:'781a55540caa25d5876f28f277a99d48'},'ui_common.js':{v:1},'cmodules/web/index.fbd4c4b841a4db094d6c.js':{v:'01e2c1f76c87df6d78d5818926a8d45d'},'cmodules/web/index.js':{v:1},'al/index.3c618ab599f4d3cc7018.css':{v:''},'index.css':{v:1},'cmodules/web/join.e921fc188b681339c66b.js':{v:'846548871aea5427cbca51a1617c513c'},'cmodules/web/join.js':{v:1},'al/join.83e186add06e5809c014.css':{v:''},'join.css':{v:1},'ui_controls.js':{v:189},'ui_controls.6d887d252cd181f2be7f.css':{v:''},'ui_controls.css':{v:1},'al/cookies_policy.65640d039de9486c509c.css':{v:''},'cookies_policy.css':{v:1},'cmodules/web/css_types.7072f2e6f601aa8875bd.js':{v:'4482715c18abe6253e59'},'cmodules/web/css_types.js':{v:1},'cmodules/web/unauthorized.1b39cf821f40540e1b14.js':{v:'cdb42bcd49ae0641df8d9abe8be72cc5'},'cmodules/web/unauthorized.js':{v:1},'cmodules/web/jobs_devtools_notification.fae58dff8a0e29571e95.js':{v:'ec2b9b83c1f4451ac8e342e9fadf55b4'},'cmodules/web/jobs_devtools_notification.js':{v:1},'cmodules/web/page_layout.367c725c1efd150f692b.js':{v:'70f9bc332b8a77da1870f3276c88ffc6'},'cmodules/web/page_layout.js':{v:1},'cmodules/bundles/87e53d18c97a21833435b4d03c8ffead.71abec828712e3c2fe34.js':{v:'118df2fa244ad28f118d'},'cmodules/web/likes.4fffe19303c964e5da61.js':{v:'3f9d781529ab52daee462bd1632b91d9'},'cmodules/web/likes.js':{v:1},'cmodules/bundles/vendors.d8be6de74e8d64f67187.js':{v:'d54e61451335845931b5'},'cmodules/web/grip.f50231034e8b05f2ddab.js':{v:'1acaa759fc8db37488004c1229bfefde'},'cmodules/web/grip.js':{v:1}
+  ,'cmodules/bundles/evbus.035f3d2e60c59ab7cd67.js':{v:'439c8b71aafdabfd59fa'},'cmodules/bundles/audioplayer.491a832342f0afee7d3a.js':{v:'5fad3511cb7cf6281fe0'},'cmodules/bundles/lottie.42c43ab3dd042ab8b845.js':{v:'4d0de2991b49d6fc43f9'},'cmodules/bundles/common.b3b0a4f967e2bee9f1b6.js':{v:'78de0b9f59c99b729470'},'cmodules/web/common_web.2df7fd38da98b00b5514.js':{v:'65bfd8efbbc84c780f76410a60e3e412'},'lang3_0.js': {v: 26834889},'cmodules/bundles/983f42e70b3e18d97715513130ff4d9c.71c87b47c4a67e3c5005.js':{v:'2e110c95af558361560b'},'cmodules/bundles/7ff0c31fd89ceca852f0cf5e2f61c8c8.f3895afa7a813888d3ff.js':{v:'2cb6e168c5cf439148ca'},'cmodules/bundles/c6f51c78d2a3f17f935b490330a9da66.d954fec92e6569491561.js':{v:'64bcfd2af49e9f37d2fc'},'cmodules/bundles/07ed5e94b188401a51c6fd9fb02f3537.eb008ee57715c2740cd8.js':{v:'e52d20ddaa10de61ae4e'},'cmodules/bundles/e1eb3733f1f626a37fd0d2e038b98573.25d68629c38a5491f36e.js':{v:'6f58b25c88e0fe5fca22'},'cmodules/bundles/3d69874b9b2a413d4c2d4df376b293a6.72e9ed78df3966fadec0.js':{v:'0f36ec6a3a27e10301f6'},'cmodules/web/page.4510ccb4bd79f4e85512.js':{v:'4bb45cd6b0a3f086321713d42161b8b9'},'page.js':{v:1},'al/page.56bb91688712df2434f2.css':{v:''},'page.css':{v:1},'al/post.2dda6ccdfe124838da95.css':{v:''},'post.css':{v:1},'cmodules/web/wall.637f597ef2a966a8a7e6.js':{v:'763ecf5252473298a26da770b2d80b6e'},'cmodules/web/wall.js':{v:1},'al/wall.edb54d6715a22c7b838f.css':{v:''},'wall.css':{v:1},'wide_dd.js':{v:31},'al/wide_dd.6bcece6deceba34f76ce.css':{v:''},'wide_dd.css':{v:1},'cmodules/web/pagination.8b08dc00fb1afaf0254f.js':{v:'baf98316575a0e697896fc5e094d1bff'},'cmodules/web/pagination.js':{v:1},'cmodules/bundles/palette.60c089afa6c6b372e5a4.js':{v:'21ca4767fe544e438ac9'},'cmodules/web/emoji.7212eb74d24e8ba746e6.js':{v:'6ba845ae8d0cc1a24bab7683231135c1'},'cmodules/web/emoji.js':{v:1},'al/ui_common.2df1b3d763cda2ddf2be.css':{v:''},'ui_common.css':{v:1},'cmodules/bundles/71af34534be10395f7f6bb3e2039fd2e.60fb4d8eec439a51d0dd.js':{v:'4b78c3e89b3153e7d52b'},'cmodules/web/ui_common.295cb4b381b288bc2541.js':{v:'781a55540caa25d5876f28f277a99d48'},'ui_common.js':{v:1},'cmodules/web/index.fbd4c4b841a4db094d6c.js':{v:'01e2c1f76c87df6d78d5818926a8d45d'},'cmodules/web/index.js':{v:1},'al/index.3c618ab599f4d3cc7018.css':{v:''},'index.css':{v:1},'cmodules/web/join.e921fc188b681339c66b.js':{v:'846548871aea5427cbca51a1617c513c'},'cmodules/web/join.js':{v:1},'al/join.83e186add06e5809c014.css':{v:''},'join.css':{v:1},'ui_controls.js':{v:189},'ui_controls.6d887d252cd181f2be7f.css':{v:''},'ui_controls.css':{v:1},'cmodules/web/css_types.7072f2e6f601aa8875bd.js':{v:'4482715c18abe6253e59'},'cmodules/web/css_types.js':{v:1},'cmodules/web/unauthorized.1b39cf821f40540e1b14.js':{v:'cdb42bcd49ae0641df8d9abe8be72cc5'},'cmodules/web/unauthorized.js':{v:1},'cmodules/web/jobs_devtools_notification.fae58dff8a0e29571e95.js':{v:'ec2b9b83c1f4451ac8e342e9fadf55b4'},'cmodules/web/jobs_devtools_notification.js':{v:1},'cmodules/web/page_layout.367c725c1efd150f692b.js':{v:'70f9bc332b8a77da1870f3276c88ffc6'},'cmodules/web/page_layout.js':{v:1},'cmodules/bundles/87e53d18c97a21833435b4d03c8ffead.71abec828712e3c2fe34.js':{v:'118df2fa244ad28f118d'},'cmodules/web/likes.4fffe19303c964e5da61.js':{v:'3f9d781529ab52daee462bd1632b91d9'},'cmodules/web/likes.js':{v:1},'cmodules/bundles/vendors.d8be6de74e8d64f67187.js':{v:'d54e61451335845931b5'},'cmodules/web/grip.f50231034e8b05f2ddab.js':{v:'1acaa759fc8db37488004c1229bfefde'},'cmodules/web/grip.js':{v:1}
 }
 var abp;
 </script>
 
-<meta property="og:title" content="Wall posts "/><meta property="og:site_name" content="VK"/><meta property="og:description" content="Linux Mint 19.1 «Tessa» Beta доступен для загрузки Стали доступны ISO-образы операционной системы Linux Mint 19.1 «Tessa» Beta. Новая версия включает в себя множество системных улучшений, а также новый стильный макет рабочего стола"/><meta property="og:image" content="http://sun9-32.userapi.com/c850724/v850724288/59435/mSsoyXXfYZY.jpg"/><meta property="og:image:secure_url" content="https://sun9-32.userapi.com/c850724/v850724288/59435/mSsoyXXfYZY.jpg"/><meta property="og:image:width" content="604"/><meta property="og:image:height" content="403"/><meta property="og:url" content="https://vk.com/wall-80747703_7738"/><meta property="og:type" content="website"/><script type="text/javascript" src="/js/loader_nav2188141052_3.js"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/evbus.035f3d2e60c59ab7cd67.js?439c8b71aafdabfd59fa"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/audioplayer.491a832342f0afee7d3a.js?5fad3511cb7cf6281fe0"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/lottie.42c43ab3dd042ab8b845.js?4d0de2991b49d6fc43f9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/common.b3b0a4f967e2bee9f1b6.js?78de0b9f59c99b729470"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/common_web.2df7fd38da98b00b5514.js?65bfd8efbbc84c780f76410a60e3e412"></script><script type="text/javascript" src="/js/lang3_0.js?26833521"></script><script type="text/javascript" src="/js/lib/px.js?ch=1"></script><script type="text/javascript" src="/js/lib/px.js?ch=2"></script><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.vk.com/wall-80747703_7738" /><link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/wall-80747703_7738" /><meta name="google-site-verification" content="CNjLCRpSR2sryzCC4NQKKCL5WnvmBTaag2J_UlTyYeQ" /><meta name="yandex-verification" content="798f8402854bea07" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/983f42e70b3e18d97715513130ff4d9c.71c87b47c4a67e3c5005.js?2e110c95af558361560b"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/7ff0c31fd89ceca852f0cf5e2f61c8c8.f3895afa7a813888d3ff.js?2cb6e168c5cf439148ca"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/c6f51c78d2a3f17f935b490330a9da66.d954fec92e6569491561.js?64bcfd2af49e9f37d2fc"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/07ed5e94b188401a51c6fd9fb02f3537.eb008ee57715c2740cd8.js?e52d20ddaa10de61ae4e"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/e1eb3733f1f626a37fd0d2e038b98573.25d68629c38a5491f36e.js?6f58b25c88e0fe5fca22"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/3d69874b9b2a413d4c2d4df376b293a6.72e9ed78df3966fadec0.js?0f36ec6a3a27e10301f6"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/page.4510ccb4bd79f4e85512.js?4bb45cd6b0a3f086321713d42161b8b9"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/page.56bb91688712df2434f2.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/post.2dda6ccdfe124838da95.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/wall.637f597ef2a966a8a7e6.js?763ecf5252473298a26da770b2d80b6e"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/wall.edb54d6715a22c7b838f.css" /><script type="text/javascript" src="https://st.vk.com/js/al/wide_dd.js?31"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/wide_dd.6bcece6deceba34f76ce.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/pagination.8b08dc00fb1afaf0254f.js?baf98316575a0e697896fc5e094d1bff"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/palette.60c089afa6c6b372e5a4.js?21ca4767fe544e438ac9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/emoji.7212eb74d24e8ba746e6.js?6ba845ae8d0cc1a24bab7683231135c1"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/ui_common.2df1b3d763cda2ddf2be.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/71af34534be10395f7f6bb3e2039fd2e.60fb4d8eec439a51d0dd.js?4b78c3e89b3153e7d52b"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/ui_common.295cb4b381b288bc2541.js?781a55540caa25d5876f28f277a99d48"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/index.fbd4c4b841a4db094d6c.js?01e2c1f76c87df6d78d5818926a8d45d"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/index.3c618ab599f4d3cc7018.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/join.e921fc188b681339c66b.js?846548871aea5427cbca51a1617c513c"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/join.83e186add06e5809c014.css" /><script type="text/javascript" src="https://st.vk.com/js/lib/ui_controls.js?189"></script><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/ui_controls.6d887d252cd181f2be7f.css" /><link type="text/css" rel="stylesheet" href="https://st.vk.com/css/al/cookies_policy.65640d039de9486c509c.css" /><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/css_types.7072f2e6f601aa8875bd.js?4482715c18abe6253e59"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/unauthorized.1b39cf821f40540e1b14.js?cdb42bcd49ae0641df8d9abe8be72cc5"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/jobs_devtools_notification.fae58dff8a0e29571e95.js?ec2b9b83c1f4451ac8e342e9fadf55b4"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/page_layout.367c725c1efd150f692b.js?70f9bc332b8a77da1870f3276c88ffc6"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/87e53d18c97a21833435b4d03c8ffead.71abec828712e3c2fe34.js?118df2fa244ad28f118d"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/likes.4fffe19303c964e5da61.js?3f9d781529ab52daee462bd1632b91d9"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/bundles/vendors.d8be6de74e8d64f67187.js?d54e61451335845931b5"></script><script type="text/javascript" src="https://st.vk.com/js/cmodules/web/grip.f50231034e8b05f2ddab.js?1acaa759fc8db37488004c1229bfefde"></script>
+<meta property="og:title" content="Wall posts "/><meta property="og:site_name" content="VK"/><meta property="og:description" content="Linux Mint 19.1 «Tessa» Beta доступен для загрузки Стали доступны ISO-образы операционной системы Linux Mint 19.1 «Tessa» Beta. Новая версия включает в себя множество системных улучшений, а также новый стильный макет рабочего стола"/><meta property="og:image" content="http://sun9-32.userapi.com/c850724/v850724288/59435/mSsoyXXfYZY.jpg"/><meta property="og:image:secure_url" content="https://sun9-32.userapi.com/c850724/v850724288/59435/mSsoyXXfYZY.jpg"/><meta property="og:image:width" content="604"/><meta property="og:image:height" content="403"/><meta property="og:url" content="https://vk.com/wall-80747703_7738"/><meta property="og:type" content="website"/><script type="text/javascript" src="/js/loader_nav2188141052_3.js"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/evbus.035f3d2e60c59ab7cd67.js?439c8b71aafdabfd59fa"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/audioplayer.491a832342f0afee7d3a.js?5fad3511cb7cf6281fe0"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/lottie.42c43ab3dd042ab8b845.js?4d0de2991b49d6fc43f9"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/common.b3b0a4f967e2bee9f1b6.js?78de0b9f59c99b729470"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/common_web.2df7fd38da98b00b5514.js?65bfd8efbbc84c780f76410a60e3e412"></script><script type="text/javascript" src="/js/lang3_0.js?26834889"></script><script type="text/javascript" src="/js/lib/px.js?ch=1"></script><script type="text/javascript" src="/js/lib/px.js?ch=2"></script><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.vk.com/wall-80747703_7738" /><link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/wall-80747703_7738" /><meta name="google-site-verification" content="CNjLCRpSR2sryzCC4NQKKCL5WnvmBTaag2J_UlTyYeQ" /><meta name="yandex-verification" content="798f8402854bea07" /><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/983f42e70b3e18d97715513130ff4d9c.71c87b47c4a67e3c5005.js?2e110c95af558361560b"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/7ff0c31fd89ceca852f0cf5e2f61c8c8.f3895afa7a813888d3ff.js?2cb6e168c5cf439148ca"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/c6f51c78d2a3f17f935b490330a9da66.d954fec92e6569491561.js?64bcfd2af49e9f37d2fc"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/07ed5e94b188401a51c6fd9fb02f3537.eb008ee57715c2740cd8.js?e52d20ddaa10de61ae4e"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/e1eb3733f1f626a37fd0d2e038b98573.25d68629c38a5491f36e.js?6f58b25c88e0fe5fca22"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/3d69874b9b2a413d4c2d4df376b293a6.72e9ed78df3966fadec0.js?0f36ec6a3a27e10301f6"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/page.4510ccb4bd79f4e85512.js?4bb45cd6b0a3f086321713d42161b8b9"></script><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/page.56bb91688712df2434f2.css" /><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/post.2dda6ccdfe124838da95.css" /><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/wall.637f597ef2a966a8a7e6.js?763ecf5252473298a26da770b2d80b6e"></script><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/wall.edb54d6715a22c7b838f.css" /><script type="text/javascript" src="https://st7-9.vk.com/js/al/wide_dd.js?31"></script><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/wide_dd.6bcece6deceba34f76ce.css" /><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/pagination.8b08dc00fb1afaf0254f.js?baf98316575a0e697896fc5e094d1bff"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/palette.60c089afa6c6b372e5a4.js?21ca4767fe544e438ac9"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/emoji.7212eb74d24e8ba746e6.js?6ba845ae8d0cc1a24bab7683231135c1"></script><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/ui_common.2df1b3d763cda2ddf2be.css" /><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/71af34534be10395f7f6bb3e2039fd2e.60fb4d8eec439a51d0dd.js?4b78c3e89b3153e7d52b"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/ui_common.295cb4b381b288bc2541.js?781a55540caa25d5876f28f277a99d48"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/index.fbd4c4b841a4db094d6c.js?01e2c1f76c87df6d78d5818926a8d45d"></script><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/index.3c618ab599f4d3cc7018.css" /><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/join.e921fc188b681339c66b.js?846548871aea5427cbca51a1617c513c"></script><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/al/join.83e186add06e5809c014.css" /><script type="text/javascript" src="https://st7-9.vk.com/js/lib/ui_controls.js?189"></script><link type="text/css" rel="stylesheet" href="https://st7-9.vk.com/css/ui_controls.6d887d252cd181f2be7f.css" /><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/css_types.7072f2e6f601aa8875bd.js?4482715c18abe6253e59"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/unauthorized.1b39cf821f40540e1b14.js?cdb42bcd49ae0641df8d9abe8be72cc5"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/jobs_devtools_notification.fae58dff8a0e29571e95.js?ec2b9b83c1f4451ac8e342e9fadf55b4"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/page_layout.367c725c1efd150f692b.js?70f9bc332b8a77da1870f3276c88ffc6"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/87e53d18c97a21833435b4d03c8ffead.71abec828712e3c2fe34.js?118df2fa244ad28f118d"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/likes.4fffe19303c964e5da61.js?3f9d781529ab52daee462bd1632b91d9"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/bundles/vendors.d8be6de74e8d64f67187.js?d54e61451335845931b5"></script><script type="text/javascript" src="https://st7-9.vk.com/js/cmodules/web/grip.f50231034e8b05f2ddab.js?1acaa759fc8db37488004c1229bfefde"></script>
 
 </head>
 
@@ -170,8 +211,8 @@ var abp;
     <input type="hidden" name="captcha_sid" id="quick_captcha_sid" value="" />
     <input type="hidden" name="captcha_key" id="quick_captcha_key" value="" />
     <input type="hidden" name="_origin" value="https://vk.com" />
-    <input type="hidden" name="ip_h" value="2cf696312f98840a08" />
-    <input type="hidden" name="lg_h" value="7eb0d58ee395930a30" />
+    <input type="hidden" name="ip_h" value="230f6c9fbd4e9200d9" />
+    <input type="hidden" name="lg_h" value="1803410427e7098847" />
     <input type="hidden" name="ul" id="quick_login_ul" value="" />
     <div class="label">Phone or email</div>
     <div class="labeled"><input type="text" name="email" class="dark" id="quick_email" /></div>
@@ -196,7 +237,7 @@ var abp;
     <div class="narrow_column" id="narrow_column">
       <div class="page_block ui_rmenu ui_rmenu_pr" id="wall_rmenu" role="list">
   <a class="ui_ownblock clear_fix" href="/linuxmintrussia" onclick="return nav.go(this, event, {back: true});">
-  <img class="ui_ownblock_img" src="https://sun9-45.userapi.com/impg/c857324/v857324001/8e3f2/p7oLynZcVco.jpg?size=50x0&quality=96&crop=411,233,201,201&sign=82886b96fe3c0abc5501290d5761c787&ava=1" alt="Linux Mint Russia"/>
+  <img class="ui_ownblock_img" src="https://sun7-8.userapi.com/impg/c857324/v857324001/8e3f2/p7oLynZcVco.jpg?size=50x0&quality=96&crop=411,233,201,201&sign=82886b96fe3c0abc5501290d5761c787&ava=1" alt="Linux Mint Russia"/>
   <div class="ui_ownblock_info">
     <div class="ui_ownblock_label">Linux Mint Russia</div>
     <div class="ui_ownblock_hint">back to page</div>
@@ -219,12 +260,12 @@ var abp;
       <div class="wall_wrap clear_fix">
   <div class="big_wall">
     <div class="wall_module">
-      <div id="page_wall_posts" class="mark_top_verified "><div id="post-80747703_7738" class="_post post page_block post--with-likes closed_comments deep_active" data-post-id="-80747703_7738" onclick="wall.postClick('-80747703_7738', event);"  data-replies-offset = "0" data-replies-limit = "23" post_view_hash="7dd2e01987e079a593">
+      <div id="page_wall_posts" class="mark_top_verified "><div id="post-80747703_7738" class="_post post page_block post--with-likes closed_comments deep_active" data-post-id="-80747703_7738" onclick="wall.postClick('-80747703_7738', event);"  data-replies-offset = "0" data-replies-limit = "23" post_view_hash="eb538b1679e021b3bc">
   <div class="_post_content">
     
     <div class="post_header">
       <a class="post_image" href="/linuxmintrussia">
-        <img src="https://sun9-45.userapi.com/impg/c857324/v857324001/8e3f2/p7oLynZcVco.jpg?size=50x0&quality=96&crop=411,233,201,201&sign=82886b96fe3c0abc5501290d5761c787&ava=1" data-post-id="-80747703_7738" data-post-click-type="post_owner_img" width="50" height="50" class="post_img" alt="Linux Mint Russia" />
+        <img src="https://sun7-8.userapi.com/impg/c857324/v857324001/8e3f2/p7oLynZcVco.jpg?size=50x0&quality=96&crop=411,233,201,201&sign=82886b96fe3c0abc5501290d5761c787&ava=1" data-post-id="-80747703_7738" data-post-click-type="post_owner_img" width="50" height="50" class="post_img" alt="Linux Mint Russia" />
         <span class="blind_label">.</span>
       </a>
       
@@ -233,7 +274,7 @@ var abp;
         <div class="post_date"><a  class="post_link"  href="/wall-80747703_7738"  onclick="return showWiki({w: 'wall-80747703_7738'}, false, event);" ><span class="rel_date">5 Dec 2018</span></a><a onmouseover="wall.postTooltip(this, '-80747703_7738', {i: '-1', dark: 1, className: ' post_source_tt'})" href="/app2274003" class="wall_post_source_icon wall_post_source_android"></a></div>
         <div class="ui_actions_menu_wrap _ui_menu_wrap " onmouseover="uiActionsMenu.show(this);" onmouseout="uiActionsMenu.hide(this);">
   <div class="ui_actions_menu_icons" tabindex="0" aria-label="Actions" role="button" onclick="uiActionsMenu.keyToggle(this, event);"> <span class="blind_label">Actions</span> </div>
-  <div class="ui_actions_menu _ui_menu " ><a class="ui_actions_menu_item" onclick="wall.markAsSpam(this, '-80747703_7738', '78ca93be6e1379fe2a');" tabindex="0" role="link">Report</a></div>
+  <div class="ui_actions_menu _ui_menu " ><a class="ui_actions_menu_item" onclick="wall.markAsSpam(this, '-80747703_7738', '5772d369917b729a81');" tabindex="0" role="link">Report</a></div>
 </div>
       </div>
     </div>
@@ -243,7 +284,7 @@ var abp;
         <div class="like_wrap _like_wall-80747703_7738 ">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall-80747703_7738', '3c13bc7fffb289a170');" onmouseover="Likes.showLikes(this, 'wall-80747703_7738', {})" data-count="61" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall-80747703_7738', '78abb2d1a4d756d22e');" onmouseover="Likes.showLikes(this, 'wall-80747703_7738', {})" data-count="61" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">61</div>
@@ -273,7 +314,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/varales">
-      <img src="https://sun9-35.userapi.com/impg/xmUrlgiq6f5PZCIXEbIpY_gz0okKIlf0EJHiyw/ABc00ME87SE.jpg?size=50x0&quality=96&crop=1,66,852,852&sign=0ff2b0e1a3771f1e6dc09f8b2b53291b&ava=1" width="40" height="40" class="reply_img" alt="Alexander Varnikov" />
+      <img src="https://sun7-8.userapi.com/impg/xmUrlgiq6f5PZCIXEbIpY_gz0okKIlf0EJHiyw/ABc00ME87SE.jpg?size=50x0&quality=96&crop=1,66,852,852&sign=0ff2b0e1a3771f1e6dc09f8b2b53291b&ava=1" width="40" height="40" class="reply_img" alt="Alexander Varnikov" />
     </a>
     <div class="reply_content" >
       
@@ -285,7 +326,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7739  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7739', 'f714bca3ec7afa92cd');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7739', {})" data-count="10" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7739', '48a19dce4b830e1b5f');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7739', {})" data-count="10" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">10</div>
@@ -326,7 +367,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/monochrome_me">
-      <img src="https://sun9-31.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
+      <img src="https://sun7-6.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
     </a>
     <div class="reply_content" >
       
@@ -338,7 +379,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7741  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7741', '27491238b2336f0b27');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7741', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7741', 'a6ce633f169093d2ee');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7741', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -362,7 +403,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id6745056">
-      <img src="https://sun9-67.userapi.com/impg/uN9-ZtiVbyDOZZ5RD_BzkIUVi1hdUKhHgu3rng/LN8qTxeV-Qs.jpg?size=50x0&quality=96&crop=0,31,853,853&sign=f5fe15bc8d9c4a87cfd32c8aff62a912&ava=1" width="40" height="40" class="reply_img" alt="Evgeny Gorenkov" />
+      <img src="https://sun7-8.userapi.com/impg/uN9-ZtiVbyDOZZ5RD_BzkIUVi1hdUKhHgu3rng/LN8qTxeV-Qs.jpg?size=50x0&quality=96&crop=0,31,853,853&sign=f5fe15bc8d9c4a87cfd32c8aff62a912&ava=1" width="40" height="40" class="reply_img" alt="Evgeny Gorenkov" />
     </a>
     <div class="reply_content" >
       
@@ -374,7 +415,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7742  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7742', 'e347e1038aa0b1ccc3');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7742', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7742', 'd4bef70df251f73921');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7742', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -398,7 +439,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/monochrome_me">
-      <img src="https://sun9-31.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
+      <img src="https://sun7-6.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
     </a>
     <div class="reply_content" >
       
@@ -410,7 +451,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7748  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7748', '182778d49d5d12910c');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7748', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7748', '1436bc306420560550');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7748', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -434,7 +475,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id6745056">
-      <img src="https://sun9-67.userapi.com/impg/uN9-ZtiVbyDOZZ5RD_BzkIUVi1hdUKhHgu3rng/LN8qTxeV-Qs.jpg?size=50x0&quality=96&crop=0,31,853,853&sign=f5fe15bc8d9c4a87cfd32c8aff62a912&ava=1" width="40" height="40" class="reply_img" alt="Evgeny Gorenkov" />
+      <img src="https://sun7-8.userapi.com/impg/uN9-ZtiVbyDOZZ5RD_BzkIUVi1hdUKhHgu3rng/LN8qTxeV-Qs.jpg?size=50x0&quality=96&crop=0,31,853,853&sign=f5fe15bc8d9c4a87cfd32c8aff62a912&ava=1" width="40" height="40" class="reply_img" alt="Evgeny Gorenkov" />
     </a>
     <div class="reply_content" >
       
@@ -446,7 +487,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7750  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7750', '2c34736505be3c49ca');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7750', {})" data-count="3" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7750', 'd55f96889fd3cf6dc4');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7750', {})" data-count="3" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">3</div>
@@ -470,7 +511,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/monochrome_me">
-      <img src="https://sun9-31.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
+      <img src="https://sun7-6.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
     </a>
     <div class="reply_content" >
       
@@ -482,7 +523,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7754  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7754', '8a4e4ae6a543a27310');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7754', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7754', '1d0c66f56bfb0df4e7');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7754', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -506,7 +547,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id6745056">
-      <img src="https://sun9-67.userapi.com/impg/uN9-ZtiVbyDOZZ5RD_BzkIUVi1hdUKhHgu3rng/LN8qTxeV-Qs.jpg?size=50x0&quality=96&crop=0,31,853,853&sign=f5fe15bc8d9c4a87cfd32c8aff62a912&ava=1" width="40" height="40" class="reply_img" alt="Evgeny Gorenkov" />
+      <img src="https://sun7-8.userapi.com/impg/uN9-ZtiVbyDOZZ5RD_BzkIUVi1hdUKhHgu3rng/LN8qTxeV-Qs.jpg?size=50x0&quality=96&crop=0,31,853,853&sign=f5fe15bc8d9c4a87cfd32c8aff62a912&ava=1" width="40" height="40" class="reply_img" alt="Evgeny Gorenkov" />
     </a>
     <div class="reply_content" >
       
@@ -518,7 +559,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7755  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7755', 'f5e663df16a922d8d0');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7755', {})" data-count="2" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7755', '027423d316ebe4f346');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7755', {})" data-count="2" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">2</div>
@@ -542,7 +583,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/lapin_av">
-      <img src="https://sun9-9.userapi.com/impg/nz-jZfX1d4qFfiLHUiRz-VP7p9iC9GTHfqb-5w/oaENzufaa_c.jpg?size=50x0&quality=96&crop=457,443,1270,1270&sign=2912c116e5c60f3281da61de950db79d&ava=1" width="40" height="40" class="reply_img" alt="Andrey Lapin" />
+      <img src="https://sun7-9.userapi.com/impg/nz-jZfX1d4qFfiLHUiRz-VP7p9iC9GTHfqb-5w/oaENzufaa_c.jpg?size=50x0&quality=96&crop=457,443,1270,1270&sign=2912c116e5c60f3281da61de950db79d&ava=1" width="40" height="40" class="reply_img" alt="Andrey Lapin" />
     </a>
     <div class="reply_content" >
       
@@ -556,7 +597,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7756  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7756', '52e4e291fec5a699ef');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7756', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7756', '5ff77aaf0b76a82a13');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7756', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -580,7 +621,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/monochrome_me">
-      <img src="https://sun9-31.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
+      <img src="https://sun7-6.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
     </a>
     <div class="reply_content" >
       
@@ -592,7 +633,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7791  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7791', 'a4535cf9f88b97cd30');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7791', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7791', 'f6e321c04aea8a97fb');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7791', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -616,7 +657,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/sy5tem">
-      <img src="https://sun9-14.userapi.com/impf/c638521/v638521722/d732/308Er_U9s50.jpg?size=50x0&quality=96&crop=0,0,600,600&sign=6065624383d4f5676c232387ba897cf6&ava=1" width="40" height="40" class="reply_img" alt="Alexey Volkodav" />
+      <img src="https://sun7-8.userapi.com/impf/c638521/v638521722/d732/308Er_U9s50.jpg?size=50x0&quality=96&crop=0,0,600,600&sign=6065624383d4f5676c232387ba897cf6&ava=1" width="40" height="40" class="reply_img" alt="Alexey Volkodav" />
     </a>
     <div class="reply_content" >
       
@@ -628,7 +669,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7793  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7793', 'e2de8325b695e192e8');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7793', {})" data-count="1" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7793', 'ac1bc0880234d18679');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7793', {})" data-count="1" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">1</div>
@@ -652,7 +693,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/maxsever">
-      <img src="https://sun9-27.userapi.com/impf/c845520/v845520143/20a11e/3VQUptei6Xs.jpg?size=50x0&quality=96&crop=301,150,1270,1270&sign=94a82f9d46ad122cec30843b7373af1e&ava=1" width="40" height="40" class="reply_img" alt="Maxim Sergeev" />
+      <img src="https://sun7-8.userapi.com/impf/c845520/v845520143/20a11e/3VQUptei6Xs.jpg?size=50x0&quality=96&crop=301,150,1270,1270&sign=94a82f9d46ad122cec30843b7373af1e&ava=1" width="40" height="40" class="reply_img" alt="Maxim Sergeev" />
     </a>
     <div class="reply_content" >
       
@@ -664,7 +705,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7869  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7869', 'bb88d13252b12b4ce1');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7869', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7869', '8e36bd357a5a2838e0');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7869', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -688,7 +729,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/monochrome_me">
-      <img src="https://sun9-31.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
+      <img src="https://sun7-6.userapi.com/impg/IEITZeSio17Kt3aqVBXRQIwMj3CHcljme2zH-w/c-5MI9A6jGk.jpg?size=50x0&quality=96&crop=0,185,893,893&sign=65e49d0db49c06051a2ebcd41fc7bbab&ava=1" width="40" height="40" class="reply_img" alt="Maximilian Eisenman" />
     </a>
     <div class="reply_content" >
       
@@ -700,7 +741,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7871  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7871', '475d41fb77528fe077');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7871', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7871', '26e78feb21ca535da2');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7871', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -724,7 +765,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/maxsever">
-      <img src="https://sun9-27.userapi.com/impf/c845520/v845520143/20a11e/3VQUptei6Xs.jpg?size=50x0&quality=96&crop=301,150,1270,1270&sign=94a82f9d46ad122cec30843b7373af1e&ava=1" width="40" height="40" class="reply_img" alt="Maxim Sergeev" />
+      <img src="https://sun7-8.userapi.com/impf/c845520/v845520143/20a11e/3VQUptei6Xs.jpg?size=50x0&quality=96&crop=301,150,1270,1270&sign=94a82f9d46ad122cec30843b7373af1e&ava=1" width="40" height="40" class="reply_img" alt="Maxim Sergeev" />
     </a>
     <div class="reply_content" >
       
@@ -736,7 +777,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7887  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7887', '58064c6b3ec2e76c3e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7887', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7887', 'b4e74ee1edf26df18c');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7887', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -762,7 +803,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id1382698">
-      <img src="https://sun9-20.userapi.com/c846019/v846019067/1514d4/HG2q8_1H0hA.jpg?ava=1" width="40" height="40" class="reply_img" alt="Sergey Oschepkov" />
+      <img src="https://sun7-9.userapi.com/c846019/v846019067/1514d4/HG2q8_1H0hA.jpg?ava=1" width="40" height="40" class="reply_img" alt="Sergey Oschepkov" />
     </a>
     <div class="reply_content" >
       
@@ -776,7 +817,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7743  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7743', 'bb93edafed6a97d385');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7743', {})" data-count="1" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7743', 'bb5636ac0e8c7e2808');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7743', {})" data-count="1" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">1</div>
@@ -805,7 +846,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/m.prechesny">
-      <img src="https://sun9-51.userapi.com/impf/c854028/v854028473/d74da/2tGWIwNd2Zg.jpg?size=50x0&quality=96&crop=1103,1,1277,1277&sign=9f647216e8ca3ca448e02edda0fdcccf&ava=1" width="40" height="40" class="reply_img" alt="Mark Prechesny" />
+      <img src="https://sun7-9.userapi.com/impf/c854028/v854028473/d74da/2tGWIwNd2Zg.jpg?size=50x0&quality=96&crop=1103,1,1277,1277&sign=9f647216e8ca3ca448e02edda0fdcccf&ava=1" width="40" height="40" class="reply_img" alt="Mark Prechesny" />
     </a>
     <div class="reply_content" >
       
@@ -817,7 +858,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7744  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7744', '9bac187fe20d07b3c0');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7744', {})" data-count="1" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7744', '0dde464e7dc39d534e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7744', {})" data-count="1" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">1</div>
@@ -841,7 +882,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id1382698">
-      <img src="https://sun9-20.userapi.com/c846019/v846019067/1514d4/HG2q8_1H0hA.jpg?ava=1" width="40" height="40" class="reply_img" alt="Sergey Oschepkov" />
+      <img src="https://sun7-9.userapi.com/c846019/v846019067/1514d4/HG2q8_1H0hA.jpg?ava=1" width="40" height="40" class="reply_img" alt="Sergey Oschepkov" />
     </a>
     <div class="reply_content" >
       
@@ -855,7 +896,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7745  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7745', '8a71c72e93c15d365c');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7745', {})" data-count="1" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7745', '279b888d9d35a72134');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7745', {})" data-count="1" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">1</div>
@@ -879,7 +920,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/m.prechesny">
-      <img src="https://sun9-51.userapi.com/impf/c854028/v854028473/d74da/2tGWIwNd2Zg.jpg?size=50x0&quality=96&crop=1103,1,1277,1277&sign=9f647216e8ca3ca448e02edda0fdcccf&ava=1" width="40" height="40" class="reply_img" alt="Mark Prechesny" />
+      <img src="https://sun7-9.userapi.com/impf/c854028/v854028473/d74da/2tGWIwNd2Zg.jpg?size=50x0&quality=96&crop=1103,1,1277,1277&sign=9f647216e8ca3ca448e02edda0fdcccf&ava=1" width="40" height="40" class="reply_img" alt="Mark Prechesny" />
     </a>
     <div class="reply_content" >
       
@@ -891,7 +932,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7746  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7746', '59ffc41196aabc71f5');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7746', {})" data-count="3" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7746', '672b1054c6e2555306');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7746', {})" data-count="3" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">3</div>
@@ -915,7 +956,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id1382698">
-      <img src="https://sun9-20.userapi.com/c846019/v846019067/1514d4/HG2q8_1H0hA.jpg?ava=1" width="40" height="40" class="reply_img" alt="Sergey Oschepkov" />
+      <img src="https://sun7-9.userapi.com/c846019/v846019067/1514d4/HG2q8_1H0hA.jpg?ava=1" width="40" height="40" class="reply_img" alt="Sergey Oschepkov" />
     </a>
     <div class="reply_content" >
       
@@ -929,7 +970,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7747  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7747', '2f1522a98504c28ce4');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7747', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7747', '34a77329e6ff186c9e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7747', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -967,7 +1008,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7749  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7749', '27aecc775a25e43d5d');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7749', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7749', 'd5bba74c6dd4188880');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7749', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -991,7 +1032,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/m.r.freeman">
-      <img src="https://sun9-18.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
+      <img src="https://sun7-8.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
     </a>
     <div class="reply_content" >
       
@@ -1005,7 +1046,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7752  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7752', '008264efa83d837991');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7752', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7752', 'fede0ba9acb73e9ed4');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7752', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1029,7 +1070,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/lapin_av">
-      <img src="https://sun9-9.userapi.com/impg/nz-jZfX1d4qFfiLHUiRz-VP7p9iC9GTHfqb-5w/oaENzufaa_c.jpg?size=50x0&quality=96&crop=457,443,1270,1270&sign=2912c116e5c60f3281da61de950db79d&ava=1" width="40" height="40" class="reply_img" alt="Andrey Lapin" />
+      <img src="https://sun7-9.userapi.com/impg/nz-jZfX1d4qFfiLHUiRz-VP7p9iC9GTHfqb-5w/oaENzufaa_c.jpg?size=50x0&quality=96&crop=457,443,1270,1270&sign=2912c116e5c60f3281da61de950db79d&ava=1" width="40" height="40" class="reply_img" alt="Andrey Lapin" />
     </a>
     <div class="reply_content" >
       
@@ -1043,7 +1084,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7753  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7753', '5dbf2ab44bf950103a');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7753', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7753', '6bbf2d1cfe9ece81ed');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7753', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1067,7 +1108,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id255739132">
-      <img src="https://sun9-47.userapi.com/impf/c627226/v627226132/720/VNkfuc5kzu0.jpg?size=50x0&quality=96&crop=205,46,872,872&sign=6e4c070d723c6960a46319b34c1728a3&ava=1" width="40" height="40" class="reply_img" alt="Sergey Gromov" />
+      <img src="https://sun7-9.userapi.com/impf/c627226/v627226132/720/VNkfuc5kzu0.jpg?size=50x0&quality=96&crop=205,46,872,872&sign=6e4c070d723c6960a46319b34c1728a3&ava=1" width="40" height="40" class="reply_img" alt="Sergey Gromov" />
     </a>
     <div class="reply_content" >
       
@@ -1081,7 +1122,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7757  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7757', '6e02e2869125cb07b4');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7757', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7757', '8c4d8d3b956b2af81e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7757', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1105,7 +1146,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/b.asad">
-      <img src="https://sun9-46.userapi.com/impf/c849036/v849036773/17cfea/EREoinzpnwI.jpg?size=50x0&quality=96&crop=70,24,316,316&sign=ac642d8439e748b2f8ef6cadff5acb6d&ava=1" width="40" height="40" class="reply_img" alt="Vasily Danilchenko" />
+      <img src="https://sun7-9.userapi.com/impf/c849036/v849036773/17cfea/EREoinzpnwI.jpg?size=50x0&quality=96&crop=70,24,316,316&sign=ac642d8439e748b2f8ef6cadff5acb6d&ava=1" width="40" height="40" class="reply_img" alt="Vasily Danilchenko" />
     </a>
     <div class="reply_content" >
       
@@ -1117,7 +1158,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7759  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7759', '80e2f684d7b72e33ac');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7759', {})" data-count="2" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7759', '7c1ea6c334185c06b4');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7759', {})" data-count="2" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">2</div>
@@ -1144,7 +1185,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/gvalt77">
-      <img src="https://sun9-35.userapi.com/impf/c853424/v853424735/eeb31/02sm0ZGSzxY.jpg?size=50x0&quality=96&crop=391,39,480,480&sign=7bc4ff43ca3532a4c8305094ec393923&ava=1" width="40" height="40" class="reply_img" alt="Oleg Bard" />
+      <img src="https://sun7-6.userapi.com/impf/c853424/v853424735/eeb31/02sm0ZGSzxY.jpg?size=50x0&quality=96&crop=391,39,480,480&sign=7bc4ff43ca3532a4c8305094ec393923&ava=1" width="40" height="40" class="reply_img" alt="Oleg Bard" />
     </a>
     <div class="reply_content" >
       
@@ -1156,7 +1197,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7761  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7761', '9a27c507c4b03b0ede');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7761', {})" data-count="3" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7761', 'fd7617d94fd6527a79');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7761', {})" data-count="3" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">3</div>
@@ -1182,7 +1223,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/gvalt77">
-      <img src="https://sun9-35.userapi.com/impf/c853424/v853424735/eeb31/02sm0ZGSzxY.jpg?size=50x0&quality=96&crop=391,39,480,480&sign=7bc4ff43ca3532a4c8305094ec393923&ava=1" width="40" height="40" class="reply_img" alt="Oleg Bard" />
+      <img src="https://sun7-6.userapi.com/impf/c853424/v853424735/eeb31/02sm0ZGSzxY.jpg?size=50x0&quality=96&crop=391,39,480,480&sign=7bc4ff43ca3532a4c8305094ec393923&ava=1" width="40" height="40" class="reply_img" alt="Oleg Bard" />
     </a>
     <div class="reply_content" >
       
@@ -1194,7 +1235,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7760  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7760', 'e4f777ae13a7ef2bc9');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7760', {})" data-count="1" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7760', '60b5a2d2bd1376f5eb');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7760', {})" data-count="1" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">1</div>
@@ -1233,7 +1274,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7938  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7938', '2078f83592e7094cc8');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7938', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7938', '2bac8f503b395d5e35');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7938', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1259,7 +1300,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/cem4ik5">
-      <img src="https://sun9-23.userapi.com/impg/nhyuB0Q072HDzy0oDzTkr7PyGHxCkOyXdTuq8A/5841k3A4svI.jpg?size=50x0&quality=96&crop=56,309,551,551&sign=2c144c6c60072bc41291faf8274be702&ava=1" width="40" height="40" class="reply_img" alt="Semen Druzhinin" />
+      <img src="https://sun7-7.userapi.com/impg/nhyuB0Q072HDzy0oDzTkr7PyGHxCkOyXdTuq8A/5841k3A4svI.jpg?size=50x0&quality=96&crop=56,309,551,551&sign=2c144c6c60072bc41291faf8274be702&ava=1" width="40" height="40" class="reply_img" alt="Semen Druzhinin" />
     </a>
     <div class="reply_content" >
       
@@ -1273,7 +1314,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7762  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7762', '49ea850f33c91efb57');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7762', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7762', 'e9d488c6e54018b6e9');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7762', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1297,7 +1338,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/vip_geka">
-      <img src="https://sun9-6.userapi.com/impf/c858220/v858220094/5c01c/i59F-Gk1ZaQ.jpg?size=50x0&quality=96&crop=0,0,639,639&sign=35225ec02acc24c9ef6cd036b83a7690&ava=1" width="40" height="40" class="reply_img" alt="Evgeny Medyankin" />
+      <img src="https://sun7-6.userapi.com/impf/c858220/v858220094/5c01c/i59F-Gk1ZaQ.jpg?size=50x0&quality=96&crop=0,0,639,639&sign=35225ec02acc24c9ef6cd036b83a7690&ava=1" width="40" height="40" class="reply_img" alt="Evgeny Medyankin" />
     </a>
     <div class="reply_content" >
       
@@ -1309,7 +1350,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7763  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7763', 'af4802d35ac74c0b98');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7763', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7763', '48bba3a8e482ddd233');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7763', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1338,7 +1379,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/m.r.freeman">
-      <img src="https://sun9-18.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
+      <img src="https://sun7-8.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
     </a>
     <div class="reply_content" >
       
@@ -1352,7 +1393,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7765  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7765', '17097b8cb0a7b5d599');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7765', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7765', '65a069b9d5f6cc8fa1');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7765', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1376,7 +1417,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/iternov">
-      <img src="https://sun9-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
+      <img src="https://sun7-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
     </a>
     <div class="reply_content" >
       
@@ -1395,7 +1436,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7775  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7775', '4b8f8370e377430862');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7775', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7775', '0c0238ba8133f7d2b7');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7775', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1419,7 +1460,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/m.r.freeman">
-      <img src="https://sun9-18.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
+      <img src="https://sun7-8.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
     </a>
     <div class="reply_content" >
       
@@ -1433,7 +1474,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7776  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7776', '0eab30e33972c48006');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7776', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7776', 'd97febdd316f95ec37');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7776', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1457,7 +1498,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/iternov">
-      <img src="https://sun9-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
+      <img src="https://sun7-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
     </a>
     <div class="reply_content" >
       
@@ -1469,7 +1510,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7777  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7777', '98983807f6226d474e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7777', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7777', 'ac6fee53863d6e4d62');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7777', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1493,7 +1534,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/m.r.freeman">
-      <img src="https://sun9-18.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
+      <img src="https://sun7-8.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
     </a>
     <div class="reply_content" >
       
@@ -1507,7 +1548,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7778  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7778', 'a586463232be7283c7');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7778', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7778', '2132dd11d00e0b0a12');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7778', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1531,7 +1572,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/iternov">
-      <img src="https://sun9-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
+      <img src="https://sun7-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
     </a>
     <div class="reply_content" >
       
@@ -1543,7 +1584,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7779  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7779', 'cbeb77e58f83a6c383');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7779', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7779', 'ee164f083fcbf51c46');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7779', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1567,7 +1608,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/m.r.freeman">
-      <img src="https://sun9-18.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
+      <img src="https://sun7-8.userapi.com/impg/LcWjl1KKNYGyT49FL74D6Hjw2ar2OUIvSiZtQg/e6yMkmWOs44.jpg?size=50x0&quality=96&crop=93,0,314,314&sign=75599e137ac24f42cfa2bdfa62e0e311&ava=1" width="40" height="40" class="reply_img" alt="Fedya Fedorov" />
     </a>
     <div class="reply_content" >
       
@@ -1581,7 +1622,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7780  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7780', '1048c2dd47f90a534e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7780', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7780', 'be481b8bf991b66523');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7780', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1605,7 +1646,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/iternov">
-      <img src="https://sun9-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
+      <img src="https://sun7-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
     </a>
     <div class="reply_content" >
       
@@ -1617,7 +1658,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7781  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7781', 'c212b3890dafdd0a09');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7781', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7781', 'f0fb5d4e51f37b0756');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7781', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1655,7 +1696,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7764  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7764', '35e07f54472a36cf51');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7764', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7764', 'ae935f7d9e065e2bac');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7764', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1679,7 +1720,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/alex.manukhin">
-      <img src="https://sun9-28.userapi.com/impg/bzuLKJqsH1DGVbpM07BXGy12E4pG0tFmxtx-8Q/4FI19MSNL7M.jpg?size=50x0&quality=96&crop=278,75,586,586&sign=7b6c8615a9163816f2edaf1b6297feac&ava=1" width="40" height="40" class="reply_img" alt="Alexey Manukhin" />
+      <img src="https://sun7-7.userapi.com/impg/bzuLKJqsH1DGVbpM07BXGy12E4pG0tFmxtx-8Q/4FI19MSNL7M.jpg?size=50x0&quality=96&crop=278,75,586,586&sign=7b6c8615a9163816f2edaf1b6297feac&ava=1" width="40" height="40" class="reply_img" alt="Alexey Manukhin" />
     </a>
     <div class="reply_content" >
       
@@ -1693,7 +1734,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7766  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7766', '9ed2585073b074cb2a');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7766', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7766', 'd0759c90443ae7b753');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7766', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1722,7 +1763,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/tequilapapi">
-      <img src="https://sun9-3.userapi.com/impf/c837230/v837230622/70c97/ApjRiw6UDNc.jpg?size=50x0&quality=96&crop=0,83,499,499&sign=054c989e86c9f6c23349d210a5b62fe0&ava=1" width="40" height="40" class="reply_img" alt="Daniil Kushnir" />
+      <img src="https://sun7-8.userapi.com/impf/c837230/v837230622/70c97/ApjRiw6UDNc.jpg?size=50x0&quality=96&crop=0,83,499,499&sign=054c989e86c9f6c23349d210a5b62fe0&ava=1" width="40" height="40" class="reply_img" alt="Daniil Kushnir" />
     </a>
     <div class="reply_content" >
       
@@ -1734,7 +1775,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7788  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7788', '42bf16a6816a47019b');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7788', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7788', 'd21bb90bd421a8b5b7');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7788', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1758,7 +1799,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/alex.manukhin">
-      <img src="https://sun9-28.userapi.com/impg/bzuLKJqsH1DGVbpM07BXGy12E4pG0tFmxtx-8Q/4FI19MSNL7M.jpg?size=50x0&quality=96&crop=278,75,586,586&sign=7b6c8615a9163816f2edaf1b6297feac&ava=1" width="40" height="40" class="reply_img" alt="Alexey Manukhin" />
+      <img src="https://sun7-7.userapi.com/impg/bzuLKJqsH1DGVbpM07BXGy12E4pG0tFmxtx-8Q/4FI19MSNL7M.jpg?size=50x0&quality=96&crop=278,75,586,586&sign=7b6c8615a9163816f2edaf1b6297feac&ava=1" width="40" height="40" class="reply_img" alt="Alexey Manukhin" />
     </a>
     <div class="reply_content" >
       
@@ -1772,7 +1813,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7876  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7876', '8fbd5e13b652cbd280');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7876', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7876', '260baa89939b18659b');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7876', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1798,7 +1839,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/marauder2000">
-      <img src="https://sun9-56.userapi.com/impf/c824604/v824604121/17fe3e/X690yfkQGsE.jpg?size=50x0&quality=96&crop=215,96,526,526&sign=ab50dccce7558c425ec31e621f7e1f10&ava=1" width="40" height="40" class="reply_img" alt="Mikhail Mochalkin" />
+      <img src="https://sun7-8.userapi.com/impf/c824604/v824604121/17fe3e/X690yfkQGsE.jpg?size=50x0&quality=96&crop=215,96,526,526&sign=ab50dccce7558c425ec31e621f7e1f10&ava=1" width="40" height="40" class="reply_img" alt="Mikhail Mochalkin" />
     </a>
     <div class="reply_content" >
       
@@ -1810,7 +1851,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7767  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7767', '42b9c3361bf4d1ff37');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7767', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7767', '46258541762517bee0');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7767', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1834,7 +1875,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/alex_fedothov">
-      <img src="/images/deactivated_50.png?ava=1" width="40" height="40" class="reply_img" alt="Alexander Fedotov" />
+      <img src="https://sun7-8.userapi.com/impg/9bQ9orD_wp36aLY3XAqMarj7VfiS5C_W8bbjAA/LiDsrrLuj0Q.jpg?size=50x0&quality=96&crop=0,0,405,405&sign=30dde41f82582663e14716ca7deb07ce&ava=1" width="40" height="40" class="reply_img" alt="Alexander Fedotov" />
     </a>
     <div class="reply_content" >
       
@@ -1846,7 +1887,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7769  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7769', 'fd1626309014300f58');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7769', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7769', 'a5602406e17eea3441');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7769', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1882,7 +1923,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7771  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7771', '4ce3756b6452fc9319');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7771', {})" data-count="3" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7771', '2bd845768c2bf7d4a8');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7771', {})" data-count="3" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">3</div>
@@ -1906,7 +1947,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/iternov">
-      <img src="https://sun9-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
+      <img src="https://sun7-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
     </a>
     <div class="reply_content" >
       
@@ -1918,7 +1959,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7774  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7774', 'f455b50738d812108e');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7774', {})" data-count="2" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7774', 'cea4ecdb5cee87b8eb');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7774', {})" data-count="2" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">2</div>
@@ -1942,7 +1983,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/iternov">
-      <img src="https://sun9-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
+      <img src="https://sun7-8.userapi.com/impf/c622630/v622630590/21fd/HDnVssUVmT4.jpg?size=50x0&quality=96&crop=77,77,384,384&sign=93231b017bae7e251e938529862896d0&ava=1" width="40" height="40" class="reply_img" alt="Ivan Ternov" />
     </a>
     <div class="reply_content" >
       
@@ -1961,7 +2002,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7782  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7782', 'fbe2823aa1b3d24ab0');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7782', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7782', 'cdcb2bd7d51824ca0c');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7782', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -1985,7 +2026,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id255739132">
-      <img src="https://sun9-47.userapi.com/impf/c627226/v627226132/720/VNkfuc5kzu0.jpg?size=50x0&quality=96&crop=205,46,872,872&sign=6e4c070d723c6960a46319b34c1728a3&ava=1" width="40" height="40" class="reply_img" alt="Sergey Gromov" />
+      <img src="https://sun7-9.userapi.com/impf/c627226/v627226132/720/VNkfuc5kzu0.jpg?size=50x0&quality=96&crop=205,46,872,872&sign=6e4c070d723c6960a46319b34c1728a3&ava=1" width="40" height="40" class="reply_img" alt="Sergey Gromov" />
     </a>
     <div class="reply_content" >
       
@@ -1999,7 +2040,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7784  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7784', '1bf6ae742641fdc0c1');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7784', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7784', 'e1747e64c8fbe6658c');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7784', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -2023,7 +2064,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/agricolla">
-      <img src="https://sun9-59.userapi.com/impg/c857332/v857332565/b6e69/sKdEu6tPSBo.jpg?size=50x0&quality=96&crop=62,62,341,341&sign=523f7e483dee4b4163d43c35ffc94e1e&ava=1" width="40" height="40" class="reply_img" alt="Yury Karasev" />
+      <img src="https://sun7-6.userapi.com/impg/c857332/v857332565/b6e69/sKdEu6tPSBo.jpg?size=50x0&quality=96&crop=62,62,341,341&sign=523f7e483dee4b4163d43c35ffc94e1e&ava=1" width="40" height="40" class="reply_img" alt="Yury Karasev" />
     </a>
     <div class="reply_content" >
       
@@ -2035,7 +2076,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7787  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7787', '4efe89dda396a70070');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7787', {})" data-count="1" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7787', '6ccd425bd27a3d93c7');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7787', {})" data-count="1" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">1</div>
@@ -2059,7 +2100,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/bannikov007">
-      <img src="https://sun9-27.userapi.com/impf/c854024/v854024219/8bf8c/dV6sRb7Uxeo.jpg?size=50x0&quality=96&crop=284,201,701,701&sign=b10d3f64aabcc83364d7bcd7bc24aa5c&ava=1" width="40" height="40" class="reply_img" alt="Ivan Bannikov" />
+      <img src="https://sun7-8.userapi.com/impf/c854024/v854024219/8bf8c/dV6sRb7Uxeo.jpg?size=50x0&quality=96&crop=284,201,701,701&sign=b10d3f64aabcc83364d7bcd7bc24aa5c&ava=1" width="40" height="40" class="reply_img" alt="Ivan Bannikov" />
     </a>
     <div class="reply_content" >
       
@@ -2071,7 +2112,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7790  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7790', '69d98efb240d598cb0');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7790', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7790', 'e77fc56e27bc279706');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7790', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -2107,7 +2148,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7842  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7842', '13ccdb93f4ca383aa9');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7842', {})" data-count="0" role="button" title="Like">
+      <a class="like_btn like _like empty"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7842', '81730fd012e243e999');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7842', {})" data-count="0" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count"></div>
@@ -2131,7 +2172,7 @@ var abp;
   <div class="reply_wrap _reply_content _post_content clear_fix">
     
     <a class="reply_image" href="/id188725180">
-      <img src="https://sun9-52.userapi.com/impg/c857428/v857428304/181f3c/WFPpEnM_tYQ.jpg?size=50x0&quality=96&crop=0,135,809,809&sign=d49ef456d9decdd767ebad0691dff28b&ava=1" width="40" height="40" class="reply_img" alt="Rodion Soshin" />
+      <img src="https://sun7-9.userapi.com/impg/c857428/v857428304/181f3c/WFPpEnM_tYQ.jpg?size=50x0&quality=96&crop=0,135,809,809&sign=d49ef456d9decdd767ebad0691dff28b&ava=1" width="40" height="40" class="reply_img" alt="Rodion Soshin" />
     </a>
     <div class="reply_content" >
       
@@ -2143,7 +2184,7 @@ var abp;
         <div class="like_wrap _like_wall_reply-80747703_7948  lite">
   <div class="like_cont ">
     <div class="like_btns">
-      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7948', 'ab9f3f49e1b12f2f29');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7948', {})" data-count="1" role="button" title="Like">
+      <a class="like_btn like _like"  onclick="Likes.toggle(this, event, 'wall_reply-80747703_7948', 'b744d3cac9124a552b');" onmouseover="Likes.showLikes(this, 'wall_reply-80747703_7948', {})" data-count="1" role="button" title="Like">
   <div class="like_button_icon"></div>
   <div class="like_button_label"></div>
   <div class="like_button_count">1</div>
@@ -2192,7 +2233,7 @@ var abp;
     <a class="bnav_a" href="/dev">Developers</a>
     <a class="bnav_a" href="/jobs" style="display: none;">Careers</a>
   </div>
-  <div class="footer_lang"><a class="footer_lang_link" onclick="Language.changeLang(this, 3, 'd8ce218d64a92388d2')">English</a><a class="footer_lang_link" onclick="Language.changeLang(this, 0, 'd8ce218d64a92388d2')">Русский</a><a class="footer_lang_link" onclick="Language.changeLang(this, 1, 'd8ce218d64a92388d2')">Українська</a><a class="footer_lang_link" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">all languages »</a></div>
+  <div class="footer_lang"><a class="footer_lang_link" onclick="Language.changeLang(this, 3, '6be648d7136ca588c1')">English</a><a class="footer_lang_link" onclick="Language.changeLang(this, 0, '6be648d7136ca588c1')">Русский</a><a class="footer_lang_link" onclick="Language.changeLang(this, 1, '6be648d7136ca588c1')">Українська</a><a class="footer_lang_link" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">all languages »</a></div>
 </div>
 
 <div class="footer_bench clear">
@@ -2201,13 +2242,7 @@ var abp;
 
     <div class="clear"></div>
   </div>
-</div></div><div id="cookies_policy_wrap" class="cookies_policy_wrap">
-  <div class="cookies_policy" style="width:960px;">
-    <span class="cookies_policy_icon"></span>
-    <span class="cookies_policy_text">By continuing to browse, you consent to our use of cookies. You can read our Cookie Policy <a href="/privacy/cookies">here</a>.</span>
-    <span class="cookies_policy_close" onclick="hideCookiesPolicy();"></span>
-  </div>
-</div><noscript><div style="position:absolute;left:-10000px;">
+</div></div><noscript><div style="position:absolute;left:-10000px;">
 <img src="//top-fwz1.mail.ru/counter?id=2579437;js=na" style="border:0;" height="1" width="1" />
 </div></noscript></div>
   <div class="progress" id="global_prg"></div>
@@ -2333,8 +2368,8 @@ window.cur = window.cur || {};
 cur['deepRepliesActive']=true;
 
 window.cur = window.cur || {};
-cur['emojiHintsSendLogHash']="81794a08fd02d3f83d";
-Promise.resolve().then(() => {window.PageBottomBanners && window.PageBottomBanners.initUnauthBanner({"type":"unauth","hide_url":"","hide_params":[],"group_id":0,"icon_type":"vk_logo","header":"Read only the most interesting posts<br>","text":"We&#39;ll find posts according to your preferences and create a whole feed from them. Just log in to check it out.","feed_sections":[],"sections":[],"can_close":false,"actions":[{"type":"sign_up","mode":"overlay_primary","label":"Sign up","url":"","params":[]},{"type":"sign_in","mode":"overlay_outline","label":"Log in","url":"","params":[]}],"is_animated":true,"background_type":"green","html":"<div class=\"PageBottomBanner PageBottomBanner--unauth PageBottomBanner--animated PageBottomBanner--bg-green\">\n   <div class=\"PageBottomBanner__in\">\n      <div class=\"PageBottomBanner__icon PageBottomBanner__icon--vk_logo\"><\/div>\n      <div class=\"PageBottomBanner__content\">\n         <div class=\"PageBottomBanner__header\">Read only the most interesting posts<br><\/div>\n         <div class=\"PageBottomBanner__text\">We&#39;ll find posts according to your preferences and create a whole feed from them. Just log in to check it out.<\/div>\n      <\/div>\n      <div class=\"PageBottomBanner__actions\">\n  <button class=\"PageBottomBanner__actionBtn Button Button--size-m Button--overlay_primary\" data-action=\"{&quot;type&quot;:&quot;sign_up&quot;,&quot;mode&quot;:&quot;overlay_primary&quot;,&quot;label&quot;:&quot;Sign up&quot;,&quot;url&quot;:&quot;&quot;,&quot;params&quot;:[]}\">Sign up<\/button><button class=\"PageBottomBanner__actionBtn Button Button--size-m Button--overlay_outline\" data-action=\"{&quot;type&quot;:&quot;sign_in&quot;,&quot;mode&quot;:&quot;overlay_outline&quot;,&quot;label&quot;:&quot;Log in&quot;,&quot;url&quot;:&quot;&quot;,&quot;params&quot;:[]}\">Log in<\/button>\n<\/div>\n      \n   <\/div>\n<\/div>"})}).catch((error) => { error.name = "[unsafeJs inject_unauth_banner] " + error.name; throw error });Promise.resolve().then(() => {Unauthorized.initScrollMoreBox({"action":"more","html":"<div class=\"UnauthActionBox UnauthActionBox--rich\">\n  <div class=\"UnauthActionBox__in\">\n    \n\n    <div class=\"UnauthActionBox__hero\">\n      <div class=\"UnauthActionBox__ownerPhoto\" style=\"background-image: url(https:\/\/sun9-45.userapi.com\/impg\/c857324\/v857324001\/8e3f2\/p7oLynZcVco.jpg?size=200x0&quality=96&crop=411,233,201,201&sign=40e5eecf5cea462b9f2ec84df5300a09&ava=1)\"><\/div>\n      <div class=\"UnauthActionBox__header\">Sign up to see Linux Mint Russia<\/div>\n      <div class=\"UnauthActionBox__text\">Read and comment on posts you like from this community<\/div>\n    <\/div>\n\n    <div class=\"UnauthActionBox__aside\">\n      <div class=\"JoinForm\">\n  <div class=\"JoinForm__in\">\n    <div class=\"JoinForm__top\">\n      <div class=\"JoinForm__header\">Sign up for VK<\/div>\n      <div class=\"JoinForm__subheader\"><\/div>\n    <\/div>\n\n    <div class=\"JoinForm__error\"><\/div>\n\n    <div class=\"JoinForm__form\">\n      <div class=\"JoinForm__textInputRow\">\n        <input type=\"text\" class=\"JoinForm__textInput big_text\" name=\"first_name\" value=\"\" placeholder=\"Your first name\" \/>\n      <\/div>\n      <div class=\"JoinForm__textInputRow\">\n        <input type=\"text\" class=\"JoinForm__textInput big_text\" name=\"last_name\" value=\"\" placeholder=\"Your last name\" \/>\n      <\/div>\n\n      <div class=\"JoinForm__birthdate\">\n        <div class=\"JoinForm__label\">\n          Birthday\n          <span class=\"hint_icon\" data-title=\"&lt;b&gt;By providing your birthday&lt;\/b&gt;, your friends will be able to find you more easily and help us select interesting content to recommend to you.&lt;br&gt;You can edit your profile to manage who can view your birthday.\" onmouseover=\"showHint(this);\"><\/span>\n        <\/div>\n\n        <div class=\"JoinForm__birthdateIn\">\n          <div class=\"JoinForm__birthdateDay\">\n            <input type=\"text\" name=\"bday\" class=\"JoinForm__birthdateDayInput big_text\" \/>\n          <\/div>\n          <div class=\"JoinForm__birthdateMonth\">\n            <input type=\"text\" name=\"bmonth\" class=\"JoinForm__birthdateMonthInput big_text\" \/>\n          <\/div>\n          <div class=\"JoinForm__birthdateYear\">\n            <input type=\"text\" name=\"byear\" class=\"JoinForm__birthdateYearInput big_text\" \/>\n          <\/div>\n        <\/div>\n      <\/div>\n\n      <div class=\"JoinForm__sex \">\n        <div class=\"JoinForm__label\">Your gender<\/div>\n\n        <div class=\"JoinForm__sexIn\">\n          <div class=\"JoinForm__sexRadio radiobtn\" onclick=\"radiobtn(this, 1, 'join_form_sex');\">Female<\/div>\n          <div class=\"JoinForm__sexRadio radiobtn\" onclick=\"radiobtn(this, 2, 'join_form_sex');\">Male<\/div>\n        <\/div>\n      <\/div>\n\n      <button class=\"JoinForm__submitButton flat_button flat_button_positive button_wide button_big_text\">Continue registration<\/button>\n\n      <div class=\"JoinForm__facebookLogin FacebookLogin FacebookLogin--noNative\">\n        <div class=\"FacebookLogin__button fb-login-button\"\n          data-use-continue-as=\"true\"\n          data-width=\"264\"\n          data-max-rows=\"1\"\n          data-size=\"medium\"\n          data-button-type=\"continue_with\"\n          data-placeholder=\"Log in with Facebook\"\n        ><\/div>\n      <\/div>\n    <\/div>\n\n    <div class=\"JoinForm__footer\">\nAlready have an account? <a class=\"JoinForm__signIn\">Log in<\/a>&nbsp;&middot;&nbsp;<a href=\"#\" class=\"JoinForm__notNow\">Not now<\/a>\n<\/div>\n  <\/div>\n<\/div>\n\n    <\/div>\n  <\/div>\n<\/div>","withForm":true,"formOptions":{"from":"\/wall-80747703_7738","bdateMonths":[[0,"Month"],[1,"January"],[2,"February"],[3,"March"],[4,"April"],[5,"May"],[6,"June"],[7,"July"],[8,"August"],[9,"September"],[10,"October"],[11,"November"],[12,"December"]],"bdateYears":[[0,"Year"],[2005,"2005"],[2004,"2004"],[2003,"2003"],[2002,"2002"],[2001,"2001"],[2000,"2000"],[1999,"1999"],[1998,"1998"],[1997,"1997"],[1996,"1996"],[1995,"1995"],[1994,"1994"],[1993,"1993"],[1992,"1992"],[1991,"1991"],[1990,"1990"],[1989,"1989"],[1988,"1988"],[1987,"1987"],[1986,"1986"],[1985,"1985"],[1984,"1984"],[1983,"1983"],[1982,"1982"],[1981,"1981"],[1980,"1980"],[1979,"1979"],[1978,"1978"],[1977,"1977"],[1976,"1976"],[1975,"1975"],[1974,"1974"],[1973,"1973"],[1972,"1972"],[1971,"1971"],[1970,"1970"],[1969,"1969"],[1968,"1968"],[1967,"1967"],[1966,"1966"],[1965,"1965"],[1964,"1964"],[1963,"1963"],[1962,"1962"],[1961,"1961"],[1960,"1960"],[1959,"1959"],[1958,"1958"],[1957,"1957"],[1956,"1956"],[1955,"1955"],[1954,"1954"],[1953,"1953"],[1952,"1952"],[1951,"1951"],[1950,"1950"],[1949,"1949"],[1948,"1948"],[1947,"1947"],[1946,"1946"],[1945,"1945"],[1944,"1944"],[1943,"1943"],[1942,"1942"],[1941,"1941"],[1940,"1940"],[1939,"1939"],[1938,"1938"],[1937,"1937"],[1936,"1936"],[1935,"1935"],[1934,"1934"],[1933,"1933"],[1932,"1932"],[1931,"1931"],[1930,"1930"],[1929,"1929"],[1928,"1928"],[1927,"1927"],[1926,"1926"],[1925,"1925"],[1924,"1924"],[1923,"1923"],[1922,"1922"],[1921,"1921"],[1920,"1920"],[1919,"1919"],[1918,"1918"],[1917,"1917"],[1916,"1916"],[1915,"1915"],[1914,"1914"],[1913,"1913"],[1912,"1912"],[1911,"1911"],[1910,"1910"],[1909,"1909"],[1908,"1908"],[1907,"1907"],[1906,"1906"],[1905,"1905"],[1904,"1904"],[1903,"1903"],[1902,"1902"]],"fbApp":"128749580520227","fbState":"94b7cd9ef6244efe8a","fbLocale":"en_US"}})}).catch((error) => { error.name = "[unsafeJs init_scroll_more_box] " + error.name; throw error });var opts = {"owner_id":-80747703,"post_id":7738,"note_id":false,"post_raw":"-80747703_7738","note":false,"seen":[{"-80747703_7738":1}],"scroll":false,"start":0,"offset":40,"per_page":20,"count":51,"url":"\/wall-80747703_7738","params":false,"href":"\/wall-80747703_7738?offset=","max_post_len":280,"post_hash":"","rmedia_types":[["photo","Photo"],["video","Video"],["audio","Audio"],["doc","File"],["map","Map"],["graffiti","Graffiti"],["market","Product",{"tt_text":"Now you can <a onclick=\"showBox('al_market.php', {act: 'a_edit_item_box', attach: 1, from_wall: 1}); return false\">attach a product<\/a> to your post.","tt_words":["sell","sell","sells","selling","sale","sold","give","gives","gave","given","for","free","rent","for","rent","rental","rents","rented","renting","give for free","giving for free","gives for free","for free","for rent","rent room","rent a room","renting a room","rents room","rents a room","renting room"]}],["postpone","Timer",{"lang":{"profile_choose_timer":"Posting time","profile_wall_postpone_at":"at","wall_publication_now":"Now","wall_post_timer_reset":"Clear","export_to_twitter":"Export to Twitter","export_to_facebook":"Export to Facebook","friends_only":"Friends only","wall_post_access_all":"Public post","profile_wall_postpone_btn":"Schedule"},"date":1610014874,"postpone_item_hidden":false}]],"share":{"timehash":"1610011274_35b4abc47e8c7f2b86","allow_custom_photo":true,"allow_edit_title":true,"allow_edit_url":true,"max_title_len":100},"upload":null,"upload_video":null,"check_comments":true,"reply_names":{"13443686":["Alexander","Alexander, "],"_":false,"458131140":["Maximilian","Maximilian, "],"6745056":["Evgeny","Evgeny, "],"13451807":["Andrey","Andrey, "],"38131722":["Alexey","Alexey, "],"23078266":["Maxim","Maxim, "],"100":["VK Administration","VK Administration, "],"402418":["Mark","Mark, "],"1382698":["Sergey","Sergey, "],"275816200":["DELETED","DELETED, "],"199250383":["Fedya","Fedya, "],"255739132":["Sergey","Sergey, "],"84497234":["Oleg","Oleg, "],"335601557":["Vasily","Vasily, "],"160364629":["Alexey","Alexey, "],"426509329":["Semen","Semen, "],"138961590":["Ivan","Ivan, "],"22225664":["Evgeny","Evgeny, "],"318962347":["Vitaly","Vitaly, "],"55941622":["Daniil","Daniil, "],"6743990":["Alexey","Alexey, "],"72498440":["Mikhail","Mikhail, "],"518334164":["Alexander","Alexander, "],"439867349":["Alexander","Alexander, "],"139676622":["Yury","Yury, "],"50595946":["Ivan","Ivan, "],"472827560":["DELETED","DELETED, "],"188725180":["Rodion","Rodion, "]},"wall_type":"full","view_hash":"7dd2e01987e079a593","replies_page_count":20}, preload = [51,60,"",[]];
+cur['emojiHintsSendLogHash']="0fd35718bc9335073f";
+Promise.resolve().then(() => {window.PageBottomBanners && window.PageBottomBanners.initUnauthBanner({"type":"unauth","hide_url":"","hide_params":[],"group_id":0,"icon_type":"vk_logo","header":"Read only the most interesting posts<br>","text":"We&#39;ll find posts according to your preferences and create a whole feed from them. Just log in to check it out.","feed_sections":[],"sections":[],"can_close":false,"actions":[{"type":"sign_up","mode":"overlay_primary","label":"Sign up","url":"","params":[]},{"type":"sign_in","mode":"overlay_outline","label":"Log in","url":"","params":[]}],"is_animated":true,"background_type":"green","html":"<div class=\"PageBottomBanner PageBottomBanner--unauth PageBottomBanner--animated PageBottomBanner--bg-green\">\n   <div class=\"PageBottomBanner__in\">\n      <div class=\"PageBottomBanner__icon PageBottomBanner__icon--vk_logo\"><\/div>\n      <div class=\"PageBottomBanner__content\">\n         <div class=\"PageBottomBanner__header\">Read only the most interesting posts<br><\/div>\n         <div class=\"PageBottomBanner__text\">We&#39;ll find posts according to your preferences and create a whole feed from them. Just log in to check it out.<\/div>\n      <\/div>\n      <div class=\"PageBottomBanner__actions\">\n  <button class=\"PageBottomBanner__actionBtn Button Button--size-m Button--overlay_primary\" data-action=\"{&quot;type&quot;:&quot;sign_up&quot;,&quot;mode&quot;:&quot;overlay_primary&quot;,&quot;label&quot;:&quot;Sign up&quot;,&quot;url&quot;:&quot;&quot;,&quot;params&quot;:[]}\">Sign up<\/button><button class=\"PageBottomBanner__actionBtn Button Button--size-m Button--overlay_outline\" data-action=\"{&quot;type&quot;:&quot;sign_in&quot;,&quot;mode&quot;:&quot;overlay_outline&quot;,&quot;label&quot;:&quot;Log in&quot;,&quot;url&quot;:&quot;&quot;,&quot;params&quot;:[]}\">Log in<\/button>\n<\/div>\n      \n   <\/div>\n<\/div>"})}).catch((error) => { error.name = "[unsafeJs inject_unauth_banner] " + error.name; throw error });Promise.resolve().then(() => {Unauthorized.initScrollMoreBox({"action":"more","html":"<div class=\"UnauthActionBox UnauthActionBox--rich\">\n  <div class=\"UnauthActionBox__in\">\n    \n\n    <div class=\"UnauthActionBox__hero\">\n      <div class=\"UnauthActionBox__ownerPhoto\" style=\"background-image: url(https:\/\/sun7-8.userapi.com\/impg\/c857324\/v857324001\/8e3f2\/p7oLynZcVco.jpg?size=200x0&quality=96&crop=411,233,201,201&sign=40e5eecf5cea462b9f2ec84df5300a09&ava=1)\"><\/div>\n      <div class=\"UnauthActionBox__header\">Sign up to see Linux Mint Russia<\/div>\n      <div class=\"UnauthActionBox__text\">Read and comment on posts you like from this community<\/div>\n    <\/div>\n\n    <div class=\"UnauthActionBox__aside\">\n      <div class=\"JoinForm\">\n  <div class=\"JoinForm__in\">\n    <div class=\"JoinForm__top\">\n      <div class=\"JoinForm__header\">Sign up for VK<\/div>\n      <div class=\"JoinForm__subheader\"><\/div>\n    <\/div>\n\n    <div class=\"JoinForm__error\"><\/div>\n\n    <div class=\"JoinForm__form\">\n      <div class=\"JoinForm__textInputRow\">\n        <input type=\"text\" class=\"JoinForm__textInput big_text\" name=\"first_name\" value=\"\" placeholder=\"Your first name\" \/>\n      <\/div>\n      <div class=\"JoinForm__textInputRow\">\n        <input type=\"text\" class=\"JoinForm__textInput big_text\" name=\"last_name\" value=\"\" placeholder=\"Your last name\" \/>\n      <\/div>\n\n      <div class=\"JoinForm__birthdate\">\n        <div class=\"JoinForm__label\">\n          Birthday\n          <span class=\"hint_icon\" data-title=\"&lt;b&gt;By providing your birthday&lt;\/b&gt;, your friends will be able to find you more easily and help us select interesting content to recommend to you.&lt;br&gt;You can edit your profile to manage who can view your birthday.\" onmouseover=\"showHint(this);\"><\/span>\n        <\/div>\n\n        <div class=\"JoinForm__birthdateIn\">\n          <div class=\"JoinForm__birthdateDay\">\n            <input type=\"text\" name=\"bday\" class=\"JoinForm__birthdateDayInput big_text\" \/>\n          <\/div>\n          <div class=\"JoinForm__birthdateMonth\">\n            <input type=\"text\" name=\"bmonth\" class=\"JoinForm__birthdateMonthInput big_text\" \/>\n          <\/div>\n          <div class=\"JoinForm__birthdateYear\">\n            <input type=\"text\" name=\"byear\" class=\"JoinForm__birthdateYearInput big_text\" \/>\n          <\/div>\n        <\/div>\n      <\/div>\n\n      <div class=\"JoinForm__sex \">\n        <div class=\"JoinForm__label\">Your gender<\/div>\n\n        <div class=\"JoinForm__sexIn\">\n          <div class=\"JoinForm__sexRadio radiobtn\" onclick=\"radiobtn(this, 1, 'join_form_sex');\">Female<\/div>\n          <div class=\"JoinForm__sexRadio radiobtn\" onclick=\"radiobtn(this, 2, 'join_form_sex');\">Male<\/div>\n        <\/div>\n      <\/div>\n\n      <button class=\"JoinForm__submitButton flat_button flat_button_positive button_wide button_big_text\">Continue registration<\/button>\n\n      <div class=\"JoinForm__facebookLogin FacebookLogin FacebookLogin--noNative\">\n        <div class=\"FacebookLogin__button fb-login-button\"\n          data-use-continue-as=\"true\"\n          data-width=\"264\"\n          data-max-rows=\"1\"\n          data-size=\"medium\"\n          data-button-type=\"continue_with\"\n          data-placeholder=\"Log in with Facebook\"\n        ><\/div>\n      <\/div>\n    <\/div>\n\n    <div class=\"JoinForm__footer\">\nAlready have an account? <a class=\"JoinForm__signIn\">Log in<\/a>&nbsp;&middot;&nbsp;<a href=\"#\" class=\"JoinForm__notNow\">Not now<\/a>\n<\/div>\n  <\/div>\n<\/div>\n\n    <\/div>\n  <\/div>\n<\/div>","withForm":true,"formOptions":{"from":"\/wall-80747703_7738","bdateMonths":[[0,"Month"],[1,"January"],[2,"February"],[3,"March"],[4,"April"],[5,"May"],[6,"June"],[7,"July"],[8,"August"],[9,"September"],[10,"October"],[11,"November"],[12,"December"]],"bdateYears":[[0,"Year"],[2007,"2007"],[2006,"2006"],[2005,"2005"],[2004,"2004"],[2003,"2003"],[2002,"2002"],[2001,"2001"],[2000,"2000"],[1999,"1999"],[1998,"1998"],[1997,"1997"],[1996,"1996"],[1995,"1995"],[1994,"1994"],[1993,"1993"],[1992,"1992"],[1991,"1991"],[1990,"1990"],[1989,"1989"],[1988,"1988"],[1987,"1987"],[1986,"1986"],[1985,"1985"],[1984,"1984"],[1983,"1983"],[1982,"1982"],[1981,"1981"],[1980,"1980"],[1979,"1979"],[1978,"1978"],[1977,"1977"],[1976,"1976"],[1975,"1975"],[1974,"1974"],[1973,"1973"],[1972,"1972"],[1971,"1971"],[1970,"1970"],[1969,"1969"],[1968,"1968"],[1967,"1967"],[1966,"1966"],[1965,"1965"],[1964,"1964"],[1963,"1963"],[1962,"1962"],[1961,"1961"],[1960,"1960"],[1959,"1959"],[1958,"1958"],[1957,"1957"],[1956,"1956"],[1955,"1955"],[1954,"1954"],[1953,"1953"],[1952,"1952"],[1951,"1951"],[1950,"1950"],[1949,"1949"],[1948,"1948"],[1947,"1947"],[1946,"1946"],[1945,"1945"],[1944,"1944"],[1943,"1943"],[1942,"1942"],[1941,"1941"],[1940,"1940"],[1939,"1939"],[1938,"1938"],[1937,"1937"],[1936,"1936"],[1935,"1935"],[1934,"1934"],[1933,"1933"],[1932,"1932"],[1931,"1931"],[1930,"1930"],[1929,"1929"],[1928,"1928"],[1927,"1927"],[1926,"1926"],[1925,"1925"],[1924,"1924"],[1923,"1923"],[1922,"1922"],[1921,"1921"],[1920,"1920"],[1919,"1919"],[1918,"1918"],[1917,"1917"],[1916,"1916"],[1915,"1915"],[1914,"1914"],[1913,"1913"],[1912,"1912"],[1911,"1911"],[1910,"1910"],[1909,"1909"],[1908,"1908"],[1907,"1907"],[1906,"1906"],[1905,"1905"],[1904,"1904"],[1903,"1903"],[1902,"1902"]],"fbApp":"128749580520227","fbState":"5d973e2cdf15e46ed6","fbLocale":"en_US"}})}).catch((error) => { error.name = "[unsafeJs init_scroll_more_box] " + error.name; throw error });var opts = {"owner_id":-80747703,"post_id":7738,"note_id":false,"post_raw":"-80747703_7738","note":false,"seen":[{"-80747703_7738":1}],"scroll":false,"start":0,"offset":40,"per_page":20,"count":51,"url":"\/wall-80747703_7738","params":false,"href":"\/wall-80747703_7738?offset=","max_post_len":280,"post_hash":"","rmedia_types":[["photo","Photo"],["video","Video"],["audio","Audio"],["doc","File"],["map","Map"],["graffiti","Graffiti"],["market","Product",{"tt_text":"Now you can <a onclick=\"showBox('al_market.php', {act: 'a_edit_item_box', attach: 1, from_wall: 1}); return false\">attach a product<\/a> to your post.","tt_words":["sell","sell","sells","selling","sale","sold","give","gives","gave","given","for","free","rent","for","rent","rental","rents","rented","renting","give for free","giving for free","gives for free","for free","for rent","rent room","rent a room","renting a room","rents room","rents a room","renting room"]}],["postpone","Timer",{"lang":{"profile_choose_timer":"Posting time","profile_wall_postpone_at":"at","wall_publication_now":"Now","wall_post_timer_reset":"Clear","export_to_twitter":"Export to Twitter","export_to_facebook":"Export to Facebook","friends_only":"Friends only","wall_post_access_all":"Public post","profile_wall_postpone_btn":"Schedule"},"date":1610096995,"postpone_item_hidden":false}]],"share":{"timehash":"1610093395_f8e089730d1534295b","allow_custom_photo":true,"allow_edit_title":true,"allow_edit_url":true,"max_title_len":100},"upload":null,"upload_video":null,"check_comments":true,"reply_names":{"13443686":["Alexander","Alexander, "],"_":false,"458131140":["Maximilian","Maximilian, "],"6745056":["Evgeny","Evgeny, "],"13451807":["Andrey","Andrey, "],"38131722":["Alexey","Alexey, "],"23078266":["Maxim","Maxim, "],"100":["VK Administration","VK Administration, "],"402418":["Mark","Mark, "],"1382698":["Sergey","Sergey, "],"275816200":["DELETED","DELETED, "],"199250383":["Fedya","Fedya, "],"255739132":["Sergey","Sergey, "],"84497234":["Oleg","Oleg, "],"335601557":["Vasily","Vasily, "],"160364629":["Alexey","Alexey, "],"426509329":["Semen","Semen, "],"138961590":["Ivan","Ivan, "],"22225664":["Evgeny","Evgeny, "],"318962347":["Vitaly","Vitaly, "],"55941622":["Daniil","Daniil, "],"6743990":["Alexey","Alexey, "],"72498440":["Mikhail","Mikhail, "],"518334164":["Alexander","Alexander, "],"439867349":["Alexander","Alexander, "],"139676622":["Yury","Yury, "],"50595946":["Ivan","Ivan, "],"472827560":["DELETED","DELETED, "],"188725180":["Rodion","Rodion, "]},"wall_type":"full","view_hash":"eb538b1679e021b3bc","replies_page_count":20}, preload = [51,60,"",[]];
 cur.lang = extend(cur.lang || {}, {
   dont_attach: 'Remove attachment',
   wall_n_replies: ["","%s comment","%s comments"],

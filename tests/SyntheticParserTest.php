@@ -24,7 +24,9 @@ final class SyntheticParserTest extends TestCase
 				}
 				$str = file_get_contents($foundPaths[0]);
 				
-				$str = iconv('windows-1251', 'utf-8//ignore', $str);
+				if(!mb_detect_encoding($str, 'UTF-8', true)) {
+					$str = iconv('windows-1251', 'utf-8', $str);
+				}
 
 				try {
 					$dom = new Document($str);
@@ -71,7 +73,7 @@ final class SyntheticParserTest extends TestCase
 		}
 
 		foreach($postsBySource as $sourceId => $posts) {
-			$pairs[] = array($sourceId, $posts);
+			$pairs[$sourceId] = array($sourceId, $posts);
 		}
 
 		return $pairs;
@@ -97,7 +99,7 @@ final class SyntheticParserTest extends TestCase
 			$postInJson = file_get_contents($postPath);
 			$post = json_decode($postInJson, true);
 
-			$pairs[] = array($post['id'], $post);
+			$pairs[$post['id']] = array($post['id'], $post);
 		}
 
 		return $pairs;

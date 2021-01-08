@@ -35,7 +35,9 @@ $getDoms = function($urls, $context) {
 	foreach($handles as $url => $handle) {
 		$str = curl_multi_getcontent($handle);
 
-		$str = iconv('windows-1251', 'utf-8//ignore', $str);
+		if(!mb_detect_encoding($str, 'UTF-8', true)) {
+			$str = iconv('windows-1251', 'utf-8', $str);
+		}
 
 		try {
 			$dom = new Document($str);
