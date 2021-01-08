@@ -127,7 +127,7 @@ class PostExtractor extends GenericExtractor {
 	private function extractPostAuthor() {
 		$authorIsSpecified = has($this->postDom, '.wall_post_cont .wall_signed_by', $authorElem);
 		if($authorIsSpecified) {
-			return $$authorElem->text();
+			return $authorElem->text();
 		} else {
 			return $this->extractPostSource();
 		}
