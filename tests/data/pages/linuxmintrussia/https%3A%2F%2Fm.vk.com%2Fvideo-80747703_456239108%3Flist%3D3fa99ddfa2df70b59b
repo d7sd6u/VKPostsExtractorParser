@@ -1,0 +1,150 @@
+            <!DOCTYPE html>
+      <html lang="us" class="vk vk_js_no vk_1x vk_flex_no r d h  vk_appAuth_no n vk_old  vk_schemes_no ">
+      <head>
+              <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="MobileOptimized" content="176" />
+        <meta name="HandheldFriendly" content="True" />
+        <base id="base">
+        <link rel="manifest" crossorigin="use-credentials" href="/manifest.webmanifest?ver=209">
+        <meta name="description" content="" />
+        <meta property="og:description" content="" />
+        <link rel="shortcut icon" href="/images/icons/favicons/fav_logo.ico?8"></link>
+            <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/pwa/favicon_32.png?11">
+    <link rel="apple-touch-icon" href="/images/icons/pwa/apple/default.png?11">
+    <meta name="apple-mobile-web-app-title" content="VK">
+    <meta name="application-name" content="VK">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>kali linux на виртуальной машине — Video | VK</title>
+        <meta http-equiv="origin-trial" content="Av8ECqeAAIiC9bF3N7aq2M/TaxNzzpPcFXnw0rRb9KRUQlbyHKYmPj6KeVUFVDk+S7W9RfJH2GsEOS8G99uJvgcAAABaeyJvcmlnaW4iOiJodHRwczovL3ZrLmNvbTo0NDMiLCJmZWF0dXJlIjoiQmFkZ2luZyIsImV4cGlyeSI6MTU2MTY2MTkxNCwiaXNTdWJkb21haW4iOnRydWV9">
+        <script>
+          (function() {
+            window.vk = {"id":0,"__debug":false,"__dev":false,"wsTransport":"https:\/\/stats.vk-portal.net","statsMeta":{"platform":"mvk","st":false,"time":1610977390,"hash":"ramnQ4DKHQNMb8K8GwpR4MjmzUIJlDBjRFfnN0XRs7z"},"tnsPixelType":"unauth","tnsPixelSocdem":"13","platform":"mvk","rv":"105705","ts":1610977390,"sw":{"url":"\/js\/sw.js","push_hash":"518fc51d8d9f7ed91c"},"stFiles":{"https:\/\/st.vk.com\/css\/mobile\/common.7d9f278aef8ddfc1b6ff.css":"","https:\/\/st.vk.com\/css\/mobile\/video.cbad45e05f3d69ded38b.css":"","https:\/\/st.vk.com\/css\/mobile\/mail.a75c8ac2f86aa69531fd.css":"","https:\/\/st.vk.com\/css\/mobile\/unauthorized.242b30cdfd8912c4015b.css":"","https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js":"cc7c2f73903eed3810690ecbcc7b7f629af1987d81b7901d639b663ead17a6b0","https:\/\/st.vk.com\/js\/cmodules\/mobile\/vendors.3624a680f0fbfd12a0e2.js":"b0f4b6f78fc8e4b55689e475202ec69ccde25488bb108d86c38d211f24e33055","https:\/\/st.vk.com\/js\/cmodules\/mobile\/icons.9fea268629bdf77534b7.js":"df3344c95cd6c47b22ee19b2263813fbc7a03bf26dcfb1043ef3f066848e032d","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js":"f7134b278bc9c8b7fafd463d498267dcdaa9b29e3dcf81dfa75c499e087400a4","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js":"461d29db9cf063edab983e11a01ea627c12993aa7170d6132b1e35c3c20df9aa","https:\/\/st.vk.com\/js\/cmodules\/mobile\/grip.a7b9edd60a5be5a84b06.js":"1486c3f7f2e6a8a879155d4ff7133b7b9919fc0438b0ad221a8fffcdb1442955","https:\/\/st.vk.com\/js\/cmodules\/mobile\/unauthorized.0297efb9caeb123eed77.js":"c54112dc3a21b9e192499085629f4275ba8c6e6b931c87c518c87ba882e50d52"},"stNavMap":{"^\\\/join":["https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/vendors.3624a680f0fbfd12a0e2.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/icons.9fea268629bdf77534b7.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/join.06d9b854bbc917dc0f39.js","https:\/\/st.vk.com\/css\/mobile\/join.8a0ec4cd83850643f54b.css"],"promocode(\\\/([0-9a-zA-Z-]+))?":["https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/vendors.3624a680f0fbfd12a0e2.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/icons.9fea268629bdf77534b7.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/promocode.56276ea40d69f6a3e81f.js","https:\/\/st.vk.com\/css\/mobile\/promocode.7008324ec2aafb688785.css"],"^\\\/video":["https:\/\/st.vk.com\/css\/mobile\/video.cbad45e05f3d69ded38b.css","https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/vendors.3624a680f0fbfd12a0e2.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/icons.9fea268629bdf77534b7.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/video.96c5ad3a56f1510c3240.js","https:\/\/st.vk.com\/css\/mobile\/mail.a75c8ac2f86aa69531fd.css"],"^\\\/clip":["https:\/\/st.vk.com\/css\/mobile\/ShortVideoPage.7730b2d47847f84a10b8.css","https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/vendors.3624a680f0fbfd12a0e2.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/icons.9fea268629bdf77534b7.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/short_video.9f8f8330a2273fe50fbb.js","https:\/\/st.vk.com\/css\/mobile\/mail.a75c8ac2f86aa69531fd.css"],"^\\\/(photo|album|tag|attachments|market)":["https:\/\/st.vk.com\/css\/mobile\/photo.9df4230efda6409bff93.css","https:\/\/st.vk.com\/css\/mobile\/mail.a75c8ac2f86aa69531fd.css"],"^\\\/(wall|mail|write|im|chatjoin)":["https:\/\/st.vk.com\/css\/mobile\/mail.a75c8ac2f86aa69531fd.css","https:\/\/st.vk.com\/css\/mobile\/wall.781e4d9e562a18402bc8.css"],"settings\\?act=money_transfer_history":["https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/vendors.3624a680f0fbfd12a0e2.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/icons.9fea268629bdf77534b7.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/money_transfer_history.d01a623df371830dd42c.js","https:\/\/st.vk.com\/css\/mobile\/money_transfer_history.78005b0c01f936b453e0.css"],"reports\\?act=":["https:\/\/st.vk.com\/css\/mobile\/reports.cff6c24a3443efc8018b.css"],"^\\\/(blog|about|press|jobs|products|adv)":["https:\/\/st.vk.com\/css\/mobile\/blog.412f4f22d6daf370190a.css","https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/vendors.3624a680f0fbfd12a0e2.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/icons.9fea268629bdf77534b7.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/blog.28e0861709bd37728192.js","https:\/\/st.vk.com\/css\/mobile\/mail.a75c8ac2f86aa69531fd.css"],"^\\\/(product|cart|orders|market\\.php)(\\??[0-9a-zA-Z=_-]+)?":["https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/vendors.3624a680f0fbfd12a0e2.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/icons.9fea268629bdf77534b7.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/market.01e3defbc5376fb93f86.js","https:\/\/st.vk.com\/css\/mobile\/market.3960be0caf91b737447b.css"],"^\\\/groups_catalog\\\/([0-9a-zA-Z_\\-]+)$":["https:\/\/st.vk.com\/js\/cmodules\/mobile\/runtime.0b6e8992ba590b3949b1.js","https:\/\/st.vk.com\/js\/cmodules\/mobile\/groups_catalog.f8feeb6e82e96d796c6b.js"]},"pe":{"vk_apps_svg_qr":1,"upload.send_upload_stat":1,"push_notifier":1,"geminus_counter":1,"notify_new_events_box":1,"mini_apps_web_add_to_favorites":1,"mini_apps_web_add_to_menu":1,"mini_apps_m_web_new_stub_page":1,"mini_apps_web_catalog_enabled":1,"apps_edit_marusia_uploading_audio":1,"cookie_secure_default_true":1,"widgets_xdm_same_origin":1,"stickers_money_transfer_suggestions":1,"web2_story_box_enabled":1,"bridge_mobile_story_box_enabled":1,"gifts_stickers_preview_tooltips":1,"navigation_timespent":1,"market_item_recommendations_view_log":1,"market_item_others_view_log":1,"web_stats_transport_story_view":1,"registration_item_stat":1,"mvk_lazy_static_reload":1,"notifications_view_new":1,"ads_market_autopromotion_bookmarks_stats":1,"web_new_photo_editor":1,"web_new_photo_editor_crop":1,"web_photo_editor_hide_entrypoint":1,"web_stats_try_send":1,"stickers_catalog_reload_after_buy":1,"web_stats_send_on_events_limit":1,"stickers_web_new_ui":1,"ads_new_reports_web_tgb":1,"ads_autopromotion_web_cashback":1,"recognize_mock_turn_off":1,"photo_recognition_web":1,"aliexpress_app_links_with_partner_links":1,"ads_new_reports_web_histories":1,"ads_new_reports_mvk_histories":1,"audio_unauth_preview":1,"audio_unauth_preview_box":1,"ads_easy_promote_goods_new_create_api":1,"unauthorized_media_layer_box":1,"pinned_conversations":1,"messenger_empty_pinned_support":1},"ex":[],"audioAdsConfig":{"_":"_"}};
+            window.isMVK = true;
+            window.isCustomScroll = false;
+            window.isNewMail = false;
+            window.isNewLongpoll = false;
+            window.audioSubscribe = false;
+            window.isArticleWebView = false;
+
+            var vkElem = document.querySelector('.vk');
+            var vkClass = vkElem.getAttribute('class');
+
+            function cssPropertySupported(pNames) {
+              var element = document.createElement('a');
+              var index = pNames.length;
+              try {
+                while (index--) {
+                  var name = pNames[index];
+
+                  element.style.display = name;
+                  if (element.style.display === name) {
+                    return true;
+                  }
+                }
+              } catch (pError) {}
+
+              return false;
+            }
+            var supports = {
+              js: true,
+              flex: cssPropertySupported('flex -webkit-flex -ms-flexbox -moz-box -webkit-box'.split(' ')),
+            };
+
+            supports.js && (vkClass = vkClass.replace('vk_js_no', 'vk_js_yes'));
+            supports.flex && (vkClass = vkClass.replace('vk_flex_no', 'vk_flex_yes'));
+            vkElem.setAttribute('class', vkClass);
+          })();
+        </script>
+
+        
+        <script type="text/javascript">
+<!--
+;(function(){"use strict";function e(e){t(e),e.hash_redirect&&o(e),e.al_ver&&(window.al={ver:e.al_ver}),document.addEventListener("DOMContentLoaded",(function(){e.help_hints&&window.Tooltip&&window.Tooltip.initHelpHints&&window.Tooltip.initHelpHints(e.help_hints)}))}function t(e){var t=e.iospwa_cookie,o=e.device_cookie,i=e.cookie_secure,n=e.cookie_samesite,a=e.cookie_path,r=e.cookie_domain,c=e.need_reload,s=new Date((new Date).getTime()+7776e6).toUTCString();!0===navigator.standalone&&-1===document.cookie.indexOf(t+"=1")&&(document.cookie=t+"=1; expires="+s+";"+i+n+" path="+a+"; domain="+r);var l=document,u=window,d="undefined",p="!",h="-",f=u.screen,m=f.width||0,v=f.height||0,y=u.devicePixelRatio||1,w=new RegExp("(^|;\\s+)"+o+"=([^;]+)"),g=(l.cookie.match(w)||[])[2]||"",T=g.split("/");if(g&&m==T[0]&&v==T[1]&&y==T[2]&&7===T[3].length);else{var k=[m,v,y,M()].join("/");l.cookie=o+"=; expires="+new Date(0).toUTCString()+";"+i+n+" path="+a,l.cookie=o+"="+k+"; expires="+s+";"+i+n+" path="+a+"; domain="+r,""!==l.cookie&&c&&location.reload()}function M(){var e=(function(){var e;try{e=new XMLHttpRequest}catch(t){try{e=new ActiveXObject("Msxml2.XMLHTTP")}catch(t){try{e=new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}}}return e?"!":"-"})(),t=((o=l.createElement("div")).innerHTML='<input type="file" />',"file"!==(o=o.getElementsByTagName("input")[0]).type||o.disabled?"-":"!"),o,i="ontouchstart"in u?"!":"-",n="-",a,r,c;try{(typeof navigator.geolocation!==d||typeof u.google!==d&&typeof google.gears!==d||typeof device!==d&&typeof device.getServiceObject!==d||typeof Mojo!==d&&"Mojo.Service.Request"!=typeof Mojo.Service.Request)&&(n="!")}catch(e){}return[e,t,i,n,(function(e){try{var t=u.Audio?new Audio:l.createElement("audio");if(t.canPlayType&&t.canPlayType(e)&&"no"!==t.canPlayType(e))return"!"}catch(e){}return"-"})("audio/mpeg"),(function(e){try{for(var t=l.createElement("div"),o=["","webkit","Moz","ms","O"],i=0,n=o.length;i<n;i++){var a=o[i],r=a?a+e:e.toLowerCase();if(typeof t.style[r]!==d)return"!"}return"-"}catch(e){return"-"}})("Transform"),(u.XMLHttpRequest||u.XDomainRequest)&&(u.FormData||u.FileReader&&(u.XMLHttpRequest&&XMLHttpRequest.sendAsBinary||u.ArrayBuffer&&u.Uint8Array&&(u.MozBlobBuilder||u.WebKitBlobBuilder||u.BlobBuilder)))?"!":"-"].join("")}}function o(e){var t=e.cookie_secure,o=e.cookie_samesite,i=location,n=i.hash||"",a=n.substr(2);if("#/"===n.substr(0,2)){var r=window.locDomain,c=new Date;c.setTime(c.getTime()+864e5);var s="; expires="+c.toGMTString();document.cookie=["remixtmp_hash_nav","=",escape(i.href),s,"; path=/",""+t,""+o,r?"; domain=."+r:""].join(""),a.match(/^\/*(away|login)(\.php)?([^a-z0-9\.]|$)/)&&(a=""),i.replace(i.protocol+"//"+i.host+"/"+a)}}return e})()({"hash_redirect":true,"device_cookie":"remixmdevice","iospwa_cookie":"remixmiospwa","cookie_path":"\/","cookie_domain":".vk.com","cookie_samesite":"","cookie_secure":" Secure;","need_reload":true,"help_hints":{"mvk:video_filters":{"id":"mvk:video_filters","active":false,"hash":null},"feed:textlive_hide":{"id":"feed:textlive_hide","active":true,"hash":"1aaa692d60dbe9c4a0"},"narratives:add_tooltip":{"id":"narratives:add_tooltip","active":false,"hash":null},"mvk:audio_messages":{"id":"mvk:audio_messages","active":false,"hash":null}},"al_ver":""});
+//-->
+</script>
+        <link rel="stylesheet" href="https://st.vk.com/css/mobile/common.7d9f278aef8ddfc1b6ff.css?">
+<link rel="stylesheet" href="https://st.vk.com/css/mobile/video.cbad45e05f3d69ded38b.css?">
+<link rel="stylesheet" href="https://st.vk.com/css/mobile/mail.a75c8ac2f86aa69531fd.css?">
+<link rel="stylesheet" href="https://st.vk.com/css/mobile/unauthorized.242b30cdfd8912c4015b.css?">
+<script src="https://st.vk.com/js/cmodules/mobile/runtime.0b6e8992ba590b3949b1.js?cc7c2f73903eed3810690ecbcc7b7f629af1987d81b7901d639b663ead17a6b0"></script>
+<script src="https://st.vk.com/js/cmodules/mobile/vendors.3624a680f0fbfd12a0e2.js?b0f4b6f78fc8e4b55689e475202ec69ccde25488bb108d86c38d211f24e33055"></script>
+<script src="https://st.vk.com/js/cmodules/mobile/icons.9fea268629bdf77534b7.js?df3344c95cd6c47b22ee19b2263813fbc7a03bf26dcfb1043ef3f066848e032d"></script>
+<script src="https://st.vk.com/js/cmodules/mobile/b-cafa774d178f2d8dc98b9188257db41a.444ed48b2a2462dd3757.js?f7134b278bc9c8b7fafd463d498267dcdaa9b29e3dcf81dfa75c499e087400a4"></script>
+<script src="https://st.vk.com/js/cmodules/mobile/b-7610275fa06694c2c2bbad93855f7355.b9d090ccc79030dc8fcb.js?461d29db9cf063edab983e11a01ea627c12993aa7170d6132b1e35c3c20df9aa"></script>
+<script src="https://st.vk.com/js/cmodules/mobile/grip.a7b9edd60a5be5a84b06.js?1486c3f7f2e6a8a879155d4ff7133b7b9919fc0438b0ad221a8fffcdb1442955"></script>
+<script src="https://st.vk.com/js/cmodules/mobile/unauthorized.0297efb9caeb123eed77.js?c54112dc3a21b9e192499085629f4275ba8c6e6b931c87c518c87ba882e50d52"></script>
+
+        <link rel="canonical" href="https://vk.com/video-80747703_456239108" />
+        <link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/video-80747703_456239108" />
+      </head>
+
+      <body  class="vk__page _ivk _hover vk_ios_no _hfixed vk_stickers_hints_support_no opera_mini_no vk_safari_no vk__page_video vk_tabbar_bottom    vk_al_no ">
+        <script id="color-scheme-script" type="text/javascript">
+<!--
+;(function(){"use strict";function e(e){var o=e.colorSchemeMode,c=e.isForcedColorSchemeMode,r=e.isDarkSchemeGuideHidden,s=e.colorSchemesMap;if(window.colorScheme){var t=o;try{var i=sessionStorage.getItem("colorScheme");i&&(t=i,window.colorScheme.isModeSavingAllowed=!1),c&&(t=o,window.colorScheme.isModeSavingAllowed=!1,sessionStorage.setItem("colorScheme",o))}catch(e){}window.colorScheme.init({mode:t,schemesMap:s});var d=document.querySelector(".vk"),n=d.getAttribute("class");window.isSchemesSupported()&&(n=n.replace("vk_schemes_no","vk_schemes_yes")),d.setAttribute("class",n),window.isSchemesSupported()&&!r&&onDOMReady((function(){window.DarkSchemeModal.open()}))}var m=document.getElementById("color-scheme-script");m.parentNode.removeChild(m)}return e})()({"colorSchemeMode":"auto","isForcedColorSchemeMode":false,"isDarkSchemeGuideHidden":true,"colorSchemesMap":null});
+//-->
+</script>
+        <div class="UnsupportedBrowser" role="alert" tabindex="-1"><div class="UnsupportedBrowser__content"><div class="UnsupportedBrowser__cell"><div class="UnsupportedBrowser__text">Your browser is outdated.<br/>Try updating it so that VK works faster and more stably.</div></div><div class="UnsupportedBrowser__cell UnsupportedBrowser__closeButtonCell"><button type="button" class="Btn Btn_theme_regular Btn_size_small UnsupportedBrowser__close" onclick="UnsupportedBrowser.hide()">Close</button></div></div></div>
+            <div class="layout">
+      
+          <div class="layout__header mhead" id="vk_head">
+      <div class="hb_wrap">
+        <div class="hb_btn">&nbsp;</div>
+      </div>
+    </div>
+      <div class="layout__body " id="vk_wrap">
+        <div class="layout__leftMenu" id="l">
+          
+        </div>
+        <div class="layout__basis" id="m" role="main">
+              <div class="basis">
+      <div class="basis__header mhead basis__header_noBottomMenu basis__header_noshadow basis__header_noshadowAnim basis__header_unauthorized basis__header_unauthorized_actions basis__header_nohide" id="mhead"><div class="UnauthorizedHeader"><div class="UnauthorizedHeader__row"><div class="UnauthorizedHeader__logoWrapper UnauthorizedHeader__logoWrapper--toEdge"><div><div class="UnauthorizedHeader__logo hb_btn mhi_logo"></div><span class="visually-hidden">VK</span></div></div></div><div class="UnauthorizedHeader__row"><div class="UnauthorizedHeader__buttons"><div class="UnauthorizedHeader__button"><a class="Btn Btn_theme_outline Btn_size_small" href="/login?to=dmlkZW8tODA3NDc3MDNfNDU2MjM5MTA4P2xpc3Q9M2ZhOTlkZGZhMmRmNzBiNTli" role="button" style="" target=""><div class="Btn__text">Log in</div></a></div><div class="UnauthorizedHeader__button UnauthorizedHeader__button--register"><a class="Btn Btn_theme_small Btn_size_small" href="/join" role="button" style="" target=""><div class="Btn__text">Sign up</div></a></div></div></div></div></div>
+      <div class="basis__menu"><div class="VideoFilterBadgeFiller"></div></div>
+      <div class="CookiePolicy"><div class="CookiePolicy__content"><div class="CookiePolicy__icon"></div><div class="CookiePolicy__text">By continuing to browse, you consent to our use of cookies. You can read our Cookie Policy <a href="/privacy/cookies">here</a>.</div><a class="CookiePolicy__hide" href="/settings?act=hide_cookie_policy&amp;hash=c1a37aa15452be0c5e&amp;redirect_url=%2Fvideo-80747703_456239108%3Flist%3D3fa99ddfa2df70b59b&amp;redirect_hash=bb5cea497c114ebeeb" onclick="CookiePolicy._onHideClick(event, this)">    <div class="CookiePolicy__hideIcon Icon Icon_close12"  >
+      
+    </div></a></div></div>
+      <div class="basis__content mcont " id="mcont" data-canonical="https://vk.com/video-80747703_456239108"><div class="VideoPage Pad Pad_theme_gray"><div id="video-80747703_456239108"><div class="VideoPage__video"><iframe
+  class="vv_inline_video"
+  type="text/html"
+  width="100%"
+  height="99"
+  src="//www.youtube.com/embed/kLIP28pRLIo?autoplay=0&autohide=1&wmode=opaque&showinfo=0"
+  frameborder="0"
+  allowfullscreen="1"
+></iframe></div><div class="VideoPageInfoRow"><h2 class="VideoPageInfoRow__title">kali linux на виртуальной машине</h2><div aria-label="2 views" class="VideoPageInfoRow__views">2 views</div></div><div class="wi_like_wrap is_empty"></div><div class="wi_buttons_wrap"><div class="wi_buttons"><div class="like_wrap"><span class="item_like is_empty" aria-label="0 Like" role="button" aria-pressed="false" onclick="window.Unauthorized &amp;&amp; window.Unauthorized.onActionClick(event, &#39;like&#39;, &#39;video-80747703_456239108&#39;)"><i class="i_like"></i></span></div></div></div><a class="Cell Cell--link" href="/id608143474"><div class="Cell__before"><img class="Cell__avatar" aria-hidden src="https://sun9-72.userapi.com/impg/pqJi9rVD-vehb2CfoYEhqHO4ZcptFKJkKjrtuQ/wCqXXO7Vf6I.jpg?size=50x0&amp;quality=96&amp;crop=83,83,456,456&amp;sign=e9d4fca669b2f19a1e0962f38a3ec90f&amp;ava=1" /></div><div class="Cell__main"><div class="Cell__title">Manana Tselkovskaya</div><div class="Cell__description">Added on today</div></div></a><div class="VideoPage__description">Исследуем постоянный XSS/Исследуем продвинутый постоянный XSS</div><div class="Replies"><a id="comments" name="comments"></a><div id="wall_replies" class="RepliesWrap wall_replies bl_cont"></div><a id="comments_end" name="comments_end"></a></div></div></div></div>
+      
+      
+          <div aria-hidden="true" class="_cntrs" style="height:0;overflow:hidden;">
+          <img width="1" height="1" src="https://sb.scorecardresearch.com/p?c1=2&c2=13765216&c3=&c4=https%3A%2F%2Fm.vk.com%2Fvideo-80747703_456239108%3Flist%3D3fa99ddfa2df70b59b&c5=&c9=&c15=&cv=2.0&cj=1&rn=18137907" alt="">
+      
+      <noscript><img src="//top-fwz1.mail.ru/counter?id=2579437;pid=0;r=" style="border:0;" height="1" width="1" /></noscript>
+    </div>
+    </div>
+        </div>
+      </div>
+    </div>
+        
+        
+        <script type="text/javascript">
+<!--
+parent&&parent!=window&&(document.getElementsByTagName('body')[0].innerHTML='');try{sessionStorage.set('is_mvk_tab', 1)}catch(e){};window.store.stickers = {"url_template":"https:\/\/vk.com\/sticker\/1-%id%-%size%"};;(function (d, w) {
+var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+//-->
+</script>
+        <div id="vk_utils"></div>
+        <div id="z"></div>
+        <div id="vk_bottom"></div>
+        <div id="theme_color_shim"></div>
+        
+        
+      </body>
+    </html>

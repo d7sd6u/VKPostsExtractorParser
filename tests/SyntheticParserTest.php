@@ -44,7 +44,9 @@ final class SyntheticParserTest extends TestCase
 	 * @dataProvider pregeneratedPostsBySource
 	 */
 	public function testGetPostFromSourceStillWorksOnPregeneratedData($sourceId, $pregeneratedPosts): void {
-		$parser = new Parser($this->getDomsSynthetic, function($message) {});
+		$parser = new Parser($this->getDomsSynthetic, function($message) {}, array(
+			'baseTimestamp' => '946684800'
+		));
 		$posts = $parser->getPostsFromSource($sourceId);
 
 		$postsById = array();
@@ -83,7 +85,9 @@ final class SyntheticParserTest extends TestCase
 	 * @dataProvider pregeneratedPostsById
 	 */
 	public function testGetPostByIdStillWorksOnPregeneratedData($postId, $pregeneratedPost): void {
-		$parser = new Parser($this->getDomsSynthetic, function($message) {});
+		$parser = new Parser($this->getDomsSynthetic, function($message) {}, array(
+			'baseTimestamp' => '946684800'
+		));
 		$post = $parser->getPostById($postId);
 
 		$this->assertEquals($post, $pregeneratedPost);

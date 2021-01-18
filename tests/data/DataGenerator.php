@@ -81,7 +81,9 @@ $log = function($message) {
 
 date_default_timezone_set('UTC');
 
-$parser = new Parser($getDoms, $log);
+$parser = new Parser($getDoms, $log, array(
+	'baseTimestamp' => '946684800'
+));
 
 try {
 	$posts = $parser->getPostsFromSource($source);
